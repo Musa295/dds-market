@@ -1,11 +1,16 @@
 import printerDlpRed from "@/assets/products/printer-dlp-red.jpg";
 import millingMachine from "@/assets/products/milling-machine.jpg";
 import sinteringFurnace from "@/assets/products/sintering-furnace.jpg";
+import sinteringFurnace2 from "@/assets/products/sintering-furnace-2.jpg";
 import porcelainFurnace from "@/assets/products/porcelain-furnace.jpg";
+import porcelainFurnace2 from "@/assets/products/porcelain-furnace-2.jpg";
 import porcelainFurnaceCompact from "@/assets/products/porcelain-furnace-compact.jpg";
+import porcelainFurnaceCompact2 from "@/assets/products/porcelain-furnace-compact-2.jpg";
 import titaniumInstrument from "@/assets/products/titanium-instrument.jpg";
 import laserSintering from "@/assets/products/laser-sintering.jpg";
+import laserSintering2 from "@/assets/products/laser-sintering-2.jpg";
 import dustCollector from "@/assets/products/dust-collector.jpg";
+import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
 
 export const SITE = {
