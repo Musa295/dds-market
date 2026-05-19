@@ -44,6 +44,7 @@ export type Product = {
   short: string;
   features: string[];
   image?: string;
+  images?: string[];
 };
 
 export const CATEGORIES = [
