@@ -1,9 +1,42 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
-import { PRODUCTS, CATEGORIES } from "@/components/site/data";
+import { PRODUCTS, CATEGORIES, type Product } from "@/components/site/data";
 import { Button } from "@/components/ui/button";
 import { useMemo, useState } from "react";
-import { Search } from "lucide-react";
+import { Search, ChevronLeft, ChevronRight } from "lucide-react";
+
+function ProductGallery({ product }: { product: Product }) {
+  const imgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
+  const [idx, setIdx] = useState(0);
+  const hasMany = imgs.length > 1;
+  const prev = (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setIdx((i) => (i - 1 + imgs.length) % imgs.length); };
+  const next = (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setIdx((i) => (i + 1) % imgs.length); };
+  return (
+    <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+      {imgs.length > 0 ? (
+        <img src={imgs[idx]} alt={product.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-300" />
+      ) : (
+        <div className="absolute inset-0 bg-mesh opacity-30" />
+      )}
+      <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium z-10">{product.brand}</div>
+      {hasMany && (
+        <>
+          <button type="button" onClick={prev} aria-label="Предыдущее фото" className="absolute left-2 top-1/2 -translate-y-1/2 size-8 grid place-items-center rounded-full bg-card/90 backdrop-blur border border-border shadow-sm hover:bg-card opacity-0 group-hover:opacity-100 transition-opacity z-10">
+            <ChevronLeft className="size-4" />
+          </button>
+          <button type="button" onClick={next} aria-label="Следующее фото" className="absolute right-2 top-1/2 -translate-y-1/2 size-8 grid place-items-center rounded-full bg-card/90 backdrop-blur border border-border shadow-sm hover:bg-card opacity-0 group-hover:opacity-100 transition-opacity z-10">
+            <ChevronRight className="size-4" />
+          </button>
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+            {imgs.map((_, i) => (
+              <button key={i} type="button" aria-label={`Фото ${i + 1}`} onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIdx(i); }} className={`h-1.5 rounded-full transition-all ${i === idx ? "w-6 bg-primary" : "w-1.5 bg-card/80"}`} />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
 export const Route = createFileRoute("/catalog")({
   head: () => ({ meta: [
@@ -58,14 +91,7 @@ function CatalogPage() {
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.map((p) => (
               <article key={p.slug} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
-                <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
-                  {p.image ? (
-                    <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" />
-                  ) : (
-                    <div className="absolute inset-0 bg-mesh opacity-30" />
-                  )}
-                  <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium">{p.brand}</div>
-                </div>
+                <ProductGallery product={p} />
                 <div className="p-5">
                   <div className="text-xs text-muted-foreground">{p.category}</div>
                   <h3 className="mt-1 font-semibold text-lg leading-tight">{p.name}</h3>

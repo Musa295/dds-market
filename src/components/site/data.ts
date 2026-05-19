@@ -1,11 +1,16 @@
 import printerDlpRed from "@/assets/products/printer-dlp-red.jpg";
 import millingMachine from "@/assets/products/milling-machine.jpg";
 import sinteringFurnace from "@/assets/products/sintering-furnace.jpg";
+import sinteringFurnace2 from "@/assets/products/sintering-furnace-2.jpg";
 import porcelainFurnace from "@/assets/products/porcelain-furnace.jpg";
+import porcelainFurnace2 from "@/assets/products/porcelain-furnace-2.jpg";
 import porcelainFurnaceCompact from "@/assets/products/porcelain-furnace-compact.jpg";
+import porcelainFurnaceCompact2 from "@/assets/products/porcelain-furnace-compact-2.jpg";
 import titaniumInstrument from "@/assets/products/titanium-instrument.jpg";
 import laserSintering from "@/assets/products/laser-sintering.jpg";
+import laserSintering2 from "@/assets/products/laser-sintering-2.jpg";
 import dustCollector from "@/assets/products/dust-collector.jpg";
+import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
 
 export const SITE = {
@@ -39,6 +44,7 @@ export type Product = {
   short: string;
   features: string[];
   image?: string;
+  images?: string[];
 };
 
 export const CATEGORIES = [
@@ -83,6 +89,7 @@ export const PRODUCTS: Product[] = [
     short: "Селективное лазерное плавление CoCr и титана для каркасов и абатментов.",
     features: ["Лазер 200 Вт", "Толщина слоя 20 мкм", "CoCr / Ti6Al4V", "Камера с инертным газом"],
     image: laserSintering,
+    images: [laserSintering, laserSintering2],
   },
   {
     slug: "sintering-furnace-zir-1600",
@@ -93,6 +100,7 @@ export const PRODUCTS: Product[] = [
     short: "Скоростное спекание циркониевых каркасов за 25 минут.",
     features: ["До 1600 °C", "Скорость 25 мин", "Камера на 100 единиц", "Сенсорный экран"],
     image: sinteringFurnace,
+    images: [sinteringFurnace, sinteringFurnace2],
   },
   {
     slug: "porcelain-furnace-a7",
@@ -103,6 +111,7 @@ export const PRODUCTS: Product[] = [
     short: "Профессиональная вакуумная печь для прессовки и обжига керамики.",
     features: ["До 1200 °C", "Вакуумный насос", "200 программ", "Сенсорное управление"],
     image: porcelainFurnace,
+    images: [porcelainFurnace, porcelainFurnace2],
   },
   {
     slug: "porcelain-furnace-compact",
@@ -113,6 +122,7 @@ export const PRODUCTS: Product[] = [
     short: "Настольная компактная печь для небольших лабораторий и клиник.",
     features: ["До 1100 °C", "Цветной TFT-экран", "Тихая работа", "Автокалибровка"],
     image: porcelainFurnaceCompact,
+    images: [porcelainFurnaceCompact, porcelainFurnaceCompact2],
   },
   {
     slug: "titanium-plating",
@@ -133,6 +143,7 @@ export const PRODUCTS: Product[] = [
     short: "Промышленная вытяжка для зуботехнических лабораторий с HEPA-фильтрацией.",
     features: ["1500 Вт", "HEPA H13", "4 режима мощности", "Мобильное шасси"],
     image: dustCollector,
+    images: [dustCollector, dustCollector2],
   },
   {
     slug: "print-platforms",
