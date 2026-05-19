@@ -58,8 +58,12 @@ function CatalogPage() {
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.map((p) => (
               <article key={p.slug} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
-                <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative">
-                  <div className="absolute inset-0 bg-mesh opacity-30" />
+                <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+                  {p.image ? (
+                    <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <div className="absolute inset-0 bg-mesh opacity-30" />
+                  )}
                   <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium">{p.brand}</div>
                 </div>
                 <div className="p-5">
