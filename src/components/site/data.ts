@@ -88,6 +88,7 @@ export const PRODUCTS: Product[] = [
     short: "DLP-принтер для моделей, кап, хирургических шаблонов.",
     features: ["XY 62 мкм", "385 нм LED", "Открытая система смол", "Wi-Fi / Ethernet"],
     image: printerDlpRed,
+    images: [printerDlpRed, printerDlpEdge2],
   },
   {
     slug: "laser-sintering-deskfab",
@@ -98,7 +99,7 @@ export const PRODUCTS: Product[] = [
     short: "Селективное лазерное плавление CoCr и титана для каркасов и абатментов.",
     features: ["Лазер 200 Вт", "Толщина слоя 20 мкм", "CoCr / Ti6Al4V", "Камера с инертным газом"],
     image: laserSintering,
-    images: [laserSintering, laserSintering2],
+    images: [laserSintering, laserSintering2, laserSintering3, laserSintering4],
   },
   {
     slug: "sintering-furnace-zir-1600",
@@ -109,7 +110,7 @@ export const PRODUCTS: Product[] = [
     short: "Скоростное спекание циркониевых каркасов за 25 минут.",
     features: ["До 1600 °C", "Скорость 25 мин", "Камера на 100 единиц", "Сенсорный экран"],
     image: sinteringFurnace,
-    images: [sinteringFurnace, sinteringFurnace2],
+    images: [sinteringFurnace, sinteringFurnace2, sinteringFurnace3],
   },
   {
     slug: "porcelain-furnace-a7",
@@ -120,7 +121,7 @@ export const PRODUCTS: Product[] = [
     short: "Профессиональная вакуумная печь для прессовки и обжига керамики.",
     features: ["До 1200 °C", "Вакуумный насос", "200 программ", "Сенсорное управление"],
     image: porcelainFurnace,
-    images: [porcelainFurnace, porcelainFurnace2],
+    images: [porcelainFurnace, porcelainFurnace2, porcelainFurnace3, porcelainFurnace4, porcelainFurnace5],
   },
   {
     slug: "porcelain-furnace-compact",
