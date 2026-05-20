@@ -1,20 +1,28 @@
 import printerDlpRed from "@/assets/products/printer-dlp-red.jpg";
+import printerDlpEdge2 from "@/assets/products/printer-dlp-edge-2.jpg";
 import millingMachine from "@/assets/products/milling-machine.jpg";
 import sinteringFurnace from "@/assets/products/sintering-furnace.jpg";
 import sinteringFurnace2 from "@/assets/products/sintering-furnace-2.jpg";
+import sinteringFurnace3 from "@/assets/products/sintering-furnace-3.jpg";
 import porcelainFurnace from "@/assets/products/porcelain-furnace.jpg";
 import porcelainFurnace2 from "@/assets/products/porcelain-furnace-2.jpg";
+import porcelainFurnace3 from "@/assets/products/porcelain-furnace-3.jpg";
+import porcelainFurnace4 from "@/assets/products/porcelain-furnace-4.jpg";
+import porcelainFurnace5 from "@/assets/products/porcelain-furnace-5.jpg";
 import porcelainFurnaceCompact from "@/assets/products/porcelain-furnace-compact.jpg";
 import porcelainFurnaceCompact2 from "@/assets/products/porcelain-furnace-compact-2.jpg";
 import titaniumInstrument from "@/assets/products/titanium-instrument.jpg";
 import laserSintering from "@/assets/products/laser-sintering.jpg";
 import laserSintering2 from "@/assets/products/laser-sintering-2.jpg";
+import laserSintering3 from "@/assets/products/laser-sintering-3.jpg";
+import laserSintering4 from "@/assets/products/laser-sintering-4.jpg";
 import dustCollector from "@/assets/products/dust-collector.jpg";
 import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
 
 export const SITE = {
-  name: "Digital Dentistry Solutions",
+  name: "DDS",
+  fullName: "Digital Dentistry Solutions",
   tagline: "Цифровая стоматология. Оборудование и решения для клиник и лабораторий в Москве.",
   phone: "+7 (495) 123-45-67",
   phoneHref: "tel:+74951234567",
@@ -22,6 +30,7 @@ export const SITE = {
   address: "г. Москва, ул. Ленинская Слобода, 19, БЦ «Омега Плаза»",
   telegram: "https://t.me/dds_moscow",
   whatsapp: "https://wa.me/74951234567",
+  max: "https://max.ru/dds_moscow",
 };
 
 export const NAV = [
@@ -79,6 +88,7 @@ export const PRODUCTS: Product[] = [
     short: "DLP-принтер для моделей, кап, хирургических шаблонов.",
     features: ["XY 62 мкм", "385 нм LED", "Открытая система смол", "Wi-Fi / Ethernet"],
     image: printerDlpRed,
+    images: [printerDlpRed, printerDlpEdge2],
   },
   {
     slug: "laser-sintering-deskfab",
@@ -89,7 +99,7 @@ export const PRODUCTS: Product[] = [
     short: "Селективное лазерное плавление CoCr и титана для каркасов и абатментов.",
     features: ["Лазер 200 Вт", "Толщина слоя 20 мкм", "CoCr / Ti6Al4V", "Камера с инертным газом"],
     image: laserSintering,
-    images: [laserSintering, laserSintering2],
+    images: [laserSintering, laserSintering2, laserSintering3, laserSintering4],
   },
   {
     slug: "sintering-furnace-zir-1600",
@@ -100,7 +110,7 @@ export const PRODUCTS: Product[] = [
     short: "Скоростное спекание циркониевых каркасов за 25 минут.",
     features: ["До 1600 °C", "Скорость 25 мин", "Камера на 100 единиц", "Сенсорный экран"],
     image: sinteringFurnace,
-    images: [sinteringFurnace, sinteringFurnace2],
+    images: [sinteringFurnace, sinteringFurnace2, sinteringFurnace3],
   },
   {
     slug: "porcelain-furnace-a7",
@@ -111,7 +121,7 @@ export const PRODUCTS: Product[] = [
     short: "Профессиональная вакуумная печь для прессовки и обжига керамики.",
     features: ["До 1200 °C", "Вакуумный насос", "200 программ", "Сенсорное управление"],
     image: porcelainFurnace,
-    images: [porcelainFurnace, porcelainFurnace2],
+    images: [porcelainFurnace, porcelainFurnace2, porcelainFurnace3, porcelainFurnace4, porcelainFurnace5],
   },
   {
     slug: "porcelain-furnace-compact",

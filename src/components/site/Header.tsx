@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Phone, Mail, Search, MessageCircle, Send } from "lucide-react";
+import { Menu, X, Phone, Mail, Search, MessageCircle, Send, Zap } from "lucide-react";
 import { SITE, NAV } from "./data";
 import { Button } from "@/components/ui/button";
 
@@ -18,6 +18,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <a href={SITE.telegram} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-accent transition"><Send className="size-3.5" /> Telegram</a>
             <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-accent transition"><MessageCircle className="size-3.5" /> WhatsApp</a>
+            <a href={SITE.max} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-accent transition"><Zap className="size-3.5" /> MAX</a>
           </div>
         </div>
       </div>
@@ -26,8 +27,8 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2.5 shrink-0">
           <div className="grid size-9 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold">D</div>
           <div className="leading-tight">
-            <div className="font-display font-bold text-sm">Digital Dentistry</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Solutions · Moscow</div>
+            <div className="font-display font-bold text-base tracking-tight">DDS</div>
+            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Digital Dentistry · Moscow</div>
           </div>
         </Link>
 
@@ -47,7 +48,7 @@ export function Header() {
 
       {/* Main nav */}
       <nav className="hidden lg:block border-t border-border/60">
-        <div className="container mx-auto flex items-center gap-1 px-6">
+        <div className="container mx-auto flex items-center justify-center gap-1 px-6">
           {NAV.map((n) => (
             <Link
               key={n.to}
@@ -71,6 +72,11 @@ export function Header() {
             </Link>
           ))}
           <a href={SITE.phoneHref} className="flex items-center gap-2 pt-2 font-semibold border-t"><Phone className="size-4" /> {SITE.phone}</a>
+          <div className="flex items-center gap-4 pt-2 text-sm">
+            <a href={SITE.telegram} target="_blank" rel="noreferrer" className="flex items-center gap-1"><Send className="size-4" /> TG</a>
+            <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-1"><MessageCircle className="size-4" /> WA</a>
+            <a href={SITE.max} target="_blank" rel="noreferrer" className="flex items-center gap-1"><Zap className="size-4" /> MAX</a>
+          </div>
         </div>
       )}
     </header>
