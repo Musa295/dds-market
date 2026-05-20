@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
-import { PRODUCTS, SITE } from "@/components/site/data";
+import { PRODUCTS, SITE, type Product } from "@/components/site/data";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Check, Phone, Mail, MessageCircle } from "lucide-react";
