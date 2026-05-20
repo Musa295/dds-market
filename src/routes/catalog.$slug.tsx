@@ -34,7 +34,7 @@ export const Route = createFileRoute("/catalog/$slug")({
 });
 
 function ProductPage() {
-  const { product } = Route.useLoaderData();
+  const { product } = Route.useLoaderData() as { product: Product };
   const imgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
   const [idx, setIdx] = useState(0);
   const hasMany = imgs.length > 1;
