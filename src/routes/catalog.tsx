@@ -91,17 +91,21 @@ function CatalogPage() {
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.map((p) => (
               <article key={p.slug} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
-                <ProductGallery product={p} />
+                <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block">
+                  <ProductGallery product={p} />
+                </Link>
                 <div className="p-5">
                   <div className="text-xs text-muted-foreground">{p.category}</div>
-                  <h3 className="mt-1 font-semibold text-lg leading-tight">{p.name}</h3>
+                  <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block hover:text-primary transition-colors">
+                    <h3 className="mt-1 font-semibold text-lg leading-tight">{p.name}</h3>
+                  </Link>
                   <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{p.short}</p>
                   <ul className="mt-3 space-y-1 text-xs text-muted-foreground">
                     {p.features.slice(0,3).map((f) => <li key={f}>• {f}</li>)}
                   </ul>
                   <div className="mt-4 flex items-center justify-between">
                     <div className="font-display font-bold text-primary">{p.price}</div>
-                    <Button size="sm" asChild><Link to="/contacts">Запросить</Link></Button>
+                    <Button size="sm" asChild><Link to="/catalog/$slug" params={{ slug: p.slug }}>Подробнее</Link></Button>
                   </div>
                 </div>
               </article>

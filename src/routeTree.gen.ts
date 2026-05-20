@@ -18,6 +18,7 @@ import { Route as ContactsRouteImport } from './routes/contacts'
 import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CatalogSlugRouteImport } from './routes/catalog.$slug'
 
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
@@ -64,40 +65,48 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CatalogSlugRoute = CatalogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CatalogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/catalog': typeof CatalogRoute
+  '/catalog': typeof CatalogRouteWithChildren
   '/contacts': typeof ContactsRoute
   '/delivery': typeof DeliveryRoute
   '/laboratory': typeof LaboratoryRoute
   '/milling': typeof MillingRoute
   '/promo': typeof PromoRoute
   '/services': typeof ServicesRoute
+  '/catalog/$slug': typeof CatalogSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/catalog': typeof CatalogRoute
+  '/catalog': typeof CatalogRouteWithChildren
   '/contacts': typeof ContactsRoute
   '/delivery': typeof DeliveryRoute
   '/laboratory': typeof LaboratoryRoute
   '/milling': typeof MillingRoute
   '/promo': typeof PromoRoute
   '/services': typeof ServicesRoute
+  '/catalog/$slug': typeof CatalogSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/catalog': typeof CatalogRoute
+  '/catalog': typeof CatalogRouteWithChildren
   '/contacts': typeof ContactsRoute
   '/delivery': typeof DeliveryRoute
   '/laboratory': typeof LaboratoryRoute
   '/milling': typeof MillingRoute
   '/promo': typeof PromoRoute
   '/services': typeof ServicesRoute
+  '/catalog/$slug': typeof CatalogSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -111,6 +120,7 @@ export interface FileRouteTypes {
     | '/milling'
     | '/promo'
     | '/services'
+    | '/catalog/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -122,6 +132,7 @@ export interface FileRouteTypes {
     | '/milling'
     | '/promo'
     | '/services'
+    | '/catalog/$slug'
   id:
     | '__root__'
     | '/'
@@ -133,12 +144,13 @@ export interface FileRouteTypes {
     | '/milling'
     | '/promo'
     | '/services'
+    | '/catalog/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CatalogRoute: typeof CatalogRoute
+  CatalogRoute: typeof CatalogRouteWithChildren
   ContactsRoute: typeof ContactsRoute
   DeliveryRoute: typeof DeliveryRoute
   LaboratoryRoute: typeof LaboratoryRoute
@@ -212,13 +224,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/catalog/$slug': {
+      id: '/catalog/$slug'
+      path: '/$slug'
+      fullPath: '/catalog/$slug'
+      preLoaderRoute: typeof CatalogSlugRouteImport
+      parentRoute: typeof CatalogRoute
+    }
   }
 }
+
+interface CatalogRouteChildren {
+  CatalogSlugRoute: typeof CatalogSlugRoute
+}
+
+const CatalogRouteChildren: CatalogRouteChildren = {
+  CatalogSlugRoute: CatalogSlugRoute,
+}
+
+const CatalogRouteWithChildren =
+  CatalogRoute._addFileChildren(CatalogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CatalogRoute: CatalogRoute,
+  CatalogRoute: CatalogRouteWithChildren,
   ContactsRoute: ContactsRoute,
   DeliveryRoute: DeliveryRoute,
   LaboratoryRoute: LaboratoryRoute,
