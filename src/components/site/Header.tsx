@@ -27,7 +27,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2.5 shrink-0">
           <div className="grid size-9 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold">D</div>
           <div className="leading-tight">
-            <div className="font-display font-bold text-base tracking-tight">DDS</div>
+            <div className="font-display font-bold text-base tracking-tight">DDS MARKET</div>
             <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Digital Dentistry · Moscow</div>
           </div>
         </Link>

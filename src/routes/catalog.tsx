@@ -6,7 +6,8 @@ import { useMemo, useState } from "react";
 import { Search, ChevronLeft, ChevronRight } from "lucide-react";
 
 function ProductGallery({ product }: { product: Product }) {
-  const imgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
+  const raw = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
+  const imgs = Array.from(new Set(raw));
   const [idx, setIdx] = useState(0);
   const hasMany = imgs.length > 1;
   const prev = (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setIdx((i) => (i - 1 + imgs.length) % imgs.length); };

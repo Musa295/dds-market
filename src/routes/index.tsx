@@ -22,66 +22,48 @@ function Index() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-hero-gradient">
-        <div className="absolute inset-0 bg-mesh opacity-40" />
-        <div className="container relative mx-auto px-6 py-20 md:py-32 grid md:grid-cols-12 gap-10 items-center">
-          <div className="md:col-span-7">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium">
-              <Sparkles className="size-3.5" /> Цифровая стоматология · Москва
-            </span>
-            <h1 className="mt-5 font-display text-4xl md:text-6xl font-bold leading-[1.05] text-balance">
-              Оборудование для современной <span className="text-primary">стоматологии</span> и зуботехнических лабораторий
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-              Сканеры, фрезерные станки, 3D-принтеры, печи и ПО от ведущих мировых производителей. Полный цикл — от подбора до сервиса.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg"><Link to="/catalog">Перейти в каталог <ArrowRight className="size-4" /></Link></Button>
-              <Button asChild size="lg" variant="outline"><Link to="/contacts">Получить консультацию</Link></Button>
-            </div>
-            <div className="mt-10 grid grid-cols-3 gap-6 max-w-lg">
-              {[
-                { n: "12+", l: "лет на рынке" },
-                { n: "850+", l: "оснащённых клиник" },
-                { n: "24/7", l: "техподдержка" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-3xl font-bold text-primary">{s.n}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
-                </div>
-              ))}
-            </div>
+      {/* HERO with video */}
+      <section className="relative overflow-hidden bg-foreground">
+        <video
+          src="/hero-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/60 to-foreground/30" />
+        <div className="absolute inset-0 bg-mesh opacity-20 mix-blend-overlay" />
+        <div className="container relative mx-auto px-6 py-24 md:py-36 max-w-4xl text-background">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-background/20 bg-background/10 backdrop-blur text-background text-xs font-medium">
+            <Sparkles className="size-3.5" /> Цифровая стоматология · Москва
+          </span>
+          <h1 className="mt-5 font-display text-4xl md:text-6xl font-bold leading-[1.05] text-balance">
+            Оборудование для современной <span className="text-accent">стоматологии</span> и зуботехнических лабораторий
+          </h1>
+          <p className="mt-6 text-lg text-background/85 max-w-2xl">
+            Сканеры, фрезерные станки, 3D-принтеры, печи и ПО от ведущих мировых производителей. Полный цикл — от подбора до сервиса.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button asChild size="lg"><Link to="/catalog">Перейти в каталог <ArrowRight className="size-4" /></Link></Button>
+            <Button asChild size="lg" variant="outline" className="bg-background/10 backdrop-blur border-background/30 text-background hover:bg-background hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
           </div>
-
-          <div className="md:col-span-5">
-            <div className="relative aspect-square rounded-3xl bg-gradient-to-br from-primary via-primary to-accent p-1 shadow-2xl">
-              <div className="size-full rounded-[1.4rem] bg-card overflow-hidden relative">
-                <div className="absolute inset-0 bg-mesh opacity-30" />
-                <div className="relative size-full grid place-items-center p-10">
-                  <svg viewBox="0 0 200 200" className="size-full">
-                    <defs>
-                      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stopColor="oklch(0.42 0.09 210)" />
-                        <stop offset="100%" stopColor="oklch(0.72 0.13 185)" />
-                      </linearGradient>
-                    </defs>
-                    {/* stylized tooth */}
-                    <path d="M100 30 C 60 30, 40 60, 45 110 C 48 145, 65 175, 80 175 C 92 175, 92 145, 100 145 C 108 145, 108 175, 120 175 C 135 175, 152 145, 155 110 C 160 60, 140 30, 100 30 Z" fill="url(#g1)" opacity="0.95"/>
-                    <circle cx="100" cy="100" r="4" fill="white" opacity="0.6"/>
-                  </svg>
-                </div>
+          <div className="mt-12 grid grid-cols-3 gap-6 max-w-lg">
+            {[
+              { n: "12+", l: "лет на рынке" },
+              { n: "850+", l: "оснащённых клиник" },
+              { n: "24/7", l: "техподдержка" },
+            ].map((s) => (
+              <div key={s.l}>
+                <div className="font-display text-3xl font-bold text-accent">{s.n}</div>
+                <div className="text-xs text-background/70 mt-1">{s.l}</div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl">
-                <div className="text-xs text-muted-foreground">Поверка и сертификация</div>
-                <div className="font-semibold flex items-center gap-1.5"><ShieldCheck className="size-4 text-accent" /> ISO 13485</div>
-              </div>
-              <div className="absolute -top-4 -right-4 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl">
-                <div className="text-xs text-muted-foreground">Гарантия</div>
-                <div className="font-semibold">до 3 лет</div>
-              </div>
-            </div>
+            ))}
           </div>
+        </div>
+        <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-background/60 text-xs">
+          <ShieldCheck className="size-3.5" /> ISO 13485 · Гарантия до 3 лет
         </div>
       </section>
 
