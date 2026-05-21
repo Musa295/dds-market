@@ -3,7 +3,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { PRODUCTS, SITE, type Product } from "@/components/site/data";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Check, Phone, Mail, MessageCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Check, Phone, Mail, MessageCircle, Truck, ShieldCheck, Wrench, Package } from "lucide-react";
 
 export const Route = createFileRoute("/catalog/$slug")({
   loader: ({ params }) => {
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/catalog/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.product.name} — DDS` },
+      { title: `${loaderData?.product.name} — DDS MARKET` },
       { name: "description", content: loaderData?.product.short ?? "" },
     ],
   }),
@@ -33,11 +33,29 @@ export const Route = createFileRoute("/catalog/$slug")({
   component: ProductPage,
 });
 
+const TABS = [
+  { id: "description", label: "Описание" },
+  { id: "specs", label: "Характеристики" },
+  { id: "delivery", label: "Доставка и оплата" },
+  { id: "warranty", label: "Гарантия и сервис" },
+] as const;
+
 function ProductPage() {
   const { product } = Route.useLoaderData() as { product: Product };
-  const imgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
+  const rawImgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
+  // dedupe identical images so we don't show arrows on duplicates
+  const imgs = Array.from(new Set(rawImgs));
   const [idx, setIdx] = useState(0);
+  const [tab, setTab] = useState<typeof TABS[number]["id"]>("description");
   const hasMany = imgs.length > 1;
+
+  const description = product.description ?? [
+    `${product.name} — профессиональное решение категории «${product.category}» от ${product.brand}. ${product.short}`,
+    "Оборудование сертифицировано для применения в стоматологических клиниках и зуботехнических лабораториях на территории РФ. Поставляется напрямую от производителя с полным комплектом документации и русифицированным интерфейсом.",
+    "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. Доступен лизинг, trade-in и подменный фонд на время ремонта.",
+  ];
+
+  const specs = product.specs ?? product.features.map((f) => ({ label: "Параметр", value: f }));
 
   return (
     <PageShell
@@ -64,6 +82,8 @@ function ProductPage() {
                 </button>
               </>
             )}
+            <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium">{product.brand}</div>
+            <div className="absolute top-3 right-3 text-xs bg-accent/90 text-accent-foreground px-2.5 py-1 rounded-full font-medium">В наличии</div>
           </div>
           {hasMany && (
             <div className="mt-4 grid grid-cols-5 gap-3">
@@ -80,19 +100,20 @@ function ProductPage() {
         <div>
           <div className="text-sm text-muted-foreground">{product.category} · {product.brand}</div>
           <h2 className="mt-2 font-display text-3xl font-bold">{product.name}</h2>
-          <div className="mt-4 font-display font-bold text-3xl text-primary">{product.price}</div>
+          <div className="mt-1 text-xs text-muted-foreground">Артикул: {product.sku ?? product.slug.toUpperCase()}</div>
+          <div className="mt-5 flex items-baseline gap-3">
+            <div className="font-display font-bold text-3xl text-primary">{product.price}</div>
+            <span className="text-xs text-accent font-semibold uppercase tracking-wider">В наличии</span>
+          </div>
           <p className="mt-5 text-muted-foreground leading-relaxed">{product.short}</p>
 
-          <div className="mt-8">
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">Характеристики</h3>
-            <ul className="grid sm:grid-cols-2 gap-2">
-              {product.features.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <Check className="size-4 text-primary shrink-0 mt-0.5" />
-                  <span>{f}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="mt-6 grid grid-cols-2 gap-2">
+            {product.features.slice(0, 4).map((f) => (
+              <div key={f} className="flex items-start gap-2 text-sm">
+                <Check className="size-4 text-primary shrink-0 mt-0.5" />
+                <span>{f}</span>
+              </div>
+            ))}
           </div>
 
           <div className="mt-8 p-5 rounded-2xl border border-border bg-card">
@@ -105,20 +126,123 @@ function ProductPage() {
             </div>
           </div>
 
-          <div className="mt-8 grid sm:grid-cols-3 gap-3 text-sm">
-            <div className="p-4 rounded-xl bg-muted/50">
-              <div className="font-semibold">Гарантия</div>
-              <div className="text-muted-foreground mt-1">12–24 месяца</div>
+          <div className="mt-6 grid grid-cols-3 gap-3 text-xs">
+            <div className="p-3 rounded-xl bg-muted/50 flex items-start gap-2">
+              <ShieldCheck className="size-4 text-primary shrink-0 mt-0.5" />
+              <div><div className="font-semibold">Гарантия</div><div className="text-muted-foreground">12–24 мес.</div></div>
             </div>
-            <div className="p-4 rounded-xl bg-muted/50">
-              <div className="font-semibold">Доставка</div>
-              <div className="text-muted-foreground mt-1">По Москве и РФ</div>
+            <div className="p-3 rounded-xl bg-muted/50 flex items-start gap-2">
+              <Truck className="size-4 text-primary shrink-0 mt-0.5" />
+              <div><div className="font-semibold">Доставка</div><div className="text-muted-foreground">Москва и РФ</div></div>
             </div>
-            <div className="p-4 rounded-xl bg-muted/50">
-              <div className="font-semibold">Монтаж</div>
-              <div className="text-muted-foreground mt-1">Сертифицированные инженеры</div>
+            <div className="p-3 rounded-xl bg-muted/50 flex items-start gap-2">
+              <Wrench className="size-4 text-primary shrink-0 mt-0.5" />
+              <div><div className="font-semibold">Монтаж</div><div className="text-muted-foreground">Сертифиц.</div></div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* TABS */}
+      <div className="container mx-auto px-6 pb-12">
+        <div className="border-b border-border flex flex-wrap gap-1">
+          {TABS.map((t) => (
+            <button
+              key={t.id}
+              onClick={() => setTab(t.id)}
+              className={`px-5 py-3 text-sm font-medium border-b-2 -mb-px transition ${tab === t.id ? "border-primary text-primary" : "border-transparent text-muted-foreground hover:text-foreground"}`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="py-8">
+          {tab === "description" && (
+            <div className="prose prose-neutral max-w-3xl">
+              {description.map((p, i) => (
+                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+              ))}
+              <h3 className="font-display text-xl font-bold mt-8 mb-3 text-foreground">Ключевые преимущества</h3>
+              <ul className="space-y-2">
+                {product.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-foreground">
+                    <Check className="size-4 text-primary shrink-0 mt-1" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {tab === "specs" && (
+            <div className="max-w-3xl">
+              <table className="w-full text-sm">
+                <tbody>
+                  {specs.map((s, i) => (
+                    <tr key={i} className="border-b border-border">
+                      <td className="py-3 pr-6 text-muted-foreground w-1/2">{s.label}</td>
+                      <td className="py-3 font-medium">{s.value}</td>
+                    </tr>
+                  ))}
+                  <tr className="border-b border-border">
+                    <td className="py-3 pr-6 text-muted-foreground">Производитель</td>
+                    <td className="py-3 font-medium">{product.brand}</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="py-3 pr-6 text-muted-foreground">Категория</td>
+                    <td className="py-3 font-medium">{product.category}</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="py-3 pr-6 text-muted-foreground">Артикул</td>
+                    <td className="py-3 font-medium">{product.sku ?? product.slug.toUpperCase()}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {tab === "delivery" && (
+            <div className="max-w-3xl grid sm:grid-cols-2 gap-5">
+              <div className="p-5 rounded-2xl border border-border bg-card">
+                <Truck className="size-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-2">Доставка по Москве</h3>
+                <p className="text-sm text-muted-foreground">Бесплатно при заказе от 100 000 ₽. Доставляем собственным транспортом в течение 1–2 рабочих дней.</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border bg-card">
+                <Package className="size-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-2">Доставка по РФ</h3>
+                <p className="text-sm text-muted-foreground">Транспортные компании: СДЭК, ПЭК, Деловые Линии. Срок 3–10 дней. Возможен авиафрахт.</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border bg-card sm:col-span-2">
+                <h3 className="font-semibold mb-2">Способы оплаты</h3>
+                <ul className="text-sm text-muted-foreground space-y-1.5">
+                  <li>• Безналичный расчёт для юридических лиц (с НДС / без НДС)</li>
+                  <li>• Оплата картой через эквайринг</li>
+                  <li>• Лизинг от партнёрских банков (Сбер, Альфа, ВТБ)</li>
+                  <li>• Trade-in вашего оборудования в зачёт стоимости</li>
+                </ul>
+              </div>
+            </div>
+          )}
+
+          {tab === "warranty" && (
+            <div className="max-w-3xl space-y-4">
+              <p className="text-muted-foreground leading-relaxed">Официальная гарантия производителя 12–24 месяца. Все обязательства подтверждены сервисным контрактом и зарегистрированы в РФ.</p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-5 rounded-2xl border border-border bg-card">
+                  <ShieldCheck className="size-6 text-primary mb-3" />
+                  <h3 className="font-semibold mb-2">Что входит в гарантию</h3>
+                  <p className="text-sm text-muted-foreground">Замена вышедших из строя узлов, выезд инженера, диагностика, ПО-обновления.</p>
+                </div>
+                <div className="p-5 rounded-2xl border border-border bg-card">
+                  <Wrench className="size-6 text-primary mb-3" />
+                  <h3 className="font-semibold mb-2">Постгарантийный сервис</h3>
+                  <p className="text-sm text-muted-foreground">Контракты ТО, ремонт любой сложности, подменный фонд на период ремонта.</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
