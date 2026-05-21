@@ -21,8 +21,8 @@ import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
 
 export const SITE = {
-  name: "DDS",
-  fullName: "Digital Dentistry Solutions",
+  name: "DDS MARKET",
+  fullName: "Digital Dentistry Solutions Market",
   tagline: "Цифровая стоматология. Оборудование и решения для клиник и лабораторий в Москве.",
   phone: "+7 (495) 123-45-67",
   phoneHref: "tel:+74951234567",
@@ -54,6 +54,10 @@ export type Product = {
   features: string[];
   image?: string;
   images?: string[];
+  description?: string[];
+  specs?: { label: string; value: string }[];
+  inStock?: boolean;
+  sku?: string;
 };
 
 export const CATEGORIES = [
@@ -188,8 +192,6 @@ export const PRODUCTS: Product[] = [
 export const SERVICES = [
   { title: "Подбор оборудования", desc: "Подберём решение под объём клиники и бюджет — от стартового набора до полного цифрового цикла." },
   { title: "Поставка и монтаж", desc: "Прямые поставки от производителей, монтаж и пусконаладка инженерами с сертификатами." },
-  { title: "Обучение персонала", desc: "Курсы для врачей и техников: сканирование, CAD-моделирование, фрезерование, печать." },
   { title: "Сервисное обслуживание", desc: "Регулярное ТО, ремонт, поверка. Подменный фонд на время ремонта." },
-  { title: "Trade-in и лизинг", desc: "Программы обмена старого оборудования и лизинг от партнёрских банков." },
   { title: "Интеграция CAD/CAM", desc: "Настройка цифрового workflow от сканера до готового протеза." },
 ];
