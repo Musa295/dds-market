@@ -39,7 +39,7 @@ function ProductGallery({ product }: { product: Product }) {
   );
 }
 
-export const Route = createFileRoute("/catalog")({
+export const Route = createFileRoute("/catalog/")({
   head: () => ({ meta: [
     { title: "Каталог оборудования — Digital Dentistry Solutions" },
     { name: "description", content: "Каталог стоматологического оборудования: сканеры, фрезерные станки, 3D-принтеры, печи, ПО, расходные материалы." },
