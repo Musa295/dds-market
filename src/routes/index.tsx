@@ -76,7 +76,7 @@ function Index() {
           </div>
           <Link to="/catalog" className="text-primary font-medium hover:underline inline-flex items-center gap-1">Весь каталог <ArrowRight className="size-4" /></Link>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {CATEGORIES.map((cat, i) => {
             const Icon = ICONS[i % ICONS.length];
             return (
