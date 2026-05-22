@@ -1,6 +1,7 @@
 import printerDlpRed from "@/assets/products/printer-dlp-red.jpg";
 import printerDlpEdge2 from "@/assets/products/printer-dlp-edge-2.jpg";
 import millingMachine from "@/assets/products/milling-machine.jpg";
+import millingMachine2 from "@/assets/products/milling-machine-2.jpg";
 import sinteringFurnace from "@/assets/products/sintering-furnace.jpg";
 import sinteringFurnace2 from "@/assets/products/sintering-furnace-2.jpg";
 import sinteringFurnace3 from "@/assets/products/sintering-furnace-3.jpg";
