@@ -26,7 +26,7 @@ export function Header() {
 
       <div className="container mx-auto flex h-16 items-center justify-between gap-6 px-6">
         <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="grid size-9 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold">D</div>
+          <img src={logo} alt="DDS MARKET" width={40} height={40} className="size-10 object-contain" />
           <div className="leading-tight">
             <div className="font-display font-bold text-base tracking-tight">DDS MARKET</div>
             <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Digital Dentistry · Moscow</div>
