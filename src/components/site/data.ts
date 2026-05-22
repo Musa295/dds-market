@@ -85,6 +85,7 @@ export const PRODUCTS: Product[] = [
     short: "5-осевой фрезерный центр для сухой и мокрой обработки.",
     features: ["5 осей", "Сухая и мокрая обработка", "Шпиндель 60 000 об/мин", "Магазин на 16 фрез"],
     image: millingMachine,
+    images: [millingMachine, millingMachine2],
   },
   {
     slug: "printer-dlp-edge",
