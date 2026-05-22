@@ -7,7 +7,7 @@ import { CheckCircle2 } from "lucide-react";
 export const Route = createFileRoute("/services")({
   head: () => ({ meta: [
     { title: "Услуги — Digital Dentistry Solutions" },
-    { name: "description", content: "Подбор оборудования, поставка, монтаж, обучение, сервис, trade-in и лизинг." },
+    { name: "description", content: "Подбор оборудования, поставка, монтаж, обучение, сервис и trade-in." },
   ]}),
   component: () => (
     <PageShell title="Услуги" subtitle="Полный спектр услуг по оснащению и сопровождению стоматологических клиник и лабораторий." crumbs={[{ label: "Услуги" }]}>
