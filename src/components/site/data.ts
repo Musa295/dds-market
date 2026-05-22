@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "sintering-furnace-zir-1600",
     name: "Печь спекания Zir-Fast 1600",
-    category: "Печи спекания",
+    category: "Печи спекания и обжига керамики",
     brand: "DDS Pro",
     price: "от 620 000 ₽",
     short: "Скоростное спекание циркониевых каркасов за 25 минут.",
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "porcelain-furnace-a7",
     name: "Печь обжига керамики Ceramic A7",
-    category: "Печи обжига керамики",
+    category: "Печи спекания и обжига керамики",
     brand: "DDS Pro",
     price: "от 410 000 ₽",
     short: "Профессиональная вакуумная печь для прессовки и обжига керамики.",
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "porcelain-furnace-compact",
     name: "Компакт-печь Ceramic Mini",
-    category: "Печи обжига керамики",
+    category: "Печи спекания и обжига керамики",
     brand: "DDS Pro",
     price: "от 280 000 ₽",
     short: "Настольная компактная печь для небольших лабораторий и клиник.",
