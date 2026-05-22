@@ -20,6 +20,8 @@ import laserSintering4 from "@/assets/products/laser-sintering-4.jpg";
 import dustCollector from "@/assets/products/dust-collector.jpg";
 import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
+import cadSoftware from "@/assets/products/cad-software.jpg";
+import zirconiaDisc from "@/assets/products/zirconia-disc.jpg";
 
 export const SITE = {
   name: "DDS MARKET",
@@ -181,6 +183,7 @@ export const PRODUCTS: Product[] = [
     price: "от 320 000 ₽",
     short: "Профессиональное CAD-ПО для зуботехнической лаборатории.",
     features: ["Все модули", "Открытая архитектура", "Облачные обновления", "Поддержка 24/7"],
+    image: cadSoftware,
   },
   {
     slug: "zirconia-disc",
@@ -190,6 +193,7 @@ export const PRODUCTS: Product[] = [
     price: "от 6 500 ₽",
     short: "Многослойный диск с естественным градиентом цвета.",
     features: ["98.5 × 14 мм", "Прочность 1200 МПа", "Полупрозрачность 49%", "VITA A1–D4"],
+    image: zirconiaDisc,
   },
 ];
 

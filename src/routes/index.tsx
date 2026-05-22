@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cpu, Microscope, Printer, Wrench, GraduationCap, Truck, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Cog, Printer, ScanLine, Flame, Microscope, Wind, MonitorCog, Package, Truck, ShieldCheck, Sparkles } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
 
 export const Route = createFileRoute("/")({
@@ -15,7 +15,16 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const ICONS = [Microscope, Cpu, Printer, Wrench, GraduationCap, Truck];
+const CATEGORY_ICONS: Record<string, typeof Cog> = {
+  "Фрезерные станки": Cog,
+  "3D-принтеры": Printer,
+  "3D сканеры": ScanLine,
+  "Печи спекания и обжига керамики": Flame,
+  "Лабораторное оборудование": Microscope,
+  "Вытяжки и пылеулавливатели": Wind,
+  "Программное обеспечение": MonitorCog,
+  "Расходные материалы": Package,
+};
 
 function Index() {
   return (
@@ -77,8 +86,8 @@ function Index() {
           <Link to="/catalog" className="text-primary font-medium hover:underline inline-flex items-center gap-1">Весь каталог <ArrowRight className="size-4" /></Link>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {CATEGORIES.map((cat, i) => {
-            const Icon = ICONS[i % ICONS.length];
+          {CATEGORIES.map((cat) => {
+            const Icon = CATEGORY_ICONS[cat] ?? Cog;
             return (
               <Link key={cat} to="/catalog" className="group p-6 rounded-2xl border border-border bg-card hover:border-primary hover:shadow-lg transition-all">
                 <div className="grid size-12 place-items-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 text-primary mb-4 group-hover:scale-110 transition">
@@ -102,17 +111,25 @@ function Index() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {PRODUCTS.slice(0, 6).map((p) => (
               <article key={p.slug} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
-                <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative">
-                  <div className="absolute inset-0 bg-mesh opacity-30" />
-                  <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium">{p.brand}</div>
-                  <div className="absolute bottom-3 right-3 text-xs bg-primary text-primary-foreground px-2.5 py-1 rounded-full font-medium">{p.category}</div>
-                </div>
+                <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+                  {p.image ? (
+                    <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+                  ) : (
+                    <div className="absolute inset-0 bg-mesh opacity-30" />
+                  )}
+                  <div className="absolute top-3 left-3 text-xs bg-card/90 backdrop-blur px-2.5 py-1 rounded-full font-medium z-10">{p.brand}</div>
+                  <div className="absolute bottom-3 right-3 text-xs bg-primary text-primary-foreground px-2.5 py-1 rounded-full font-medium z-10">{p.category}</div>
+                </Link>
                 <div className="p-5">
-                  <h3 className="font-semibold text-lg leading-tight">{p.name}</h3>
+                  <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block hover:text-primary transition-colors">
+                    <h3 className="font-semibold text-lg leading-tight">{p.name}</h3>
+                  </Link>
                   <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{p.short}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <div className="font-display text-lg font-bold text-primary">{p.price}</div>
-                    <Button size="sm" variant="ghost">Узнать <ArrowRight className="size-3" /></Button>
+                    <Button size="sm" variant="ghost" asChild>
+                      <Link to="/catalog/$slug" params={{ slug: p.slug }}>Узнать <ArrowRight className="size-3" /></Link>
+                    </Button>
                   </div>
                 </div>
               </article>

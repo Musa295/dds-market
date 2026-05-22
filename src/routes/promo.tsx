@@ -4,19 +4,18 @@ import { Button } from "@/components/ui/button";
 import { Tag, Clock } from "lucide-react";
 
 const PROMOS = [
-  { title: "−15% на интраоральные сканеры Medit", desc: "При покупке сканера — бесплатное обучение врача и техника.", end: "до 30 июня", tag: "Хит" },
+  { title: "−15% на интраоральные сканеры Medit", desc: "Расширенная гарантия 3 года и комплект калибровочных насадок в подарок.", end: "до 30 июня", tag: "Хит" },
   { title: "Trade-in старого фрезерного станка", desc: "Принимаем оборудование любых производителей в зачёт нового.", end: "постоянно", tag: "Выгодно" },
-  { title: "Лизинг 0% на 12 месяцев", desc: "На комплекты для цифровой лаборатории от 3 млн ₽.", end: "до 31 июля", tag: "Финансы" },
   { title: "Бесплатный аудит клиники", desc: "Инженер оценит существующее оборудование и даст рекомендации.", end: "постоянно", tag: "Бесплатно" },
 ];
 
 export const Route = createFileRoute("/promo")({
   head: () => ({ meta: [
     { title: "Акции — Digital Dentistry Solutions" },
-    { name: "description", content: "Актуальные акции, спецпредложения, программы trade-in и лизинга." },
+    { name: "description", content: "Актуальные акции, спецпредложения и программы trade-in." },
   ]}),
   component: () => (
-    <PageShell title="Акции и спецпредложения" subtitle="Скидки, программы trade-in, лизинг и бонусы для постоянных клиентов." crumbs={[{ label: "Акции" }]}>
+    <PageShell title="Акции и спецпредложения" subtitle="Скидки, программы trade-in и бонусы для постоянных клиентов." crumbs={[{ label: "Акции" }]}>
       <div className="container mx-auto px-6 py-14 grid md:grid-cols-2 gap-5">
         {PROMOS.map((p) => (
           <div key={p.title} className="group relative overflow-hidden p-8 rounded-3xl border border-border bg-card hover:shadow-xl transition">
