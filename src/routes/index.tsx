@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cog, Printer, ScanLine, Flame, Microscope, Wind, MonitorCog, Package, Truck, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, Truck, ShieldCheck, Sparkles } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
 
 export const Route = createFileRoute("/")({
@@ -17,13 +17,11 @@ export const Route = createFileRoute("/")({
 
 const CATEGORY_ICONS: Record<string, typeof Cog> = {
   "Фрезерные станки": Cog,
+  "3D-принтеры по металлу": Layers,
   "3D-принтеры": Printer,
-  "3D сканеры": ScanLine,
-  "Печи спекания и обжига керамики": Flame,
-  "Лабораторное оборудование": Microscope,
-  "Вытяжки и пылеулавливатели": Wind,
-  "Программное обеспечение": MonitorCog,
-  "Расходные материалы": Package,
+  "Вытяжки для станков": Wind,
+  "Фотополимерные смолы": FlaskConical,
+  "Аппараты для анодирования": Zap,
 };
 
 function Index() {
@@ -85,7 +83,7 @@ function Index() {
           </div>
           <Link to="/catalog" className="text-primary font-medium hover:underline inline-flex items-center gap-1">Весь каталог <ArrowRight className="size-4" /></Link>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {CATEGORIES.map((cat) => {
             const Icon = CATEGORY_ICONS[cat] ?? Cog;
             return (
