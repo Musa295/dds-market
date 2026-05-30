@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, Truck, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, Truck, ShieldCheck, Sparkles, ScanLine, Package } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
 
 export const Route = createFileRoute("/")({
@@ -19,9 +19,11 @@ const CATEGORY_ICONS: Record<string, typeof Cog> = {
   "Фрезерные станки": Cog,
   "3D-принтеры по металлу": Layers,
   "3D-принтеры": Printer,
+  "3D-сканеры": ScanLine,
   "Вытяжки для станков": Wind,
   "Фотополимерные смолы": FlaskConical,
   "Аппараты для анодирования": Zap,
+  "Расходные материалы": Package,
 };
 
 function Index() {
