@@ -22,6 +22,10 @@ import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import printedModels from "@/assets/products/printed-models.jpg";
 import cadSoftware from "@/assets/products/cad-software.jpg";
 import zirconiaDisc from "@/assets/products/zirconia-disc.jpg";
+import scannerBlz1 from "@/assets/products/scanner-blz-ls100-1.jpg";
+import scannerBlz2 from "@/assets/products/scanner-blz-ls100-2.jpg";
+import scannerBlz3 from "@/assets/products/scanner-blz-ls100-3.jpg";
+import scannerBlz4 from "@/assets/products/scanner-blz-ls100-4.jpg";
 
 export const SITE = {
   name: "DDS MARKET",
@@ -71,9 +75,11 @@ export const CATEGORIES = [
   "Фрезерные станки",
   "3D-принтеры по металлу",
   "3D-принтеры",
+  "3D-сканеры",
   "Вытяжки для станков",
   "Фотополимерные смолы",
   "Аппараты для анодирования",
+  "Расходные материалы",
 ] as const;
 
 export const DEFAULT_SPECS: { label: string; value: string }[] = [
