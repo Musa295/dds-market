@@ -29,7 +29,7 @@ export function Header() {
           <img src={logo} alt="DDS MARKET" width={40} height={40} className="size-10 object-contain" />
           <div className="leading-tight">
             <div className="font-display font-bold text-base tracking-tight">DDS MARKET</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Solutions</div>
+            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Digital Dentistry Solutions</div>
           </div>
         </Link>
 
