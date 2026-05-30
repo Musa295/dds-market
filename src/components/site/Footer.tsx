@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Send, MessageCircle, Zap } from "lucide-react";
 import { SITE, NAV } from "./data";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -8,10 +9,10 @@ export function Footer() {
       <div className="container mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <div className="grid size-9 place-items-center rounded-lg bg-accent text-accent-foreground font-bold">D</div>
+            <img src={logo} alt="DDS MARKET" width={40} height={40} className="size-10 object-contain rounded-lg bg-background/10 p-1" />
             <div>
-              <div className="font-display font-bold">Digital Dentistry</div>
-              <div className="text-[10px] uppercase tracking-widest opacity-70">Solutions · Moscow</div>
+              <div className="font-display font-bold">DDS MARKET</div>
+              <div className="text-[10px] uppercase tracking-widest opacity-70">Solutions</div>
             </div>
           </div>
           <p className="mt-4 text-sm opacity-80">

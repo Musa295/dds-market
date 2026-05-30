@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
-import { PRODUCTS, SITE, type Product } from "@/components/site/data";
+import { PRODUCTS, SITE, DEFAULT_SPECS, type Product } from "@/components/site/data";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Check, Phone, Mail, MessageCircle, Truck, ShieldCheck, Wrench, Package } from "lucide-react";
@@ -55,7 +55,7 @@ function ProductPage() {
     "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. Доступен trade-in и подменный фонд на время ремонта.",
   ];
 
-  const specs = product.specs ?? product.features.map((f) => ({ label: "Параметр", value: f }));
+  const specs = product.specs ?? DEFAULT_SPECS;
 
   return (
     <PageShell
