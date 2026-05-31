@@ -5,17 +5,17 @@ import { Tag, Clock } from "lucide-react";
 
 const PROMOS = [
   { title: "−15% на интраоральные сканеры Medit", desc: "Расширенная гарантия 3 года и комплект калибровочных насадок в подарок.", end: "до 30 июня", tag: "Хит" },
-  { title: "Trade-in старого фрезерного станка", desc: "Принимаем оборудование любых производителей в зачёт нового.", end: "постоянно", tag: "Выгодно" },
+  { title: "Скидка 10% на расходные материалы", desc: "При заказе циркониевых дисков XTCERA или Aidite от 10 шт. — скидка 10%.", end: "постоянно", tag: "Выгодно" },
   { title: "Бесплатный аудит клиники", desc: "Инженер оценит существующее оборудование и даст рекомендации.", end: "постоянно", tag: "Бесплатно" },
 ];
 
 export const Route = createFileRoute("/promo")({
   head: () => ({ meta: [
     { title: "Акции — Digital Dentistry Solutions" },
-    { name: "description", content: "Актуальные акции, спецпредложения и программы trade-in." },
+    { name: "description", content: "Актуальные акции и спецпредложения на стоматологическое оборудование и расходные материалы." },
   ]}),
   component: () => (
-    <PageShell title="Акции и спецпредложения" subtitle="Скидки, программы trade-in и бонусы для постоянных клиентов." crumbs={[{ label: "Акции" }]}>
+    <PageShell title="Акции и спецпредложения" subtitle="Скидки и бонусы для постоянных клиентов." crumbs={[{ label: "Акции" }]}>
       <div className="container mx-auto px-6 py-14 grid md:grid-cols-2 gap-5">
         {PROMOS.map((p) => (
           <div key={p.title} className="group relative overflow-hidden p-8 rounded-3xl border border-border bg-card hover:shadow-xl transition">

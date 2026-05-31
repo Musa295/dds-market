@@ -52,7 +52,7 @@ function ProductPage() {
   const description = product.description ?? [
     `${product.name} — профессиональное решение категории «${product.category}» от ${product.brand}. ${product.short}`,
     "Оборудование сертифицировано для применения в стоматологических клиниках и зуботехнических лабораториях на территории РФ. Поставляется напрямую от производителя с полным комплектом документации и русифицированным интерфейсом.",
-    "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. Доступен trade-in и подменный фонд на время ремонта.",
+    "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. Подменный фонд на время ремонта.",
   ];
 
   const specs = product.specs ?? DEFAULT_SPECS;
@@ -66,7 +66,7 @@ function ProductPage() {
       <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
         {/* Gallery */}
         <div>
-          <div className="aspect-square bg-gradient-to-br from-secondary to-muted rounded-2xl relative overflow-hidden border border-border">
+          <div className="aspect-square bg-white rounded-2xl relative overflow-hidden border border-border">
             {imgs.length > 0 ? (
               <img src={imgs[idx]} alt={product.name} className="absolute inset-0 w-full h-full object-contain p-8" />
             ) : (
@@ -214,9 +214,9 @@ function ProductPage() {
                 <h3 className="font-semibold mb-2">Транспортные компании</h3>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• <b>MagicTrans</b> — 1–7 дней</li>
-                  <li>• ПЭК — 2–10 дней</li>
-                  <li>• Деловые линии — 2–10 дней</li>
-                  <li>• СДЭК — 2–10 дней</li>
+                  <li>• ПЭК — 1–7 дней</li>
+                  <li>• Деловые линии — 1–7 дней</li>
+                  <li>• СДЭК — 1–7 дней</li>
                 </ul>
               </div>
               <div className="p-5 rounded-2xl border border-border bg-card sm:col-span-2">
@@ -256,7 +256,7 @@ function ProductPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {PRODUCTS.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, 4).map((p) => (
             <Link key={p.slug} to="/catalog/$slug" params={{ slug: p.slug }} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
-              <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 {p.image && <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />}
               </div>
               <div className="p-4">

@@ -100,7 +100,7 @@ function Index() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {PRODUCTS.slice(0, 6).map((p) => (
               <article key={p.slug} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all">
-                <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+                <Link to="/catalog/$slug" params={{ slug: p.slug }} className="block aspect-[4/3] bg-white relative overflow-hidden">
                   {p.image ? (
                     <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
                   ) : (
