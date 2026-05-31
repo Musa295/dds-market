@@ -23,9 +23,9 @@ export const Route = createFileRoute("/delivery")({
             <div className="mt-4 font-semibold text-lg">Транспортные компании</div>
             <ul className="mt-3 space-y-2 text-sm">
               <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>MagicTrans</b> — сроки 1–7 дней</span></li>
-              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>ПЭК</b> — сроки 2–10 дней</span></li>
-              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>Деловые линии</b> — сроки 2–10 дней</span></li>
-              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>СДЭК</b> — сроки 2–10 дней</span></li>
+              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>ПЭК</b> — сроки 1–7 дней</span></li>
+              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>Деловые линии</b> — сроки 1–7 дней</span></li>
+              <li className="flex items-start gap-2"><Package className="size-4 text-accent shrink-0 mt-0.5" /><span><b>СДЭК</b> — сроки 1–7 дней</span></li>
             </ul>
           </div>
         </div>
