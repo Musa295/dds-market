@@ -66,7 +66,7 @@ function ProductPage() {
       <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
         {/* Gallery */}
         <div>
-          <div className="aspect-square bg-gradient-to-br from-secondary to-muted rounded-2xl relative overflow-hidden border border-border">
+          <div className="aspect-square bg-white rounded-2xl relative overflow-hidden border border-border">
             {imgs.length > 0 ? (
               <img src={imgs[idx]} alt={product.name} className="absolute inset-0 w-full h-full object-contain p-8" />
             ) : (
@@ -256,7 +256,7 @@ function ProductPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {PRODUCTS.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, 4).map((p) => (
             <Link key={p.slug} to="/catalog/$slug" params={{ slug: p.slug }} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
-              <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 {p.image && <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />}
               </div>
               <div className="p-4">

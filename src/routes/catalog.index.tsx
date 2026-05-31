@@ -13,7 +13,7 @@ function ProductGallery({ product }: { product: Product }) {
   const prev = (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setIdx((i) => (i - 1 + imgs.length) % imgs.length); };
   const next = (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setIdx((i) => (i + 1) % imgs.length); };
   return (
-    <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+    <div className="aspect-[4/3] bg-white relative overflow-hidden">
       {imgs.length > 0 ? (
         <img src={imgs[idx]} alt={product.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-300" />
       ) : (
