@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, Truck, ShieldCheck, Sparkles, ScanLine, Package } from "lucide-react";
+import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, ShieldCheck, Sparkles, ScanLine, Package, Flame } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
 
 export const Route = createFileRoute("/")({
@@ -17,10 +17,11 @@ export const Route = createFileRoute("/")({
 
 const CATEGORY_ICONS: Record<string, typeof Cog> = {
   "Фрезерные станки": Cog,
-  "3D-принтеры по металлу": Layers,
+  "3D-принтеры по металлу (SLM)": Layers,
   "3D-принтеры": Printer,
   "3D-сканеры": ScanLine,
   "Вытяжки для станков": Wind,
+  "Печи спекания и обжига керамики": Flame,
   "Фотополимерные смолы": FlaskConical,
   "Аппараты для анодирования": Zap,
   "Расходные материалы": Package,
@@ -57,18 +58,6 @@ function Index() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg"><Link to="/catalog">Перейти в каталог <ArrowRight className="size-4" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-background/10 backdrop-blur border-background/30 text-background hover:bg-background hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
-          </div>
-          <div className="mt-12 grid grid-cols-3 gap-6 max-w-lg">
-            {[
-              { n: "12+", l: "лет на рынке" },
-              { n: "850+", l: "оснащённых клиник" },
-              { n: "24/7", l: "техподдержка" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-bold text-accent">{s.n}</div>
-                <div className="text-xs text-background/70 mt-1">{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
         <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-background/60 text-xs">
@@ -143,7 +132,7 @@ function Index() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="text-sm font-medium text-primary uppercase tracking-wider">Услуги</div>
           <h2 className="font-display text-3xl md:text-4xl font-bold mt-2">Полный цикл сопровождения</h2>
-          <p className="mt-4 text-muted-foreground">От подбора и поставки до обучения персонала и круглосуточного сервиса.</p>
+          <p className="mt-4 text-muted-foreground">От подбора и поставки до монтажа, обучения персонала и сервисного сопровождения.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {SERVICES.map((s) => (
