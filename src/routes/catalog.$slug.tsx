@@ -205,22 +205,26 @@ function ProductPage() {
           {tab === "delivery" && (
             <div className="max-w-3xl grid sm:grid-cols-2 gap-5">
               <div className="p-5 rounded-2xl border border-border bg-card">
-                <Truck className="size-6 text-primary mb-3" />
-                <h3 className="font-semibold mb-2">Доставка по Москве</h3>
-                <p className="text-sm text-muted-foreground">Бесплатно при заказе от 100 000 ₽. Доставляем собственным транспортом в течение 1–2 рабочих дней.</p>
+                <Package className="size-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-2">Самовывоз со склада</h3>
+                <p className="text-sm text-muted-foreground">{SITE.address}. Режим работы: {SITE.hours}.</p>
               </div>
               <div className="p-5 rounded-2xl border border-border bg-card">
-                <Package className="size-6 text-primary mb-3" />
-                <h3 className="font-semibold mb-2">Доставка по РФ</h3>
-                <p className="text-sm text-muted-foreground">Транспортные компании: СДЭК, ПЭК, Деловые Линии. Срок 3–10 дней. Возможен авиафрахт.</p>
+                <Truck className="size-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-2">Транспортные компании</h3>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• <b>MagicTrans</b> — 1–7 дней</li>
+                  <li>• ПЭК — 2–10 дней</li>
+                  <li>• Деловые линии — 2–10 дней</li>
+                  <li>• СДЭК — 2–10 дней</li>
+                </ul>
               </div>
               <div className="p-5 rounded-2xl border border-border bg-card sm:col-span-2">
                 <h3 className="font-semibold mb-2">Способы оплаты</h3>
                 <ul className="text-sm text-muted-foreground space-y-1.5">
-                  <li>• Безналичный расчёт для юридических лиц (с НДС / без НДС)</li>
-                  <li>• Оплата картой через эквайринг</li>
-                  <li>• Рассрочка от партнёрских банков (Сбер, Альфа, ВТБ)</li>
-                  <li>• Trade-in вашего оборудования в зачёт стоимости</li>
+                  <li>• Наличными в офисе</li>
+                  <li>• Безналичным переводом</li>
+                  <li>• Лизинг через партнёров</li>
                 </ul>
               </div>
             </div>
