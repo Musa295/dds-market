@@ -2,6 +2,7 @@ import printerDlpRed from "@/assets/products/printer-dlp-red.jpg";
 import printerDlpEdge2 from "@/assets/products/printer-dlp-edge-2.jpg";
 import millingMachine from "@/assets/products/milling-machine.jpg";
 import millingMachine2 from "@/assets/products/milling-machine-2.jpg";
+import millingInside from "@/assets/products/milling-inside.jpg";
 import sinteringFurnace from "@/assets/products/sintering-furnace.jpg";
 import sinteringFurnace2 from "@/assets/products/sintering-furnace-2.jpg";
 import sinteringFurnace3 from "@/assets/products/sintering-furnace-3.jpg";
@@ -12,26 +13,10 @@ import porcelainFurnace4 from "@/assets/products/porcelain-furnace-4.jpg";
 import porcelainFurnace5 from "@/assets/products/porcelain-furnace-5.jpg";
 import porcelainFurnaceCompact from "@/assets/products/porcelain-furnace-compact.jpg";
 import porcelainFurnaceCompact2 from "@/assets/products/porcelain-furnace-compact-2.jpg";
-import laserSintering from "@/assets/products/laser-sintering.jpg";
-import laserSintering2 from "@/assets/products/laser-sintering-2.jpg";
-import laserSintering3 from "@/assets/products/laser-sintering-3.jpg";
-import laserSintering4 from "@/assets/products/laser-sintering-4.jpg";
-import dustCollector from "@/assets/products/dust-collector.jpg";
-import dustCollector2 from "@/assets/products/dust-collector-2.jpg";
 import zirconiaDisc from "@/assets/products/zirconia-disc.jpg";
 import zirconiaDiscXtcera from "@/assets/products/zirconia-disc-xtcera.jpg";
 import zirconiaDiscAidite from "@/assets/products/zirconia-disc-aidite.jpg";
 import pmmaDisc from "@/assets/products/pmma-disc.jpg";
-import millingInside from "@/assets/products/milling-inside.jpg";
-import printerMini from "@/assets/products/printer-rayshape-mini.jpg";
-import scannerBlz1 from "@/assets/products/scanner-blz-ls100-1.jpg";
-import scannerBlz2 from "@/assets/products/scanner-blz-ls100-2.jpg";
-import scannerBlz3 from "@/assets/products/scanner-blz-ls100-3.jpg";
-import scannerBlz4 from "@/assets/products/scanner-blz-ls100-4.jpg";
-import srefo1 from "@/assets/products/srefo-r1207-1.jpg";
-import srefo2 from "@/assets/products/srefo-r1207-2.jpg";
-import srefo3 from "@/assets/products/srefo-r1207-3.jpg";
-import srefo4 from "@/assets/products/srefo-r1207-4.jpg";
 import dentalBurs from "@/assets/products/dental-burs.jpg";
 import photopolymerResin from "@/assets/products/photopolymer-resin.jpg";
 import lithiumDisilicate from "@/assets/products/lithium-disilicate.jpg";
@@ -39,6 +24,51 @@ import titaniumDisc from "@/assets/products/titanium-disc.jpg";
 import titaniumInstrument from "@/assets/products/titanium-instrument.jpg";
 import resinVat from "@/assets/products/resin-vat.jpg";
 import waxDisc from "@/assets/products/wax-disc.jpg";
+
+import xtcera500_1 from "@/assets/products/xtcera-500-1.webp";
+import xtcera500_2 from "@/assets/products/xtcera-500-2.webp";
+import xtcera500_3 from "@/assets/products/xtcera-500-3.webp";
+import xtcera500Lineup from "@/assets/products/xtcera-500-lineup.jpg";
+import xtcera600_1 from "@/assets/products/xtcera-600se-1.jpg";
+import xtcera600_2 from "@/assets/products/xtcera-600se-2.jpg";
+import xtcera600_3 from "@/assets/products/xtcera-600se-3.jpg";
+import xtcera600_4 from "@/assets/products/xtcera-600se-4.jpg";
+import fastform1 from "@/assets/products/fastform-1.jpg";
+import fastform2 from "@/assets/products/fastform-2.png";
+import fastform3 from "@/assets/products/fastform-3.jpg";
+import fastform4 from "@/assets/products/fastform-4.png";
+import rayshapeMini1 from "@/assets/products/rayshape-mini-1.webp";
+import rayshapeMini2 from "@/assets/products/rayshape-mini-2.webp";
+import rayshapeMini3 from "@/assets/products/rayshape-mini-3.webp";
+import rayshapeMini4 from "@/assets/products/rayshape-mini-4.webp";
+import blzLs100_1 from "@/assets/products/blz-ls100-1.webp";
+import blzLs100_2 from "@/assets/products/blz-ls100-2.webp";
+import blzLs100_3 from "@/assets/products/blz-ls100-3.png";
+import blzLs100_4 from "@/assets/products/blz-ls100-4.jpg";
+import blzLs200_1 from "@/assets/products/blz-ls200-1.webp";
+import blzLs200_2 from "@/assets/products/blz-ls200-2.webp";
+import blzLs200_3 from "@/assets/products/blz-ls200-3.webp";
+import blzLs200_4 from "@/assets/products/blz-ls200-4.webp";
+import denparkZ5_1 from "@/assets/products/denpark-z5-1.webp";
+import denparkZ5_2 from "@/assets/products/denpark-z5-2.webp";
+import denparkZ5_3 from "@/assets/products/denpark-z5-3.webp";
+import denparkZ5_4 from "@/assets/products/denpark-z5-4.webp";
+import denparkZ9_1 from "@/assets/products/denpark-z9-1.webp";
+import denparkZ9_2 from "@/assets/products/denpark-z9-2.webp";
+import denparkZ9_3 from "@/assets/products/denpark-z9-3.webp";
+import srefoR407_1 from "@/assets/products/srefo-r407-1.webp";
+import srefoR407_2 from "@/assets/products/srefo-r407-2.webp";
+import srefoR407_3 from "@/assets/products/srefo-r407-3.webp";
+import srefoR407_4 from "@/assets/products/srefo-r407-4.webp";
+import srefoR407_5 from "@/assets/products/srefo-r407-5.webp";
+import srefoE402_1 from "@/assets/products/srefo-e402-1.webp";
+import srefoE402_2 from "@/assets/products/srefo-e402-2.webp";
+import srefoR412_1 from "@/assets/products/srefo-r412-1.webp";
+import srefoR412_2 from "@/assets/products/srefo-r412-2.webp";
+import srefoR412_3 from "@/assets/products/srefo-r412-3.webp";
+import srefoR1206_1 from "@/assets/products/srefo-r1206-1.webp";
+import srefoR1206_2 from "@/assets/products/srefo-r1206-2.webp";
+import srefoR1206_3 from "@/assets/products/srefo-r1206-3.webp";
 
 export const SITE = {
   name: "DDS MARKET",
@@ -101,9 +131,10 @@ export const CATEGORIES = [
 export const CONSUMABLE_SUBCATEGORIES = [
   "Циркониевые диски",
   "PMMA и воск",
-  "Титановые диски и блоки",
+  "Титановые диски",
   "Фрезы",
   "Дисиликат лития",
+  "Металлический порошок (SLM)",
   "Фотополимеры",
   "Ванночки и плёнки",
 ] as const;
@@ -112,17 +143,9 @@ export const DEFAULT_SPECS: { label: string; value: string }[] = [
   { label: "Габариты", value: "820×750×720 мм" },
   { label: "Вес", value: "193 кг" },
   { label: "Электропитание", value: "Однофазный ток, 220 Вольт" },
-  { label: "Максимальная мощность", value: "2,5 кВт" },
-  { label: "Мощность шпинделя", value: "1,8 кВт" },
   { label: "Количество осей", value: "5" },
-  { label: "Размеры рабочей камеры", value: "220×160×120 мм" },
-  { label: "Тип обработки", value: "Сухая" },
   { label: "Скорость шпинделя", value: "До 60 000 об/мин" },
-  { label: "Скорость перемещения", value: "До 6000 мм/мин" },
-  { label: "Количество фрез", value: "10 фрез" },
   { label: "Смена фрез", value: "Автоматическая" },
-  { label: "Автокалибровка", value: "Есть" },
-  { label: "Охлаждение шпинделя", value: "Жидкостное" },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -132,29 +155,32 @@ export const PRODUCTS: Product[] = [
     name: "Фрезерный станок XTCERA X-Mill 500 Pro",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "от 3 399 500 ₽",
-    short: "5-осевой фрезерный центр для сухой и мокрой обработки.",
+    price: "1 500 000 ₽",
+    short: "5-осевой фрезерный центр XTCERA для сухой и мокрой обработки.",
     features: ["5 осей", "Сухая и мокрая обработка", "Шпиндель 60 000 об/мин", "Магазин на 16 фрез"],
-    image: millingMachine,
-    images: [millingMachine, millingInside, millingMachine2],
+    image: xtcera500_1,
+    images: [xtcera500_1, xtcera500_2, xtcera500_3, xtcera500Lineup],
   },
   {
     slug: "xtcera-x-mill-600se",
     name: "Фрезерный станок XTCERA X-Mill 600SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "от 2 899 500 ₽",
-    short: "4-осевой фрезерный центр для сухой обработки циркония, PMMA и воска.",
-    features: ["4 оси", "Шпиндель 40 000 об/мин", "Габариты 780×600×1750 мм", "Вес 230 кг"],
-    image: millingMachine2,
-    images: [millingMachine2, millingInside, millingMachine],
+    price: "1 550 000 ₽",
+    short: "4-осевой фрезерный центр XTCERA 600 SE2 с мокрой обработкой и автокалибровкой.",
+    features: ["4 оси", "Шпиндель 60 000 об/мин", "750×600×1750 мм", "Вес 400 кг"],
+    image: xtcera600_1,
+    images: [xtcera600_1, xtcera600_2, xtcera600_3, xtcera600_4],
     specs: [
-      { label: "Габариты", value: "780×600×1750 мм" },
-      { label: "Вес", value: "230 кг" },
-      { label: "Количество осей", value: "4" },
-      { label: "Скорость шпинделя", value: "До 40 000 об/мин" },
+      { label: "Габариты", value: "750×600×1750 мм" },
+      { label: "Вес", value: "400 кг" },
+      { label: "Осей", value: "4" },
+      { label: "Скорость шпинделя", value: "60 000 об/мин" },
+      { label: "Подача", value: "XYZ 6000 мм/мин" },
+      { label: "Точность", value: "2 мкм" },
+      { label: "Магазин фрез", value: "10 шт., автосмена" },
+      { label: "Тип обработки", value: "Мокрая" },
       { label: "Электропитание", value: "220 В" },
-      { label: "Тип обработки", value: "Сухая" },
     ],
   },
   {
@@ -162,8 +188,8 @@ export const PRODUCTS: Product[] = [
     name: "Фрезерный станок BLZ Mill 5X",
     category: "Фрезерные станки",
     brand: "BLZ Tech Dental",
-    price: "от 1 999 500 ₽",
-    short: "5-осевой компактный фрезер для зуботехнической лаборатории.",
+    price: "1 949 500 ₽",
+    short: "5-осевой компактный фрезер BLZ для зуботехнической лаборатории.",
     features: ["5 осей", "Автосмена фрез", "Жидкостное охлаждение", "Совместим с открытым CAD"],
     image: millingInside,
     images: [millingInside, millingMachine],
@@ -173,8 +199,8 @@ export const PRODUCTS: Product[] = [
     name: "Фрезерный станок CRABLE Mill Pro",
     category: "Фрезерные станки",
     brand: "CRABLE",
-    price: "от 1 749 500 ₽",
-    short: "Универсальный фрезерный станок для CAD/CAM-производства реставраций.",
+    price: "1 699 500 ₽",
+    short: "Универсальный 5-осевой CAD/CAM-фрезер CRABLE.",
     features: ["5 осей", "Сухая/мокрая обработка", "Магазин фрез", "Сенсорный экран"],
     image: millingMachine2,
     images: [millingMachine2, millingInside],
@@ -182,15 +208,15 @@ export const PRODUCTS: Product[] = [
 
   // ===== 3D-принтеры по металлу (SLM) =====
   {
-    slug: "deskmetal-x1-slm",
-    name: "SLM-принтер DeskMetal X1",
+    slug: "fastform-deskfab-x1",
+    name: "3D лазерный принтер по металлу (SLM) FastForm DeskFab X1",
     category: "3D-принтеры по металлу (SLM)",
-    brand: "DeskMetal",
-    price: "от 8 849 500 ₽",
-    short: "Селективное лазерное плавление CoCr и титана для каркасов и абатментов.",
-    features: ["Лазер 200 Вт", "Толщина слоя 20 мкм", "CoCr / Ti6Al4V", "Камера с инертным газом"],
-    image: laserSintering,
-    images: [laserSintering, laserSintering2, laserSintering3, laserSintering4],
+    brand: "FastForm",
+    price: "2 400 000 ₽",
+    short: "Настольный SLM-принтер FastForm DeskFab X1 — селективное лазерное плавление CoCr и титана.",
+    features: ["Селективное лазерное плавление", "CoCr / Ti6Al4V", "Камера с инертным газом", "Компактный настольный корпус"],
+    image: fastform1,
+    images: [fastform1, fastform2, fastform3, fastform4],
   },
 
   // ===== 3D-принтеры =====
@@ -199,11 +225,11 @@ export const PRODUCTS: Product[] = [
     name: "3D-принтер RayShape Edge Mini",
     category: "3D-принтеры",
     brand: "RayShape",
-    price: "64 500 ₽",
-    short: "Компактный DLP-принтер для моделей, кап и хирургических шаблонов.",
+    price: "140 000 ₽",
+    short: "Компактный DLP-принтер RayShape для моделей, кап и хирургических шаблонов.",
     features: ["DLP 405 нм", "XY 50 мкм", "Открытая система смол", "Touch-экран"],
-    image: printerMini,
-    images: [printerMini, printerDlpRed],
+    image: rayshapeMini1,
+    images: [rayshapeMini1, rayshapeMini2, rayshapeMini3, rayshapeMini4],
     sku: "1322",
     badge: "Хит продаж",
     inStock: true,
@@ -214,80 +240,73 @@ export const PRODUCTS: Product[] = [
     category: "3D-принтеры",
     brand: "RayShape",
     price: "от 189 500 ₽",
-    short: "Профессиональный DLP-принтер с увеличенной зоной печати.",
+    short: "Профессиональный DLP-принтер RayShape с увеличенной зоной печати.",
     features: ["DLP 405 нм", "XY 62 мкм", "Wi-Fi / Ethernet", "Авто-калибровка"],
     image: printerDlpEdge2,
-    images: [printerDlpEdge2, printerMini],
+    images: [printerDlpEdge2, printerDlpRed],
   },
 
   // ===== 3D-сканеры =====
   {
     slug: "scanner-blz-ls100",
-    name: "3D-сканер BLZ LS100",
+    name: "3D лабораторный сканер BLZ LS100",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
-    price: "по запросу",
-    short: "Лабораторный 3D-сканер для стоматологических слепков. Скан дуги за 10 секунд.",
-    features: [
-      "2 камеры по 1,6 Мп",
-      "Точность 8 микрон",
-      "Скан дуги за 10 секунд",
-      "Форматы STL, PLY, OBJ",
-      "Сканирование в цвете",
-      "Металлический корпус",
-    ],
-    image: scannerBlz1,
-    images: [scannerBlz1, scannerBlz2, scannerBlz3, scannerBlz4],
+    price: "390 000 ₽",
+    short: "Лабораторный 3D-сканер BLZ LS100 для стоматологических слепков. Скан дуги за 10 секунд.",
+    features: ["2 камеры 1,6 Мп", "Точность 8 микрон", "Скан дуги 10 секунд", "STL/PLY/OBJ", "Цветное сканирование"],
+    image: blzLs100_1,
+    images: [blzLs100_1, blzLs100_2, blzLs100_3, blzLs100_4],
     sku: "1323",
+    inStock: true,
     description: [
-      "3D сканер BLZ LS100 — лабораторный сканер, предназначенный для сканирования стоматологических слепков. На основе 3D моделей можно выполнять диагностику и составлять план лечения или изготавливать индивидуальные ортодонтические изделия, такие как: коронки, мосты, импланты и др. Весь процесс сканирования, включая верхнюю, нижнюю дугу и штампы, выполнить за 2 минуты.",
-      "BLZ LS100 имеет множество преимуществ, например: высокая точность и скорость сканирования, а также компактный и удобный дизайн. Благодаря высокой точности измерений, постобработка 3D модели и дальнейшее производство ортодонтических изделий упрощается.",
-      "Программное обеспечение сканера BLZ LS100 имеет удобный и интуитивно понятный интерфейс, который делает процесс сканирования максимально простым для пользователя.",
+      "3D сканер BLZ LS100 — лабораторный сканер для стоматологических слепков. На основе 3D моделей можно выполнять диагностику и составлять план лечения или изготавливать индивидуальные ортодонтические изделия: коронки, мосты, импланты и др. Весь процесс сканирования (верхняя, нижняя дуга и штампы) — за 2 минуты.",
+      "Высокая точность и скорость сканирования, компактный и удобный дизайн. ПО с интуитивным интерфейсом и расширенным функционалом для опытных пользователей.",
     ],
     specs: [
       { label: "Камеры", value: "2 × 1,6 Мп" },
       { label: "Точность", value: "8 микрон" },
-      { label: "Скорость скана дуги", value: "10 секунд" },
-      { label: "Полный скан (верх+низ+штампы)", value: "2 минуты" },
-      { label: "Форматы экспорта", value: "STL, PLY, OBJ" },
-      { label: "Сканирование в цвете", value: "Да" },
+      { label: "Скан дуги", value: "10 секунд" },
+      { label: "Полный скан", value: "2 минуты" },
+      { label: "Форматы", value: "STL, PLY, OBJ" },
+      { label: "Цвет", value: "Да" },
       { label: "Корпус", value: "Металлический, матовый чёрный" },
     ],
   },
   {
-    slug: "scanner-blz-ls200",
-    name: "3D-сканер BLZ LS200",
+    slug: "scanner-blz-ls200-plus",
+    name: "3D лабораторный сканер BLZ LS200 Plus",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
-    price: "по запросу",
-    short: "Лабораторный сканер с увеличенной точностью и расширенной комплектацией.",
-    features: ["2 камеры по 5 Мп", "Точность 5 микрон", "Скан дуги за 9 секунд", "STL/PLY/OBJ"],
-    image: scannerBlz2,
-    images: [scannerBlz2, scannerBlz3, scannerBlz4, scannerBlz1],
+    price: "490 000 ₽",
+    short: "Профессиональный сканер BLZ LS200 Plus с увеличенной точностью.",
+    features: ["2 камеры 5 Мп", "Точность 5 микрон", "Скан дуги 9 секунд", "Цветное сканирование"],
+    image: blzLs200_1,
+    images: [blzLs200_1, blzLs200_2, blzLs200_3, blzLs200_4],
     sku: "1324",
   },
   {
-    slug: "scanner-xtcera-autoscan",
-    name: "3D-сканер XTCERA AutoScan",
+    slug: "scanner-denpark-z5",
+    name: "3D лабораторный сканер DENPARK Z-5",
     category: "3D-сканеры",
-    brand: "XTCERA",
-    price: "по запросу",
-    short: "Автоматический лабораторный 3D-сканер с быстрой сменой моделей.",
-    features: ["Автоматическая загрузка моделей", "Точность 7 микрон", "Цветное сканирование", "Открытые форматы"],
-    image: scannerBlz3,
-    images: [scannerBlz3, scannerBlz1, scannerBlz4],
+    brand: "DENPARK",
+    price: "350 000 ₽",
+    short: "Лабораторный 3D-сканер DENPARK Z-5 для зуботехнических работ.",
+    features: ["2 камеры", "Открытые форматы STL/PLY/OBJ", "Скан дуги ~15 секунд", "Текстурное сканирование"],
+    image: denparkZ5_1,
+    images: [denparkZ5_1, denparkZ5_2, denparkZ5_3, denparkZ5_4],
     sku: "1325",
   },
   {
-    slug: "scanner-shining-3d",
-    name: "3D-сканер Shining 3D AutoScan DS",
+    slug: "scanner-denpark-z9",
+    name: "3D лабораторный сканер DENPARK Z-9",
     category: "3D-сканеры",
-    brand: "Shining 3D",
-    price: "по запросу",
-    short: "Профессиональный лабораторный сканер для CAD-моделирования реставраций.",
-    features: ["Двойные камеры 5 Мп", "Точность 4 микрона", "Скан челюсти 14 сек", "Поддержка артикулятора"],
-    image: scannerBlz4,
-    images: [scannerBlz4, scannerBlz2, scannerBlz1],
+    brand: "DENPARK",
+    price: "450 000 ₽",
+    short: "Профессиональный сканер DENPARK Z-9 с высокой точностью и цветом.",
+    features: ["Высокое разрешение камер", "Точность от 5 мкм", "Цветное сканирование", "STL/PLY/OBJ"],
+    image: denparkZ9_1,
+    images: [denparkZ9_1, denparkZ9_2, denparkZ9_3],
     sku: "1326",
   },
 
@@ -297,35 +316,36 @@ export const PRODUCTS: Product[] = [
     name: "Вытяжка Srefo R-407-1",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "89 500 ₽",
-    short: "Промышленная вытяжка без мешка для CAM-фрезеров.",
-    features: ["Мощность 1200 Вт", "Питание 220 В", "Без мешка", "Авторежим со станком"],
-    image: dustCollector,
-    images: [dustCollector, dustCollector2],
+    price: "50 000 ₽",
+    short: "Промышленная вытяжка Srefo R-407-1 без мешка для CAM-фрезеров.",
+    features: ["Без мешка", "Питание 220 В", "Авторежим со станком", "HEPA-фильтрация"],
+    image: srefoR407_1,
+    images: [srefoR407_1, srefoR407_2, srefoR407_3, srefoR407_4, srefoR407_5],
     sku: "1328",
     inStock: true,
   },
   {
-    slug: "dust-collector-pro-1500",
-    name: "Пылеулавливатель Srefo Dust-Pro 1500",
+    slug: "dust-collector-srefo-e402-pro",
+    name: "Вытяжка для CAM установок Srefo E-402 Pro",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "от 159 500 ₽",
-    short: "Промышленная вытяжка для зуботехнических лабораторий с HEPA-фильтрацией.",
-    features: ["1500 Вт", "HEPA H13", "4 режима мощности", "Мобильное шасси"],
-    image: dustCollector2,
-    images: [dustCollector2, dustCollector],
+    price: "50 000 ₽",
+    short: "Вытяжка Srefo E-402 Pro для CAM-установок и зуботехнических лабораторий.",
+    features: ["HEPA-фильтр", "Несколько режимов мощности", "Питание 220 В", "Компактный корпус"],
+    image: srefoE402_1,
+    images: [srefoE402_1, srefoE402_2],
     sku: "1329",
   },
   {
-    slug: "dust-collector-compact",
-    name: "Вытяжка Srefo Compact Dust 800",
+    slug: "dust-collector-srefo-r412",
+    name: "Вытяжка для CAM установок Srefo R-412",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "от 69 500 ₽",
-    short: "Настольная вытяжка для небольших фрезерных станков и постобработки.",
-    features: ["800 Вт", "HEPA-фильтр", "Тихая работа", "Компактный корпус"],
-    image: dustCollector,
+    price: "75 000 ₽",
+    short: "Промышленная вытяжка Srefo R-412 для CAM-установок.",
+    features: ["Высокая производительность", "HEPA-фильтр", "Авторежим со станком", "Тихая работа"],
+    image: srefoR412_1,
+    images: [srefoR412_1, srefoR412_2, srefoR412_3],
     sku: "1330",
   },
 
@@ -335,7 +355,7 @@ export const PRODUCTS: Product[] = [
     name: "Печь спекания Zetin",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
-    price: "от 549 500 ₽",
+    price: "524 500 ₽",
     short: "Высокотемпературная печь для спекания циркониевых каркасов.",
     features: ["До 1600 °C", "Цикл от 30 минут", "Сенсорное управление", "Камера до 100 единиц"],
     image: sinteringFurnace,
@@ -346,7 +366,7 @@ export const PRODUCTS: Product[] = [
     name: "Печь Upcera GT1 / Vicce GT1",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
-    price: "от 449 500 ₽",
+    price: "424 500 ₽",
     short: "Скоростная печь для спекания циркония за 25–45 минут.",
     features: ["До 1600 °C", "Скоростной цикл", "Цветной TFT", "200 программ"],
     image: sinteringFurnace2,
@@ -357,7 +377,7 @@ export const PRODUCTS: Product[] = [
     name: "Печь Upcera GT1 Pro / Vicce GT1 Pro",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
-    price: "от 599 500 ₽",
+    price: "574 500 ₽",
     short: "Усовершенствованная скоростная печь с расширенной камерой.",
     features: ["До 1620 °C", "Цикл от 20 минут", "Расширенная камера", "Удалённый мониторинг"],
     image: sinteringFurnace3,
@@ -368,7 +388,7 @@ export const PRODUCTS: Product[] = [
     name: "Печь Upcera A7+ / Vicce A7+",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
-    price: "от 699 500 ₽",
+    price: "674 500 ₽",
     short: "Многофункциональная печь для спекания и обжига керамики.",
     features: ["До 1600 °C", "Универсальные программы", "Большая камера", "Сенсорный экран"],
     image: porcelainFurnace,
@@ -379,14 +399,14 @@ export const PRODUCTS: Product[] = [
     name: "Компакт-печь Vicce Ceramic Mini",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
-    price: "от 274 500 ₽",
+    price: "249 500 ₽",
     short: "Настольная компактная печь для небольших лабораторий и клиник.",
     features: ["До 1100 °C", "Цветной TFT-экран", "Тихая работа", "Автокалибровка"],
     image: porcelainFurnaceCompact,
     images: [porcelainFurnaceCompact, porcelainFurnaceCompact2],
   },
 
-  // ===== Фотополимерные смолы (категория) =====
+  // ===== Фотополимерные смолы =====
   {
     slug: "resin-model",
     name: "Фотополимер Model 1 кг",
@@ -420,20 +440,19 @@ export const PRODUCTS: Product[] = [
 
   // ===== Аппараты для анодирования =====
   {
-    slug: "srefo-r-1207",
-    name: "Аппарат для анодирования титана Srefo R-1207",
+    slug: "srefo-r-1206",
+    name: "Аппарат для анодирования титана Srefo R-1206",
     category: "Аппараты для анодирования",
     brand: "Srefo",
-    price: "от 149 500 ₽",
-    short: "Аппарат для электрохимического анодирования титановых абатментов. Pure titanium plating instrument.",
-    features: ["Мощность 1000 Вт", "Питание 220 В, 50 Гц", "Цифровой индикатор", "Палитра цветов VITA"],
-    image: srefo1,
-    images: [srefo1, srefo3, srefo4, srefo2],
-    sku: "R-1207",
+    price: "50 000 ₽",
+    short: "Аппарат Srefo R-1206 для электрохимического анодирования титановых абатментов.",
+    features: ["Цифровой индикатор", "Питание 220 В, 50 Гц", "Палитра цветов VITA", "Pure titanium plating"],
+    image: srefoR1206_1,
+    images: [srefoR1206_1, srefoR1206_2, srefoR1206_3],
+    sku: "R-1206",
     inStock: true,
     specs: [
-      { label: "Модель", value: "R-1207" },
-      { label: "Мощность", value: "1000 Вт" },
+      { label: "Модель", value: "R-1206" },
       { label: "Питание", value: "220 В, 50 Гц" },
       { label: "Применение", value: "Анодирование чистого титана" },
       { label: "Управление", value: "Цифровой индикатор, кнопка RESET" },
@@ -441,6 +460,7 @@ export const PRODUCTS: Product[] = [
   },
 
   // ===== Расходные материалы =====
+  // Циркониевые диски
   {
     slug: "zirconia-disc-xtcera-multilayer",
     name: "Циркониевый диск XTCERA 3D Multilayer",
@@ -448,8 +468,8 @@ export const PRODUCTS: Product[] = [
     subcategory: "Циркониевые диски",
     brand: "XTCERA",
     price: "от 6 400 ₽",
-    short: "Многослойный циркониевый диск с естественным градиентом цвета.",
-    features: ["98,5 × 14 мм", "Прочность 1200 МПа", "Полупрозрачность 49%", "VITA A1–D4"],
+    short: "Многослойный циркониевый диск XTCERA с естественным градиентом цвета.",
+    features: ["98,5 × 14/18/22 мм", "Прочность 1200 МПа", "Полупрозрачность 49%", "VITA A1–D4"],
     image: zirconiaDisc,
   },
   {
@@ -459,7 +479,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "Циркониевые диски",
     brand: "XTCERA",
     price: "от 4 900 ₽",
-    short: "Однослойный циркониевый диск повышенной прочности.",
+    short: "Однослойный циркониевый диск XTCERA повышенной прочности.",
     features: ["98,5 мм", "Прочность 1450 МПа", "Для каркасов и мостов", "Толщины 10–25 мм"],
     image: zirconiaDiscXtcera,
   },
@@ -470,7 +490,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "Циркониевые диски",
     brand: "XTCERA",
     price: "от 5 400 ₽",
-    short: "Высокотранслюцентный циркониевый диск для эстетических реставраций.",
+    short: "Высокотранслюцентный циркониевый диск XTCERA для эстетических реставраций.",
     features: ["98,5 мм", "Полупрозрачность 45%", "VITA A1–D4", "1100 МПа"],
     image: zirconiaDisc,
   },
@@ -496,6 +516,7 @@ export const PRODUCTS: Product[] = [
     features: ["98,5 мм", "Транслюцентность до 57%", "VITA A1–D4", "Прочность 800 МПа"],
     image: zirconiaDiscAidite,
   },
+  // PMMA диски
   {
     slug: "pmma-monolayer",
     name: "PMMA Monolayer диск",
@@ -504,7 +525,18 @@ export const PRODUCTS: Product[] = [
     brand: "XTCERA",
     price: "от 2 700 ₽",
     short: "PMMA-диск для временных коронок и мостов.",
-    features: ["98,5 мм", "Однотонный", "Высокая полировка", "Различные толщины"],
+    features: ["98,5 мм", "Однотонный", "Высокая полировка", "Толщины 10–25 мм"],
+    image: pmmaDisc,
+  },
+  {
+    slug: "pmma-multilayer",
+    name: "PMMA Multilayer диск",
+    category: "Расходные материалы",
+    subcategory: "PMMA и воск",
+    brand: "Aidite",
+    price: "от 3 600 ₽",
+    short: "Многослойный PMMA-диск с градиентом цвета для эстетичных временных конструкций.",
+    features: ["98,5 мм", "Градиент VITA", "Высокая полировка", "Различные толщины"],
     image: pmmaDisc,
   },
   {
@@ -518,11 +550,12 @@ export const PRODUCTS: Product[] = [
     features: ["98,5 мм", "Синий/зелёный", "Выгорает без остатка", "Толщины 10–25 мм"],
     image: waxDisc,
   },
+  // Титановые диски
   {
     slug: "titanium-disc-sino",
     name: "Стоматологический титановый диск Sino Ti Metal TI TC4",
     category: "Расходные материалы",
-    subcategory: "Титановые диски и блоки",
+    subcategory: "Титановые диски",
     brand: "Sino Ti Metal",
     price: "от 11 500 ₽",
     short: "Титановый диск Ti6Al4V для фрезерования каркасов и абатментов.",
@@ -531,17 +564,18 @@ export const PRODUCTS: Product[] = [
     sku: "1340",
   },
   {
-    slug: "titanium-block-sino",
-    name: "Титановый блок квадратный Sino Ti Metal Ti TC4",
+    slug: "titanium-disc-grade5",
+    name: "Титановый диск Grade 5 (Ti6Al4V)",
     category: "Расходные материалы",
-    subcategory: "Титановые диски и блоки",
+    subcategory: "Титановые диски",
     brand: "Sino Ti Metal",
-    price: "от 6 900 ₽",
-    short: "Квадратный титановый блок для фрезерования индивидуальных абатментов.",
-    features: ["Ti6Al4V (TC4)", "Квадратный профиль", "Совместим с системами CAD/CAM", "Сертификат"],
+    price: "от 12 900 ₽",
+    short: "Титановый диск Grade 5 для фрезерования индивидуальных абатментов и каркасов.",
+    features: ["Ti6Al4V Grade 5", "98,5 мм", "Толщины 10–25 мм", "Сертификат"],
     image: titaniumInstrument,
     sku: "1341",
   },
+  // Фрезы
   {
     slug: "calibration-bur",
     name: "Калибровочная фреза для XTCERA / Yucera / Aidite",
@@ -577,6 +611,7 @@ export const PRODUCTS: Product[] = [
     features: ["Алмазное покрытие", "Любые диаметры", "Универсальная совместимость"],
     image: dentalBurs,
   },
+  // Дисиликат лития
   {
     slug: "lithium-disilicate",
     name: "Дисиликат лития (блоки)",
@@ -588,6 +623,41 @@ export const PRODUCTS: Product[] = [
     features: ["Высокая прочность", "Естественная транслюцентность", "Цвета VITA"],
     image: lithiumDisilicate,
   },
+  {
+    slug: "lithium-disilicate-ht",
+    name: "Дисиликат лития HT",
+    category: "Расходные материалы",
+    subcategory: "Дисиликат лития",
+    brand: "Aidite",
+    price: "от 1 400 ₽",
+    short: "Высокотранслюцентные блоки дисиликата лития для эстетических реставраций.",
+    features: ["Высокая транслюцентность", "VITA A1–D4", "Совместим с CAD/CAM"],
+    image: lithiumDisilicate,
+  },
+  // Металлический порошок (SLM)
+  {
+    slug: "slm-cocr-powder",
+    name: "Металлический порошок CoCr для SLM",
+    category: "Расходные материалы",
+    subcategory: "Металлический порошок (SLM)",
+    brand: "FastForm",
+    price: "от 32 000 ₽",
+    short: "Кобальт-хромовый порошок для SLM-печати каркасов и абатментов.",
+    features: ["Сферические частицы", "Высокая текучесть", "Совместим с DeskFab X1", "Сертификат"],
+    image: titaniumDisc,
+  },
+  {
+    slug: "slm-titanium-powder",
+    name: "Металлический порошок Ti6Al4V для SLM",
+    category: "Расходные материалы",
+    subcategory: "Металлический порошок (SLM)",
+    brand: "FastForm",
+    price: "от 48 000 ₽",
+    short: "Титановый порошок Ti6Al4V для SLM-печати медицинских изделий.",
+    features: ["Grade 23", "Сферические частицы", "Биосовместимый", "Сертификат"],
+    image: titaniumInstrument,
+  },
+  // Ванночки и плёнки
   {
     slug: "resin-vat-1",
     name: "Ванночка для 3D-принтера",
