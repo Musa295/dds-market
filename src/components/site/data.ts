@@ -189,6 +189,7 @@ export type Product = {
   inStock?: boolean;
   sku?: string;
   badge?: string;
+  sizes?: { label: string; price: string }[];
 };
 
 export const CATEGORIES = [
