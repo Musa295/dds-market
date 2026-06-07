@@ -120,6 +120,29 @@ import waxNew from "@/assets/products/wax-disc-1.jpg.asset.json";
 import slmPowder10 from "@/assets/products/slm-powder-10-1.jpg.asset.json";
 import slmPowder15 from "@/assets/products/slm-powder-15-1.jpg.asset.json";
 
+// New uploaded assets (June 2026)
+import rayshapeGreyNew from "@/assets/products/new-rayshape-grey.jpg.asset.json";
+import rayshapeOrangeNew from "@/assets/products/new-rayshape-orange.jpg.asset.json";
+import yuceraPlus1 from "@/assets/products/new-yucera-3d-plus-1.webp.asset.json";
+import yuceraPlus2 from "@/assets/products/new-yucera-3d-plus-2.jpg.asset.json";
+import yucera4d1 from "@/assets/products/new-yucera-4d-pro-1.jpg.asset.json";
+import yucera4d2 from "@/assets/products/new-yucera-4d-pro-2.jpg.asset.json";
+import yuceraSt1 from "@/assets/products/new-yucera-st-1.jpg.asset.json";
+import yuceraSt2 from "@/assets/products/new-yucera-st-2.webp.asset.json";
+import xtcera3d1 from "@/assets/products/new-xtcera-3d-1.jpg.asset.json";
+import xtcera3d2 from "@/assets/products/new-xtcera-3d-2.jpg.asset.json";
+import xtcera3d3 from "@/assets/products/new-xtcera-3d-3.jpg.asset.json";
+import sinoTi1 from "@/assets/products/new-sino-ti-1.jpg.asset.json";
+import sinoTi2 from "@/assets/products/new-sino-ti-2.jpg.asset.json";
+import sinoTi3 from "@/assets/products/new-sino-ti-3.jpg.asset.json";
+import sinoTi4 from "@/assets/products/new-sino-ti-4.jpg.asset.json";
+import rayshapeVat1 from "@/assets/products/new-rayshape-vat-1.jpg.asset.json";
+import rayshapeVat2 from "@/assets/products/new-rayshape-vat-2.jpg.asset.json";
+import rayshapeVat3 from "@/assets/products/new-rayshape-vat-3.jpg.asset.json";
+import srefoClean1 from "@/assets/products/srefo-r1206-clean-1.png.asset.json";
+import srefoClean2 from "@/assets/products/srefo-r1206-clean-2.png.asset.json";
+import srefoClean3 from "@/assets/products/srefo-r1206-clean-3.png.asset.json";
+
 const url = (a: { url: string }) => a.url;
 
 export const SITE = {
