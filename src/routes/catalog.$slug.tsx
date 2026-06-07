@@ -43,11 +43,12 @@ const TABS = [
 function ProductPage() {
   const { product } = Route.useLoaderData() as { product: Product };
   const rawImgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
-  // dedupe identical images so we don't show arrows on duplicates
   const imgs = Array.from(new Set(rawImgs));
   const [idx, setIdx] = useState(0);
   const [tab, setTab] = useState<typeof TABS[number]["id"]>("description");
+  const [sizeIdx, setSizeIdx] = useState(0);
   const hasMany = imgs.length > 1;
+  const currentPrice = product.sizes && product.sizes.length > 0 ? product.sizes[sizeIdx].price : product.price;
 
   const description = product.description ?? [
     `${product.name} — профессиональное решение категории «${product.category}» от ${product.brand}. ${product.short}`,
@@ -102,10 +103,27 @@ function ProductPage() {
           <h2 className="mt-2 font-display text-3xl font-bold">{product.name}</h2>
           <div className="mt-1 text-xs text-muted-foreground">Артикул: {product.sku ?? product.slug.toUpperCase()}</div>
           <div className="mt-5 flex items-baseline gap-3">
-            <div className="font-display font-bold text-3xl text-primary">{product.price}</div>
+            <div className="font-display font-bold text-3xl text-primary">{currentPrice}</div>
             <span className="text-xs text-accent font-semibold uppercase tracking-wider">В наличии</span>
           </div>
           <p className="mt-5 text-muted-foreground leading-relaxed">{product.short}</p>
+
+          {product.sizes && product.sizes.length > 0 && (
+            <div className="mt-6">
+              <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Выберите размер</div>
+              <div className="flex flex-wrap gap-2">
+                {product.sizes.map((s, i) => (
+                  <button
+                    key={s.label}
+                    onClick={() => setSizeIdx(i)}
+                    className={`px-3 py-2 rounded-lg text-sm border transition ${i === sizeIdx ? "border-primary bg-primary/10 text-primary font-semibold" : "border-border hover:border-primary/50"}`}
+                  >
+                    {s.label} <span className="opacity-70">— {s.price}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="mt-6 grid grid-cols-2 gap-2">
             {product.features.slice(0, 4).map((f) => (

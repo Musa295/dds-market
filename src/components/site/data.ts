@@ -120,6 +120,29 @@ import waxNew from "@/assets/products/wax-disc-1.jpg.asset.json";
 import slmPowder10 from "@/assets/products/slm-powder-10-1.jpg.asset.json";
 import slmPowder15 from "@/assets/products/slm-powder-15-1.jpg.asset.json";
 
+// New uploaded assets (June 2026)
+import rayshapeGreyNew from "@/assets/products/new-rayshape-grey.jpg.asset.json";
+import rayshapeOrangeNew from "@/assets/products/new-rayshape-orange.jpg.asset.json";
+import yuceraPlus1 from "@/assets/products/new-yucera-3d-plus-1.webp.asset.json";
+import yuceraPlus2 from "@/assets/products/new-yucera-3d-plus-2.jpg.asset.json";
+import yucera4d1 from "@/assets/products/new-yucera-4d-pro-1.jpg.asset.json";
+import yucera4d2 from "@/assets/products/new-yucera-4d-pro-2.jpg.asset.json";
+import yuceraSt1 from "@/assets/products/new-yucera-st-1.jpg.asset.json";
+import yuceraSt2 from "@/assets/products/new-yucera-st-2.webp.asset.json";
+import xtcera3d1 from "@/assets/products/new-xtcera-3d-1.jpg.asset.json";
+import xtcera3d2 from "@/assets/products/new-xtcera-3d-2.jpg.asset.json";
+import xtcera3d3 from "@/assets/products/new-xtcera-3d-3.jpg.asset.json";
+import sinoTi1 from "@/assets/products/new-sino-ti-1.jpg.asset.json";
+import sinoTi2 from "@/assets/products/new-sino-ti-2.jpg.asset.json";
+import sinoTi3 from "@/assets/products/new-sino-ti-3.jpg.asset.json";
+import sinoTi4 from "@/assets/products/new-sino-ti-4.jpg.asset.json";
+import rayshapeVat1 from "@/assets/products/new-rayshape-vat-1.jpg.asset.json";
+import rayshapeVat2 from "@/assets/products/new-rayshape-vat-2.jpg.asset.json";
+import rayshapeVat3 from "@/assets/products/new-rayshape-vat-3.jpg.asset.json";
+import srefoClean1 from "@/assets/products/srefo-r1206-clean-1.png.asset.json";
+import srefoClean2 from "@/assets/products/srefo-r1206-clean-2.png.asset.json";
+import srefoClean3 from "@/assets/products/srefo-r1206-clean-3.png.asset.json";
+
 const url = (a: { url: string }) => a.url;
 
 export const SITE = {
@@ -166,6 +189,7 @@ export type Product = {
   inStock?: boolean;
   sku?: string;
   badge?: string;
+  sizes?: { label: string; price: string }[];
 };
 
 export const CATEGORIES = [
@@ -569,25 +593,25 @@ export const PRODUCTS: Product[] = [
   // ===== Фотополимерные смолы =====
   {
     slug: "rayshape-model-pro-grey",
-    name: "Фотополимер RayShape Model PRO Grey, бутыль 1 кг",
+    name: "Фотополимер RayShape Model PRO Grey, 2,5 кг",
     category: "Фотополимерные смолы",
     brand: "RayShape",
-    price: "8 400 ₽",
+    price: "14 200 ₽",
     short: "Фотополимер RayShape Model PRO Grey для печати ортодонтических моделей.",
-    features: ["405 нм", "Низкая усадка", "Серый цвет", "Бутыль 1 кг"],
-    image: url(photoGrey),
-    images: [url(photoGrey)],
+    features: ["405 нм", "Низкая усадка", "Серый цвет", "Канистра 2,5 кг"],
+    image: url(rayshapeGreyNew),
+    images: [url(rayshapeGreyNew)],
   },
   {
     slug: "rayshape-model-pro-orange",
-    name: "Фотополимер RayShape Model PRO Orange, бутыль 1 кг",
+    name: "Фотополимер RayShape Model PRO Orange, 2,5 кг",
     category: "Фотополимерные смолы",
     brand: "RayShape",
-    price: "8 400 ₽",
+    price: "14 200 ₽",
     short: "Фотополимер RayShape Model PRO Orange для печати моделей с высокой контрастностью.",
-    features: ["405 нм", "Низкая усадка", "Оранжевый цвет", "Бутыль 1 кг"],
-    image: url(photoOrange),
-    images: [url(photoOrange)],
+    features: ["405 нм", "Низкая усадка", "Оранжевый цвет", "Канистра 2,5 кг"],
+    image: url(rayshapeOrangeNew),
+    images: [url(rayshapeOrangeNew)],
   },
   {
     slug: "rayshape-model-xe",
@@ -610,8 +634,8 @@ export const PRODUCTS: Product[] = [
     price: "50 000 ₽",
     short: "Аппарат Srefo R-1206 для электрохимического анодирования титановых абатментов.",
     features: ["Цифровой индикатор", "Питание 220 В, 50 Гц", "Палитра цветов VITA", "Pure titanium plating"],
-    image: srefoR1206Hero,
-    images: [srefoR1206Hero],
+    image: url(srefoClean1),
+    images: [url(srefoClean1), url(srefoClean2), url(srefoClean3), srefoR1206Hero],
     sku: "R-1206",
     inStock: true,
     specs: [
@@ -625,37 +649,115 @@ export const PRODUCTS: Product[] = [
   // ===== Расходные материалы =====
   // Циркониевые диски
   {
-    slug: "zirconia-disc-xtcera-multilayer",
-    name: "Циркониевый диск XTCERA 3D Multilayer",
+    slug: "zirconia-disc-yucera-3d-plus",
+    name: "Циркониевый диск Yucera 3D Plus Multilayer",
+    category: "Расходные материалы",
+    subcategory: "Циркониевые диски",
+    brand: "Yucera",
+    price: "от 5 400 ₽",
+    short: "Многослойный циркониевый диск Yucera 3D Plus с естественным градиентом цвета.",
+    features: ["98 мм × 10–25 мм", "Прочность до 1050 МПа", "Полупрозрачность 57%", "VITA A1–D4"],
+    image: url(yuceraPlus1),
+    images: [url(yuceraPlus1), url(yuceraPlus2)],
+    sizes: [
+      { label: "98 × 10 мм", price: "5 400 ₽" },
+      { label: "98 × 12 мм", price: "5 900 ₽" },
+      { label: "98 × 14 мм", price: "6 400 ₽" },
+      { label: "98 × 16 мм", price: "6 900 ₽" },
+      { label: "98 × 18 мм", price: "7 400 ₽" },
+      { label: "98 × 20 мм", price: "7 900 ₽" },
+      { label: "98 × 22 мм", price: "8 400 ₽" },
+      { label: "98 × 25 мм", price: "9 400 ₽" },
+    ],
+  },
+  {
+    slug: "zirconia-disc-yucera-4d-pro",
+    name: "Циркониевый диск Yucera 4D Pro Multilayer",
+    category: "Расходные материалы",
+    subcategory: "Циркониевые диски",
+    brand: "Yucera",
+    price: "от 6 900 ₽",
+    short: "Многослойный циркониевый диск Yucera 4D Pro с естественным градиентом и высокой эстетикой.",
+    features: ["98 мм × 10–25 мм", "Прочность до 1200 МПа", "Высокая транслюцентность", "VITA A1–D4"],
+    image: url(yucera4d1),
+    images: [url(yucera4d1), url(yucera4d2)],
+    sizes: [
+      { label: "98 × 10 мм", price: "6 900 ₽" },
+      { label: "98 × 12 мм", price: "7 500 ₽" },
+      { label: "98 × 14 мм", price: "8 100 ₽" },
+      { label: "98 × 16 мм", price: "8 700 ₽" },
+      { label: "98 × 18 мм", price: "9 400 ₽" },
+      { label: "98 × 20 мм", price: "10 100 ₽" },
+      { label: "98 × 22 мм", price: "10 800 ₽" },
+      { label: "98 × 25 мм", price: "11 900 ₽" },
+    ],
+  },
+  {
+    slug: "zirconia-disc-yucera-ht",
+    name: "Циркониевый диск Yucera HT",
+    category: "Расходные материалы",
+    subcategory: "Циркониевые диски",
+    brand: "Yucera",
+    price: "от 3 400 ₽",
+    short: "Однослойный циркониевый диск Yucera HT повышенной прочности для каркасов и мостов.",
+    features: ["98 мм × 10–25 мм", "Прочность 1200 МПа", "Транслюцентность 40%", "ISO 13485"],
+    image: url(yuceraSt1),
+    images: [url(yuceraSt1), url(yuceraSt2)],
+    sizes: [
+      { label: "98 × 10 мм", price: "3 400 ₽" },
+      { label: "98 × 12 мм", price: "3 700 ₽" },
+      { label: "98 × 14 мм", price: "4 000 ₽" },
+      { label: "98 × 16 мм", price: "4 300 ₽" },
+      { label: "98 × 18 мм", price: "4 600 ₽" },
+      { label: "98 × 20 мм", price: "4 900 ₽" },
+      { label: "98 × 22 мм", price: "5 200 ₽" },
+      { label: "98 × 25 мм", price: "5 700 ₽" },
+    ],
+  },
+  {
+    slug: "zirconia-disc-xtcera-3d",
+    name: "Циркониевый диск XTCERA 3D",
     category: "Расходные материалы",
     subcategory: "Циркониевые диски",
     brand: "XTCERA",
-    price: "от 6 400 ₽",
-    short: "Многослойный циркониевый диск XTCERA с естественным градиентом цвета.",
-    features: ["98,5 × 14/18/22 мм", "Прочность 1200 МПа", "Полупрозрачность 49%", "VITA A1–D4"],
-    image: zirconiaDisc,
+    price: "от 5 800 ₽",
+    short: "Многослойный циркониевый диск XTCERA 3D с плавным градиентом цвета.",
+    features: ["98 мм × 10–25 мм", "Прочность 1150 МПа", "Полупрозрачность 49%", "VITA 16 цветов"],
+    image: url(xtcera3d1),
+    images: [url(xtcera3d1), url(xtcera3d2), url(xtcera3d3)],
+    sizes: [
+      { label: "98 × 10 мм", price: "5 800 ₽" },
+      { label: "98 × 12 мм", price: "6 300 ₽" },
+      { label: "98 × 14 мм", price: "6 800 ₽" },
+      { label: "98 × 16 мм", price: "7 300 ₽" },
+      { label: "98 × 18 мм", price: "7 800 ₽" },
+      { label: "98 × 20 мм", price: "8 300 ₽" },
+      { label: "98 × 22 мм", price: "8 800 ₽" },
+      { label: "98 × 25 мм", price: "9 800 ₽" },
+    ],
   },
+  // Титановые диски
   {
-    slug: "zirconia-disc-xtcera-st",
-    name: "Циркониевый диск XTCERA ST",
+    slug: "titanium-disc-sino-ti-tc4",
+    name: "Титановый диск Sino Ti Metal Ti TC4",
     category: "Расходные материалы",
-    subcategory: "Циркониевые диски",
-    brand: "XTCERA",
-    price: "от 4 900 ₽",
-    short: "Однослойный циркониевый диск XTCERA повышенной прочности.",
-    features: ["98,5 мм", "Прочность 1450 МПа", "Для каркасов и мостов", "Толщины 10–25 мм"],
-    image: zirconiaDiscXtcera,
-  },
-  {
-    slug: "zirconia-disc-aidite-3d-pro",
-    name: "Циркониевый диск Aidite 3D Pro Multilayer",
-    category: "Расходные материалы",
-    subcategory: "Циркониевые диски",
-    brand: "Aidite",
-    price: "от 7 100 ₽",
-    short: "Многослойный циркониевый диск Aidite с плавным градиентом цвета.",
-    features: ["98,5 × 14/18/22 мм", "Прочность 1150 МПа", "Полупрозрачность 49%", "VITA 16 цветов"],
-    image: zirconiaDiscAidite,
+    subcategory: "Титановые диски",
+    brand: "Sino Ti Metal",
+    price: "от 8 500 ₽",
+    short: "Титановый диск Sino Ti Metal Ti TC4 для фрезерования абатментов и каркасов.",
+    features: ["140 × 150 мм", "Сплав Ti-6Al-4V (TC4)", "Толщины 10–25 мм", "Сертификат"],
+    image: url(sinoTi1),
+    images: [url(sinoTi1), url(sinoTi2), url(sinoTi3), url(sinoTi4)],
+    sizes: [
+      { label: "140 × 150 × 10 мм", price: "8 500 ₽" },
+      { label: "140 × 150 × 12 мм", price: "9 300 ₽" },
+      { label: "140 × 150 × 14 мм", price: "10 500 ₽" },
+      { label: "140 × 150 × 16 мм", price: "11 500 ₽" },
+      { label: "140 × 150 × 18 мм", price: "12 700 ₽" },
+      { label: "140 × 150 × 20 мм", price: "13 500 ₽" },
+      { label: "140 × 150 × 22 мм", price: "15 500 ₽" },
+      { label: "140 × 150 × 25 мм", price: "16 500 ₽" },
+    ],
   },
   // PMMA и воск
   {
@@ -664,11 +766,17 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "PMMA и воск",
     brand: "XTCERA",
-    price: "2 700 ₽",
+    price: "от 2 200 ₽",
     short: "PMMA-диск для временных коронок и мостов.",
-    features: ["98,5 мм", "Однотонный", "Высокая полировка", "Толщины 10–25 мм"],
+    features: ["98 мм", "Однотонный", "Высокая полировка", "Толщины 10–25 мм"],
     image: url(pmmaMono),
     images: [url(pmmaMono)],
+    sizes: [
+      { label: "98 × 10 мм", price: "2 200 ₽" },
+      { label: "98 × 14 мм", price: "2 600 ₽" },
+      { label: "98 × 18 мм", price: "3 000 ₽" },
+      { label: "98 × 25 мм", price: "3 800 ₽" },
+    ],
   },
   {
     slug: "wax-cad-cam",
@@ -676,11 +784,17 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "PMMA и воск",
     brand: "XTCERA",
-    price: "1 800 ₽",
+    price: "от 1 500 ₽",
     short: "Восковой диск для фрезерования каркасов под литьё.",
-    features: ["98,5 мм", "Выгорает без остатка", "Толщины 10–25 мм"],
+    features: ["98 мм", "Выгорает без остатка", "Толщины 10–25 мм"],
     image: url(waxNew),
     images: [url(waxNew)],
+    sizes: [
+      { label: "98 × 10 мм", price: "1 500 ₽" },
+      { label: "98 × 14 мм", price: "1 800 ₽" },
+      { label: "98 × 18 мм", price: "2 100 ₽" },
+      { label: "98 × 25 мм", price: "2 600 ₽" },
+    ],
   },
   // Фрезы
   {
@@ -689,7 +803,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Фрезы",
     brand: "XTCERA",
-    price: "10 000 ₽",
+    price: "9 500 ₽",
     short: "Калибровочная фреза для станков XTCERA X-MILL 500Plus, Yucera, Aidite.",
     features: ["Точная калибровка", "Долговечная", "Совместимость с XTCERA/Yucera/Aidite"],
     image: url(burCalib1),
@@ -702,7 +816,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Фрезы",
     brand: "XTCERA",
-    price: "2 700 ₽",
+    price: "2 500 ₽",
     short: "Универсальные фрезы по циркону и PMMA для любых CAD/CAM-станков.",
     features: ["Универсальная совместимость", "Различные диаметры", "Долговечное покрытие"],
     image: url(burPmma),
@@ -716,7 +830,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Дисиликат лития",
     brand: "XTCERA",
-    price: "от 1 100 ₽",
+    price: "от 1 000 ₽",
     short: "Блоки дисиликата лития XTCERA для фрезерования эстетических реставраций.",
     features: ["Высокая прочность", "Естественная транслюцентность", "VITA A1–D4"],
     image: url(lithium1),
@@ -729,7 +843,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Металлический порошок (SLM)",
     brand: "FastForm",
-    price: "от 35 000 ₽",
+    price: "от 32 000 ₽",
     short: "Сферический металлический порошок 10–30 мкм для SLM-печати.",
     features: ["Фракция 10–30 мкм", "Сферические частицы", "Высокая текучесть", "Сертификат"],
     image: url(slmPowder10),
@@ -741,34 +855,24 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Металлический порошок (SLM)",
     brand: "FastForm",
-    price: "от 42 000 ₽",
+    price: "от 39 000 ₽",
     short: "Сферический металлический порошок 15–45 мкм для SLM-печати.",
     features: ["Фракция 15–45 мкм", "Сферические частицы", "Высокая текучесть", "Сертификат"],
     image: url(slmPowder15),
     images: [url(slmPowder15)],
   },
-  // Ванночки и плёнки
+  // Ванночки
   {
-    slug: "resin-vat-1",
-    name: "Ванночка для 3D-принтера",
+    slug: "resin-vat-rayshape-edge-e2",
+    name: "Ванночка для 3D-принтера RayShape Edge E2",
     category: "Расходные материалы",
     subcategory: "Ванночки и плёнки",
     brand: "RayShape",
-    price: "от 7 100 ₽",
-    short: "Сменная ванночка для DLP/LCD-принтеров.",
-    features: ["Алюминиевый каркас", "FEP-плёнка", "Совместима с RayShape"],
-    image: resinVat,
-  },
-  {
-    slug: "fep-film",
-    name: "FEP-плёнка для ванночек",
-    category: "Расходные материалы",
-    subcategory: "Ванночки и плёнки",
-    brand: "RayShape",
-    price: "от 1 400 ₽",
-    short: "Сменная FEP-плёнка для ванночек 3D-принтеров.",
-    features: ["Высокая прозрачность", "Долговечность", "Различные размеры"],
-    image: resinVat,
+    price: "9 500 ₽",
+    short: "Сменная ванночка с FEP-плёнкой для DLP-принтера RayShape Edge E2.",
+    features: ["Алюминиевый каркас", "FEP-плёнка в комплекте", "Совместима с RayShape Edge E2"],
+    image: url(rayshapeVat1),
+    images: [url(rayshapeVat1), url(rayshapeVat2), url(rayshapeVat3)],
   },
 ];
 
