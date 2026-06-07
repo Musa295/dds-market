@@ -634,8 +634,8 @@ export const PRODUCTS: Product[] = [
     price: "50 000 ₽",
     short: "Аппарат Srefo R-1206 для электрохимического анодирования титановых абатментов.",
     features: ["Цифровой индикатор", "Питание 220 В, 50 Гц", "Палитра цветов VITA", "Pure titanium plating"],
-    image: srefoR1206Hero,
-    images: [srefoR1206Hero],
+    image: url(srefoClean1),
+    images: [url(srefoClean1), url(srefoClean2), url(srefoClean3), srefoR1206Hero],
     sku: "R-1206",
     inStock: true,
     specs: [
