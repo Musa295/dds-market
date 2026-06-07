@@ -43,11 +43,12 @@ const TABS = [
 function ProductPage() {
   const { product } = Route.useLoaderData() as { product: Product };
   const rawImgs = product.images && product.images.length > 0 ? product.images : product.image ? [product.image] : [];
-  // dedupe identical images so we don't show arrows on duplicates
   const imgs = Array.from(new Set(rawImgs));
   const [idx, setIdx] = useState(0);
   const [tab, setTab] = useState<typeof TABS[number]["id"]>("description");
+  const [sizeIdx, setSizeIdx] = useState(0);
   const hasMany = imgs.length > 1;
+  const currentPrice = product.sizes && product.sizes.length > 0 ? product.sizes[sizeIdx].price : product.price;
 
   const description = product.description ?? [
     `${product.name} — профессиональное решение категории «${product.category}» от ${product.brand}. ${product.short}`,
