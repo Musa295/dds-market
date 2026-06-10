@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Mail, Search, MessageCircle, Send, Zap } from "lucide-react";
 import { SITE, NAV } from "./data";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 import logo from "@/assets/logo.png";
 
 export function Header() {
