@@ -886,6 +886,8 @@ export const PRODUCTS: Product[] = [
     features: ["Алюминиевый каркас", "FEP-плёнка в комплекте", "Совместима с RayShape Edge E2"],
     image: url(rayshapeVat1),
     images: [url(rayshapeVat1), url(rayshapeVat2), url(rayshapeVat3)],
+  },
+
 
   // Набор плёнок для ванночки RayShape Edge E2
   {
