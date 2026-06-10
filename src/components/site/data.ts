@@ -142,6 +142,11 @@ import rayshapeVat3 from "@/assets/products/new-rayshape-vat-3.jpg.asset.json";
 import srefoClean1 from "@/assets/products/srefo-r1206-clean-1.png.asset.json";
 import srefoClean2 from "@/assets/products/srefo-r1206-clean-2.png.asset.json";
 import srefoClean3 from "@/assets/products/srefo-r1206-clean-3.png.asset.json";
+import rayshapeFilms1 from "@/assets/products/rayshape-films-set-1.jpg.asset.json";
+import rayshapeFilms2 from "@/assets/products/rayshape-films-set-2.jpg.asset.json";
+import rayshapeFilms3 from "@/assets/products/rayshape-films-set-3.webp.asset.json";
+import rayshapeGrey1kg from "@/assets/products/rayshape-grey-1kg.webp.asset.json";
+import rayshapeOrange1kg from "@/assets/products/rayshape-orange-1kg.webp.asset.json";
 
 const url = (a: { url: string }) => a.url;
 
