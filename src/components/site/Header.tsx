@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Mail, Search, MessageCircle, Send, Zap } from "lucide-react";
 import { SITE, NAV } from "./data";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 import logo from "@/assets/logo.png";
 
 export function Header() {
@@ -39,12 +40,16 @@ export function Header() {
           <a href={SITE.phoneHref} className="flex items-center gap-2 font-semibold text-sm hover:text-primary transition">
             <Phone className="size-4" /> {SITE.phone}
           </a>
+          <ThemeToggle />
           <Button variant="default" size="sm">Заказать звонок</Button>
         </div>
 
-        <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="menu">
-          {open ? <X /> : <Menu />}
-        </button>
+        <div className="lg:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button onClick={() => setOpen(!open)} aria-label="menu">
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Main nav */}
