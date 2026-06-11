@@ -52,8 +52,8 @@ function ProductPage() {
 
   const description = product.description ?? [
     `${product.name} — профессиональное решение категории «${product.category}» от ${product.brand}. ${product.short}`,
-    "Оборудование сертифицировано для применения в стоматологических клиниках и зуботехнических лабораториях на территории РФ. Поставляется напрямую от производителя с полным комплектом документации и русифицированным интерфейсом.",
-    "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. Подменный фонд на время ремонта.",
+    "Поставляется напрямую от производителя с полным комплектом документации и русифицированным интерфейсом. Подходит для стоматологических клиник и зуботехнических лабораторий на территории РФ.",
+    "Наши инженеры выполняют пусконаладку, обучение персонала и берут устройство на сервисное сопровождение. На время ремонта предоставляется подменный фонд.",
   ];
 
   const specs = product.specs ?? DEFAULT_SPECS;
@@ -155,7 +155,7 @@ function ProductPage() {
             </div>
             <div className="p-3 rounded-xl bg-muted/50 flex items-start gap-2">
               <Wrench className="size-4 text-primary shrink-0 mt-0.5" />
-              <div><div className="font-semibold">Монтаж</div><div className="text-muted-foreground">Сертифиц.</div></div>
+              <div><div className="font-semibold">Монтаж</div><div className="text-muted-foreground">Под ключ</div></div>
             </div>
           </div>
         </div>
@@ -250,12 +250,12 @@ function ProductPage() {
 
           {tab === "warranty" && (
             <div className="max-w-3xl space-y-4">
-              <p className="text-muted-foreground leading-relaxed">Официальная гарантия производителя 12–24 месяца. Все обязательства подтверждены сервисным контрактом и зарегистрированы в РФ.</p>
+              <p className="text-muted-foreground leading-relaxed">Официальная гарантия производителя 12–24 месяца. Все обязательства подтверждены сервисным контрактом.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl border border-border bg-card">
                   <ShieldCheck className="size-6 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Что входит в гарантию</h3>
-                  <p className="text-sm text-muted-foreground">Замена вышедших из строя узлов, выезд инженера, диагностика, ПО-обновления.</p>
+                  <p className="text-sm text-muted-foreground">Замена вышедших из строя узлов, выезд инженера, диагностика, обновления ПО.</p>
                 </div>
                 <div className="p-5 rounded-2xl border border-border bg-card">
                   <Wrench className="size-6 text-primary mb-3" />
