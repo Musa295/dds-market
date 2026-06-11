@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
-import { Check, Truck, Wrench, ShieldCheck, Layers, Printer, FlaskConical, Boxes } from "lucide-react";
+import { Check, Truck, Wrench, ShieldCheck, Layers, Printer, FlaskConical, Boxes, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -25,7 +25,7 @@ const SUPPLY = [
   {
     icon: Printer,
     title: "Оборудование для цифровой печати",
-    text: "3D-принтеры — в том числе по металлу (SLM).",
+    text: "3D-принтеры, в том числе по металлу — SLM.",
   },
   {
     icon: FlaskConical,
@@ -64,6 +64,41 @@ function AboutPage() {
             3D-принтеры), традиционное зуботехническое оборудование (печи для обжига, литейные установки,
             полимеризаторы), а также инфраструктура лабораторий (вытяжные системы, компрессоры, рабочие места).
           </p>
+          <p className="font-semibold text-foreground flex items-center gap-2">
+            <Sparkles className="size-5 text-primary" /> Поставляем:
+          </p>
+          <ul className="space-y-3 pl-1">
+            {[
+              {
+                t: "CAD/CAM-решения",
+                d: "фрезерные станки (сухие, мокрые, гибридные), интраоральные и лабораторные 3D-сканеры, программное обеспечение;",
+              },
+              {
+                t: "Оборудование для цифровой печати",
+                d: "3D-принтеры (в т. ч. по металлу — SLM);",
+              },
+              {
+                t: "Традиционное зуботехническое оборудование",
+                d: "печи для синтеризации и обжига керамики, литейные установки, полимеризаторы, пескоструйные аппараты, микромоторы;",
+              },
+              {
+                t: "Инфраструктура лабораторий",
+                d: "компрессоры и осушители, вытяжки и пылесосы, рабочие столы и системы хранения;",
+              },
+              {
+                t: "Расходные материалы",
+                d: "циркониевые и PMMA-блоки, воски, фотополимеры, фрезы, титановые заготовки.",
+              },
+            ].map((it) => (
+              <li key={it.t} className="flex items-start gap-3">
+                <span className="mt-2 size-1.5 rounded-full bg-primary shrink-0" />
+                <span>
+                  <b className="text-foreground">{it.t}:</b>{" "}
+                  <span className="text-muted-foreground">{it.d}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
           <p>
             Работаем с частными и корпоративными клиентами, предлагаем гибкие условия сотрудничества и индивидуальный
             подход.

@@ -5,7 +5,8 @@ function getInitial(): "light" | "dark" {
   if (typeof window === "undefined") return "light";
   const saved = localStorage.getItem("theme");
   if (saved === "dark" || saved === "light") return saved;
-  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  // Default to light on first visit (ignore OS preference)
+  return "light";
 }
 
 export function ThemeToggle({ className = "" }: { className?: string }) {
@@ -28,6 +29,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
     <button
       onClick={toggle}
       aria-label="Переключить тему"
+      title={theme === "dark" ? "Светлая тема" : "Тёмная тема"}
       className={`inline-flex items-center justify-center size-9 rounded-full border border-border bg-card hover:bg-muted transition ${className}`}
     >
       {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
