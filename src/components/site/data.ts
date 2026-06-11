@@ -233,7 +233,7 @@ export const PRODUCTS: Product[] = [
   // ===== Фрезерные станки =====
   {
     slug: "xtcera-x-mill-500-pro",
-    name: "Фрезерный станок XTCERA X-Mill 500 Pro",
+    name: "XTCERA X-Mill 500 Pro",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "1 500 000 ₽",
@@ -244,7 +244,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "xtcera-x-mill-500-se",
-    name: "Фрезерный станок XTCERA X-Mill 500 SE",
+    name: "XTCERA X-Mill 500 SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "1 150 000 ₽",
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "xtcera-x-mill-500-plus",
-    name: "Фрезерный станок XTCERA X-Mill 500 Plus с автокалибровкой",
+    name: "XTCERA X-Mill 500 Plus",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "1 400 000 ₽",
@@ -266,7 +266,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "xtcera-x-mill-600se",
-    name: "Фрезерный станок XTCERA X-Mill 600SE",
+    name: "XTCERA X-Mill 600SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "1 570 000 ₽",
@@ -288,7 +288,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "xtcera-x-mill-630",
-    name: "Фрезерный станок XTCERA X-Mill 630",
+    name: "XTCERA X-Mill 630",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "2 400 000 ₽",
@@ -299,7 +299,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "xtcera-x-mill-650se",
-    name: "Фрезерный станок XTCERA X-Mill 650SE",
+    name: "XTCERA X-Mill 650SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
     price: "2 800 000 ₽",
@@ -310,7 +310,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "blz-mo200",
-    name: "Фрезерный станок BLZ МО200 с автокалибровкой",
+    name: "BLZ МО200",
     category: "Фрезерные станки",
     brand: "BLZ Tech Dental",
     price: "1 200 000 ₽",
@@ -321,7 +321,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "cradle-a52",
-    name: "Фрезерный станок Cradle A52",
+    name: "Cradle A52",
     category: "Фрезерные станки",
     brand: "Cradle",
     price: "1 300 000 ₽",
@@ -332,7 +332,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "cradle-b42",
-    name: "Фрезерный станок Cradle B42",
+    name: "Cradle B42",
     category: "Фрезерные станки",
     brand: "Cradle",
     price: "1 470 000 ₽",
@@ -343,7 +343,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "cradle-b52",
-    name: "Фрезерный станок Cradle B52",
+    name: "Cradle B52",
     category: "Фрезерные станки",
     brand: "Cradle",
     price: "2 600 000 ₽",
@@ -354,7 +354,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "cradle-b52se",
-    name: "Фрезерный станок Cradle B52SE",
+    name: "Cradle B52SE",
     category: "Фрезерные станки",
     brand: "Cradle",
     price: "2 300 000 ₽",
@@ -367,7 +367,7 @@ export const PRODUCTS: Product[] = [
   // ===== 3D-принтеры по металлу (SLM) =====
   {
     slug: "fastform-deskfab-x1",
-    name: "3D лазерный принтер по металлу (SLM) FastForm DeskFab X1",
+    name: "FastForm DeskFab X1",
     category: "3D-принтеры по металлу (SLM)",
     brand: "FastForm",
     price: "2 420 000 ₽",
@@ -380,7 +380,7 @@ export const PRODUCTS: Product[] = [
   // ===== 3D-принтеры =====
   {
     slug: "rayshape-edge-mini",
-    name: "3D-принтер RayShape Edge Mini",
+    name: "RayShape Edge Mini",
     category: "3D-принтеры",
     brand: "RayShape",
     price: "140 000 ₽",
@@ -394,7 +394,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "rayshape-edge-e2",
-    name: "3D-принтер RayShape Edge E2",
+    name: "RayShape Edge E2",
     category: "3D-принтеры",
     brand: "RayShape",
     price: "260 000 ₽",
@@ -407,7 +407,7 @@ export const PRODUCTS: Product[] = [
   // ===== 3D-сканеры =====
   {
     slug: "scanner-blz-ls100",
-    name: "3D лабораторный сканер BLZ LS100",
+    name: "BLZ LS100",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
     price: "390 000 ₽",
@@ -420,7 +420,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "scanner-blz-ls200-plus",
-    name: "3D лабораторный сканер BLZ LS200 Plus",
+    name: "BLZ LS200 Plus",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
     price: "490 000 ₽",
@@ -432,7 +432,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "scanner-denpark-z5",
-    name: "3D лабораторный сканер DENPARK Z-5",
+    name: "DENPARK Z-5",
     category: "3D-сканеры",
     brand: "DENPARK",
     price: "350 000 ₽",
@@ -444,7 +444,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "scanner-denpark-z9",
-    name: "3D лабораторный сканер DENPARK Z-9",
+    name: "DENPARK Z-9",
     category: "3D-сканеры",
     brand: "DENPARK",
     price: "450 000 ₽",
@@ -458,7 +458,7 @@ export const PRODUCTS: Product[] = [
   // ===== Вытяжки для станков =====
   {
     slug: "dust-collector-srefo-r407",
-    name: "Вытяжка Srefo R-407-1",
+    name: "Srefo R-407-1",
     category: "Вытяжки для станков",
     brand: "Srefo",
     price: "50 000 ₽",
@@ -471,7 +471,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "dust-collector-srefo-e402-pro",
-    name: "Вытяжка для CAM установок Srefo E-402 Pro",
+    name: "Srefo E-402 Pro",
     category: "Вытяжки для станков",
     brand: "Srefo",
     price: "50 000 ₽",
@@ -483,7 +483,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "dust-collector-srefo-r412",
-    name: "Вытяжка для CAM установок Srefo R-412",
+    name: "Srefo R-412",
     category: "Вытяжки для станков",
     brand: "Srefo",
     price: "75 000 ₽",
@@ -497,7 +497,7 @@ export const PRODUCTS: Product[] = [
   // ===== Печи спекания и обжига керамики =====
   {
     slug: "zetin-ztcf-20b",
-    name: "Печь для обжига керамики Zetin ztcf-20B",
+    name: "Zetin ztcf-20B",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
     price: "210 000 ₽",
@@ -508,7 +508,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "zetin-ztcf-20b-pro",
-    name: "Печь для обжига керамики Zetin ztcf-20B PRO",
+    name: "Zetin ztcf-20B PRO",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
     price: "250 000 ₽",
@@ -519,7 +519,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "zetin-ztcf-30b-plus",
-    name: "Печь для синтеризации циркония Zetin ztcf-30B Plus",
+    name: "Zetin ztcf-30B Plus",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
     price: "380 000 ₽",
@@ -530,7 +530,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "zetin-ztcf-30b-sic",
-    name: "Печь для синтеризации циркония Zetin ztcf-30B SiC",
+    name: "Zetin ztcf-30B SiC",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
     price: "428 000 ₽",
@@ -541,7 +541,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "upcera-vicce-gt1",
-    name: "Печь для синтеризации циркония Upcera GT1 / Vicce GT1",
+    name: "Upcera GT1 / Vicce GT1",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
     price: "350 000 ₽",
@@ -552,7 +552,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "upcera-vicce-gt1-pro",
-    name: "Печь для синтеризации циркония Upcera GT1 Pro / Vicce GT1 Pro",
+    name: "Upcera GT1 Pro / Vicce GT1 Pro",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
     price: "390 000 ₽",
@@ -563,7 +563,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "upcera-vicce-a7-plus",
-    name: "Печь для обжига керамики Upcera А7+ / Vicce А7+",
+    name: "Upcera A7+ / Vicce A7+",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
     price: "280 000 ₽",
@@ -574,7 +574,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "upcera-vicce-a7-pro",
-    name: "Печь для обжига керамики Upcera A7Pro / Vicce A7Pro",
+    name: "Upcera A7Pro / Vicce A7Pro",
     category: "Печи спекания и обжига керамики",
     brand: "Upcera / Vicce",
     price: "320 000 ₽",
@@ -585,7 +585,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "vicce-ttf",
-    name: "Печь для синтеризации циркония Vicce TTF",
+    name: "Vicce TTF",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
     price: "450 000 ₽",
@@ -641,7 +641,7 @@ export const PRODUCTS: Product[] = [
   // ===== Аппараты для анодирования =====
   {
     slug: "srefo-r-1206",
-    name: "Аппарат для анодирования титана Srefo R-1206",
+    name: "Srefo R-1206",
     category: "Аппараты для анодирования",
     brand: "Srefo",
     price: "52 000 ₽",
@@ -758,7 +758,7 @@ export const PRODUCTS: Product[] = [
     brand: "Sino Ti Metal",
     price: "от 8 500 ₽",
     short: "Титановый диск Sino Ti Metal Ti TC4 для фрезерования абатментов и каркасов.",
-    features: ["140 × 150 мм", "Сплав Ti-6Al-4V (TC4)", "Толщины 10–25 мм", "Сертификат"],
+    features: ["140 × 150 мм", "Сплав Ti-6Al-4V (TC4)", "Толщины 10–25 мм"],
     image: url(sinoTi4),
     images: [url(sinoTi4), url(sinoTi1), url(sinoTi2), url(sinoTi3)],
     sizes: [
@@ -858,7 +858,7 @@ export const PRODUCTS: Product[] = [
     brand: "FastForm",
     price: "от 32 000 ₽",
     short: "Сферический металлический порошок 10–30 мкм для SLM-печати.",
-    features: ["Фракция 10–30 мкм", "Сферические частицы", "Высокая текучесть", "Сертификат"],
+    features: ["Фракция 10–30 мкм", "Сферические частицы", "Высокая текучесть", "Узкое распределение"],
     image: url(slmPowder10),
     images: [url(slmPowder10)],
   },
@@ -870,7 +870,7 @@ export const PRODUCTS: Product[] = [
     brand: "FastForm",
     price: "от 39 000 ₽",
     short: "Сферический металлический порошок 15–45 мкм для SLM-печати.",
-    features: ["Фракция 15–45 мкм", "Сферические частицы", "Высокая текучесть", "Сертификат"],
+    features: ["Фракция 15–45 мкм", "Сферические частицы", "Высокая текучесть", "Узкое распределение"],
     image: url(slmPowder15),
     images: [url(slmPowder15)],
   },
