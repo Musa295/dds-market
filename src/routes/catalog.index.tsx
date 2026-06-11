@@ -64,7 +64,7 @@ function CatalogPage() {
   return (
     <PageShell
       title="Каталог оборудования"
-      subtitle="Сертифицированное оборудование от ведущих мировых производителей. Прямые поставки, гарантия, сервис."
+      subtitle="Оборудование от ведущих мировых производителей. Прямые поставки, гарантия, сервис."
       crumbs={[{ label: "Каталог" }]}
     >
       <div className="container mx-auto px-6 py-12 grid lg:grid-cols-[260px_1fr] gap-10">
