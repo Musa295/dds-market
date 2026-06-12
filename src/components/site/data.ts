@@ -868,8 +868,8 @@ export const PRODUCTS: Product[] = [
     price: "от 8 000 ₽",
     short: "Квадратный титановый блок Sino Ti Metal Ti TC4 140×150 мм для CAD/CAM-фрезеровки крупных каркасов и балок.",
     features: ["140 × 150 мм", "Сплав Ti-6Al-4V (TC4)", "Толщины 10–25 мм", "Биосовместимость"],
-    image: url(sinoTi1),
-    images: [url(sinoTi1), url(sinoTi2), url(sinoTi3)],
+    image: url(sinoTi2White),
+    images: [url(sinoTi2White), url(sinoTi1), url(sinoTi3)],
     sizes: [
       { label: "140 × 150 × 10 мм", price: "8 000 ₽" },
       { label: "140 × 150 × 12 мм", price: "8 800 ₽" },
