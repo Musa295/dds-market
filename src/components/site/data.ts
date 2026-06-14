@@ -932,7 +932,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Фрезы",
     brand: "XTCERA",
-    price: "9 500 ₽",
+    price: "2 700 ₽",
     short: "Универсальные фрезы по циркону и PMMA для любых CAD/CAM-станков.",
     features: ["Универсальная совместимость", "Различные диаметры", "Долговечное покрытие"],
     image: url(burPmma),
