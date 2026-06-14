@@ -906,17 +906,11 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "PMMA и воск",
     brand: "XTCERA",
-    price: "от 1 500 ₽",
+    price: "800 ₽",
     short: "Восковой диск для фрезерования каркасов под литьё.",
     features: ["98 мм", "Выгорает без остатка", "Толщины 10–25 мм"],
     image: url(waxNew),
     images: [url(waxNew)],
-    sizes: [
-      { label: "98 × 10 мм", price: "1 500 ₽" },
-      { label: "98 × 14 мм", price: "1 800 ₽" },
-      { label: "98 × 18 мм", price: "2 100 ₽" },
-      { label: "98 × 25 мм", price: "2 600 ₽" },
-    ],
   },
   // Фрезы
   {
