@@ -919,7 +919,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Фрезы",
     brand: "XTCERA",
-    price: "2 500 ₽",
+    price: "10 000 ₽",
     short: "Калибровочная фреза для станков XTCERA X-MILL 500Plus, Yucera, Aidite.",
     features: ["Точная калибровка", "Долговечная", "Совместимость с XTCERA/Yucera/Aidite"],
     image: url(burCalib2),
