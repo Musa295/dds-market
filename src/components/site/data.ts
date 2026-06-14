@@ -971,7 +971,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Металлический порошок (SLM)",
     brand: "FastForm",
-    price: "от 39 000 ₽",
+    price: "50 000 ₽",
     short: "Сферический металлический порошок 15–45 мкм для SLM-печати.",
     features: ["Фракция 15–45 мкм", "Сферические частицы", "Высокая текучесть", "Узкое распределение"],
     image: url(slmPowder15),
