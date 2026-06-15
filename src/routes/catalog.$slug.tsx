@@ -134,12 +134,19 @@ function ProductPage() {
             ))}
           </div>
 
-          <div className="mt-8 p-5 rounded-2xl border border-border bg-card">
+          <div className="mt-6 p-4 rounded-2xl border border-primary/30 bg-primary/5">
+            <div className="text-sm font-semibold text-primary">💰 Цены ниже, чем у конкурентов</div>
+            <div className="text-xs text-muted-foreground mt-1">Работаем напрямую с производителями — без лишних наценок. Найдёте дешевле — сделаем индивидуальное предложение.</div>
+          </div>
+
+          <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
             <div className="font-semibold mb-3">Запросить КП и условия поставки</div>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
               <Button asChild><Link to="/contacts">Оставить заявку</Link></Button>
               <Button variant="outline" asChild><a href={SITE.phoneHref}><Phone className="size-4 mr-2" />{SITE.phone}</a></Button>
+              <Button variant="outline" asChild><a href={SITE.whatsapp} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />WhatsApp</a></Button>
               <Button variant="outline" asChild><a href={SITE.telegram} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />Telegram</a></Button>
+              <Button variant="outline" asChild><a href={SITE.max} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />MAX</a></Button>
               <Button variant="outline" asChild><a href={`mailto:${SITE.email}`}><Mail className="size-4 mr-2" />Email</a></Button>
             </div>
           </div>
