@@ -191,9 +191,9 @@ function ProductPage() {
               <h3 className="font-display text-xl font-bold mt-8 mb-3 text-foreground">Ключевые преимущества</h3>
               <ul className="space-y-2">
                 {product.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-foreground">
-                    <Check className="size-4 text-primary shrink-0 mt-1" />
-                    <span>{f}</span>
+                  <li key={f} className="flex items-start gap-2 text-foreground leading-relaxed">
+                    <span className="text-primary font-bold mt-0.5 shrink-0">•</span>
+                    <span>{f.replace(/^[•·\-\s]+/, "")}</span>
                   </li>
                 ))}
               </ul>
