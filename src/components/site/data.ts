@@ -154,6 +154,8 @@ import rayshapeOrange1kg from "@/assets/products/rayshape-orange-1kg.webp.asset.
 import cradleA52dw1 from "@/assets/products/cradle-a52dw-1.png.asset.json";
 import cradleA52dw2 from "@/assets/products/cradle-a52dw-2.png.asset.json";
 import sinoTi2White from "@/assets/products/new-sino-ti-2-white.jpg.asset.json";
+import srefoR501_1 from "@/assets/products/srefo-r501-1.jpg.asset.json";
+import srefoR502_1 from "@/assets/products/srefo-r502-1.jpg.asset.json";
 
 const url = (a: { url: string }) => a.url;
 
