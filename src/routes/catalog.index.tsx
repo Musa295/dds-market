@@ -55,6 +55,7 @@ function CatalogPage() {
 
   const filtered = useMemo(() => {
     return PRODUCTS.filter((p) => {
+      if (p.hidden) return false;
       const matchQ = !q || (p.name + p.short + p.brand + p.category).toLowerCase().includes(q.toLowerCase());
       const matchC = !cat || p.category === cat;
       return matchQ && matchC;

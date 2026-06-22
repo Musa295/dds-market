@@ -64,6 +64,16 @@ function ProductPage() {
       subtitle={product.short}
       crumbs={[{ label: "Каталог", to: "/catalog" }, { label: product.category }]}
     >
+      <div className="container mx-auto px-6 pt-6">
+        <button
+          type="button"
+          onClick={() => { if (typeof window !== "undefined") window.history.length > 1 ? window.history.back() : (window.location.href = "/catalog"); }}
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+          aria-label="Назад"
+        >
+          <ChevronLeft className="size-4" /> Назад
+        </button>
+      </div>
       <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
         {/* Gallery */}
         <div>
@@ -279,7 +289,7 @@ function ProductPage() {
       <div className="container mx-auto px-6 pb-16">
         <h3 className="font-display text-2xl font-bold mb-6">Похожие товары</h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {PRODUCTS.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, 4).map((p) => (
+          {PRODUCTS.filter((p) => !p.hidden && p.category === product.category && p.slug !== product.slug).slice(0, 4).map((p) => (
             <Link key={p.slug} to="/catalog/$slug" params={{ slug: p.slug }} className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 {p.image && <img src={p.image} alt={p.name} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />}

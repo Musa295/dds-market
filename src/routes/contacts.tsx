@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/site/PageShell";
 import { SITE } from "@/components/site/data";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Send, MessageCircle, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle, Clock, Zap, Instagram } from "lucide-react";
 
 export const Route = createFileRoute("/contacts")({
   head: () => ({ meta: [
     { title: "Контакты — Digital Dentistry Solutions" },
-    { name: "description", content: "Адрес офиса в Москве, телефон, email, Telegram и WhatsApp." },
+    { name: "description", content: "Адрес офиса в Москве, телефон, email, Telegram, WhatsApp, MAX." },
   ]}),
   component: () => (
     <PageShell title="Контакты" subtitle="Свяжитесь с нами удобным способом — ответим в течение 30 минут в рабочее время." crumbs={[{ label: "Контакты" }]}>
@@ -17,8 +17,10 @@ export const Route = createFileRoute("/contacts")({
             { i: Phone, l: "Телефон", v: SITE.phone, href: SITE.phoneHref },
             { i: Mail, l: "Email", v: SITE.email, href: `mailto:${SITE.email}` },
             { i: MapPin, l: "Адрес", v: SITE.address },
-            { i: Send, l: "Telegram", v: "@dds_moscow", href: SITE.telegram },
+            { i: Send, l: "Telegram", v: "@ddsmarketru", href: SITE.telegram },
             { i: MessageCircle, l: "WhatsApp", v: SITE.phone, href: SITE.whatsapp },
+            { i: Zap, l: "MAX", v: SITE.phone, href: SITE.max },
+            ...(SITE.instagram ? [{ i: Instagram, l: "Instagram", v: SITE.instagram, href: SITE.instagram }] : []),
             { i: Clock, l: "Часы работы", v: "Пн–Пт 9:00–19:00, Сб 10:00–16:00" },
           ].map((c) => (
             <div key={c.l} className="p-5 rounded-2xl border border-border bg-card flex items-start gap-4">
