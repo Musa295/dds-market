@@ -170,9 +170,10 @@ export const SITE = {
   email: "ddsmarket@mail.ru",
   address: "г. Москва, 1-я Новокузьминская ул., 11",
   hours: "Пн–Пт 09:00–18:00 · Сб 10:00–17:00 (без перерыва)",
-  telegram: "https://t.me/dds_moscow",
+  telegram: "https://t.me/ddsmarketru",
   whatsapp: "https://wa.me/79309895737",
-  max: "https://max.ru/dds_moscow",
+  max: "https://max.ru/u/f9LHodD0cOIM_hUSfnoqLKTHUPOaMPMxsYNpf-T-hChtGkBwpE2vazue0T8",
+  instagram: "",
 };
 
 export const NAV = [
@@ -204,6 +205,7 @@ export type Product = {
   sku?: string;
   badge?: string;
   sizes?: { label: string; price: string }[];
+  hidden?: boolean;
 };
 
 export const CATEGORIES = [
@@ -217,6 +219,7 @@ export const CATEGORIES = [
   "Фотополимерные смолы",
   "Аппараты для анодирования",
   "Расходные материалы",
+  "Зуботехническое оборудование и запчасти",
 ] as const;
 
 export const CONSUMABLE_SUBCATEGORIES = [
@@ -1310,6 +1313,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "upcera-vicce-a7-plus",
+    hidden: true,
     name: "Vicce A7+",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
@@ -1384,6 +1388,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "vicce-ttf",
+    hidden: true,
     name: "Vicce TTF",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
@@ -1667,6 +1672,7 @@ export const PRODUCTS: Product[] = [
   // Циркониевые диски
   {
     slug: "zirconia-disc-yucera-3d-plus",
+    hidden: true,
     name: "Циркониевый блок Yucera 3D Plus Multilayer",
     category: "Расходные материалы",
     subcategory: "Циркониевые диски",
@@ -1709,6 +1715,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "zirconia-disc-yucera-4d-pro",
+    hidden: true,
     name: "Циркониевый блок Yucera 4D Pro Multilayer",
     category: "Расходные материалы",
     subcategory: "Циркониевые диски",
@@ -1754,6 +1761,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "zirconia-disc-yucera-ht",
+    hidden: true,
     name: "Циркониевый диск Yucera HT",
     category: "Расходные материалы",
     subcategory: "Циркониевые диски",
@@ -1837,6 +1845,7 @@ export const PRODUCTS: Product[] = [
   // Титановые диски
   {
     slug: "titanium-disc-sino-ti-tc4",
+    hidden: true,
     name: "Титановый диск Sino Ti Metal Ti TC4",
     category: "Расходные материалы",
     subcategory: "Титановые диски",
@@ -1878,6 +1887,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "titanium-block-sino-ti-tc4",
+    hidden: true,
     name: "Титановый блок Sino Ti Metal Ti TC4 (140 × 150 мм)",
     category: "Расходные материалы",
     subcategory: "Титановые диски",
@@ -1920,6 +1930,7 @@ export const PRODUCTS: Product[] = [
   // PMMA и воск
   {
     slug: "pmma-monolayer",
+    hidden: true,
     name: "PMMA Monolayer диск 98 мм",
     category: "Расходные материалы",
     subcategory: "PMMA и воск",
@@ -1956,6 +1967,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "wax-cad-cam",
+    hidden: true,
     name: "Воск зуботехнический для CAD/CAM фрезерования",
     category: "Расходные материалы",
     subcategory: "PMMA и воск",
@@ -1987,6 +1999,7 @@ export const PRODUCTS: Product[] = [
   // Фрезы
   {
     slug: "calibration-bur",
+    hidden: true,
     name: "Калибровочная фреза для XTCERA X-Mill 500 Plus / Yucera / Aidite",
     category: "Расходные материалы",
     subcategory: "Фрезы",
@@ -2017,6 +2030,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "burs-zirconia-pmma",
+    hidden: true,
     name: "Фрезы для любого станка по циркону и PMMA",
     category: "Расходные материалы",
     subcategory: "Фрезы",
@@ -2048,6 +2062,7 @@ export const PRODUCTS: Product[] = [
   // Дисиликат лития
   {
     slug: "lithium-disilicate-xtcera",
+    hidden: true,
     name: "Дисиликат лития XTCERA",
     category: "Расходные материалы",
     subcategory: "Дисиликат лития",
@@ -2079,6 +2094,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "lithium-disilicate-yucera",
+    hidden: true,
     name: "Дисиликат лития Yucera",
     category: "Расходные материалы",
     subcategory: "Дисиликат лития",
@@ -2116,6 +2132,7 @@ export const PRODUCTS: Product[] = [
   // Металлический порошок (SLM)
   {
     slug: "slm-powder-10-30",
+    hidden: true,
     name: "Металлический порошок для SLM (ЛСП) 10–30 мкм",
     category: "Расходные материалы",
     subcategory: "Металлический порошок (SLM)",
@@ -2147,6 +2164,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "slm-powder-15-45",
+    hidden: true,
     name: "Металлический порошок для SLM (ЛСП) 15–45 мкм",
     category: "Расходные материалы",
     subcategory: "Металлический порошок (SLM)",
