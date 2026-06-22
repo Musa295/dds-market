@@ -156,6 +156,23 @@ import cradleA52dw2 from "@/assets/products/cradle-a52dw-2.png.asset.json";
 import sinoTi2White from "@/assets/products/new-sino-ti-2-white.jpg.asset.json";
 import srefoR501_1 from "@/assets/products/srefo-r501-1.jpg.asset.json";
 import srefoR502_1 from "@/assets/products/srefo-r502-1.jpg.asset.json";
+import srefoR50s1 from "@/assets/products/srefo-r50s-1.jpg.asset.json";
+import srefoR50s2 from "@/assets/products/srefo-r50s-2.jpg.asset.json";
+import srefoR50s3 from "@/assets/products/srefo-r50s-3.jpg.asset.json";
+// New batch (June 2026): дополнительное оборудование и запчасти
+import imgXcq2412 from "@/assets/products/new-img_1.jpg.asset.json";
+import imgXcq2413 from "@/assets/products/new-img_16.jpg.asset.json";
+import imgCompressor20b from "@/assets/products/new-img_2.jpg.asset.json";
+import imgTen30b from "@/assets/products/new-img_3.jpg.asset.json";
+import imgR1207a from "@/assets/products/new-img_4.jpg.asset.json";
+import imgR1207b from "@/assets/products/new-img_5.jpg.asset.json";
+import imgAiditeEz from "@/assets/products/new-img_6.jpg.asset.json";
+import imgHarzA3_1kg from "@/assets/products/new-img_7.jpg.asset.json";
+import imgHarzA3_05kg from "@/assets/products/new-img_8.jpg.asset.json";
+import imgR1105a from "@/assets/products/new-img_9.jpg.asset.json";
+import imgR1105b from "@/assets/products/new-img_10.jpg.asset.json";
+import imgR1105c from "@/assets/products/new-img_11.jpg.asset.json";
+import imgR1105d from "@/assets/products/new-img_12.jpg.asset.json";
 
 const url = (a: { url: string }) => a.url;
 
