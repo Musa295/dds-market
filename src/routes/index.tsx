@@ -33,7 +33,7 @@ function Index() {
       <Header />
 
       {/* HERO with video */}
-      <section className="relative overflow-hidden bg-foreground">
+      <section className="relative overflow-hidden bg-[#0b1220]">
         <video
           src="/hero-video.mp4"
           autoPlay
@@ -41,10 +41,10 @@ function Index() {
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/60 to-foreground/30" />
-        <div className="absolute inset-0 bg-mesh opacity-20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220]/95 via-[#0b1220]/80 to-primary/60" />
+        <div className="absolute inset-0 bg-mesh opacity-10 mix-blend-overlay" />
         <div className="container relative mx-auto px-6 py-16 md:py-20 max-w-4xl text-background">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-background/20 bg-background/10 backdrop-blur text-background text-xs font-medium">
             <Sparkles className="size-3.5" /> Цифровая стоматология · Москва
