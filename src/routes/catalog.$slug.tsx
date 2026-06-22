@@ -64,6 +64,16 @@ function ProductPage() {
       subtitle={product.short}
       crumbs={[{ label: "Каталог", to: "/catalog" }, { label: product.category }]}
     >
+      <div className="container mx-auto px-6 pt-6">
+        <button
+          type="button"
+          onClick={() => { if (typeof window !== "undefined") window.history.length > 1 ? window.history.back() : (window.location.href = "/catalog"); }}
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+          aria-label="Назад"
+        >
+          <ChevronLeft className="size-4" /> Назад
+        </button>
+      </div>
       <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
         {/* Gallery */}
         <div>
