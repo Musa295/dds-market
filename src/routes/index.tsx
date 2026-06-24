@@ -53,15 +53,15 @@ function Index() {
           <h1 className="mt-5 font-display text-4xl md:text-6xl font-bold leading-[1.05] text-balance">
             Оборудование для современной <span className="text-accent">стоматологии</span> и зуботехнических лабораторий
           </h1>
-          <p className="mt-6 text-lg text-background/85 max-w-2xl">
+          <p className="mt-6 text-lg text-white/90 max-w-2xl">
             Сканеры, фрезерные станки, 3D-принтеры, печи и ПО от ведущих мировых производителей. Полный цикл — от подбора до сервиса.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg"><Link to="/catalog">Перейти в каталог <ArrowRight className="size-4" /></Link></Button>
-            <Button asChild size="lg" variant="outline" className="bg-background/10 backdrop-blur border-background/30 text-background hover:bg-background hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
+            <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur border-white/40 text-white hover:bg-white hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
           </div>
         </div>
-        <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-background/60 text-xs">
+        <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-white/70 text-xs">
           <ShieldCheck className="size-3.5" /> ISO 13485 · Гарантия до 3 лет
         </div>
       </section>
