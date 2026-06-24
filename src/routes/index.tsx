@@ -34,19 +34,19 @@ function Index() {
       <Header />
 
       {/* HERO with video */}
-      <section className="relative overflow-hidden bg-[#0b1220]">
+      <section className="relative overflow-hidden bg-[#0b1220] dark:bg-[#0a1118]">
         <video
-          src="/hero-video.mp4"
+          src={heroVideo.url}
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 dark:opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220]/95 via-[#0b1220]/80 to-primary/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220]/85 via-[#0b1220]/65 to-primary/50 dark:from-[#06090f]/75 dark:via-[#06090f]/45 dark:to-[#06090f]/30" />
         <div className="absolute inset-0 bg-mesh opacity-10 mix-blend-overlay" />
-        <div className="container relative mx-auto px-6 py-16 md:py-20 max-w-4xl text-background">
+        <div className="container relative mx-auto px-6 py-16 md:py-20 max-w-4xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-background/20 bg-background/10 backdrop-blur text-background text-xs font-medium">
             <Sparkles className="size-3.5" /> Цифровая стоматология · Москва
           </span>
