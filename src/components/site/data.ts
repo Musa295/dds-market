@@ -190,7 +190,7 @@ export const SITE = {
   telegram: "https://t.me/ddsmarketru",
   whatsapp: "https://wa.me/79309895737",
   max: "https://max.ru/u/f9LHodD0cOIM_hUSfnoqLKTHUPOaMPMxsYNpf-T-hChtGkBwpE2vazue0T8",
-  instagram: "",
+  instagram: "https://www.instagram.com/systemscadcam?igsh=a3c5cmhtcGx5bTgy",
 };
 
 export const NAV = [
