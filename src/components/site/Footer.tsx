@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <div className="rounded-xl bg-background p-2 shadow-lg ring-1 ring-background/20">
+            <div className="rounded-xl bg-white p-2 shadow-lg ring-1 ring-white/30">
               <img src={logo} alt="DDS MARKET" width={56} height={56} className="size-14 object-contain" />
             </div>
             <div>
