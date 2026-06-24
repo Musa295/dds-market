@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, ShieldCheck, Sparkles, ScanLine, Package, Flame } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
