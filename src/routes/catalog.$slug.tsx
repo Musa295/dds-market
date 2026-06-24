@@ -113,7 +113,11 @@ function ProductPage() {
           <h2 className="mt-2 font-display text-3xl font-bold">{product.name}</h2>
           <div className="mt-1 text-xs text-muted-foreground">Артикул: {product.sku ?? product.slug.toUpperCase()}</div>
           <div className="mt-5 flex items-baseline gap-3">
-            <div className="font-display font-bold text-3xl text-primary">{currentPrice}</div>
+            {/^\s*оставьте\s+заявку/i.test(currentPrice) ? (
+              <Link to="/contacts" className="font-display font-bold text-3xl text-primary underline-offset-4 hover:underline">{currentPrice}</Link>
+            ) : (
+              <div className="font-display font-bold text-3xl text-primary">{currentPrice}</div>
+            )}
             <span className="text-xs text-accent font-semibold uppercase tracking-wider">В наличии</span>
           </div>
           <p className="mt-5 text-muted-foreground leading-relaxed">{product.short}</p>
