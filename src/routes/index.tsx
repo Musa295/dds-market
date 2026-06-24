@@ -79,7 +79,7 @@ function Index() {
           {CATEGORIES.map((cat) => {
             const Icon = CATEGORY_ICONS[cat] ?? Cog;
             return (
-              <Link key={cat} to="/catalog" className="group p-6 rounded-2xl border border-border bg-card hover:border-primary hover:shadow-lg transition-all">
+              <Link key={cat} to="/catalog" search={{ q: "", cat }} className="group p-6 rounded-2xl border border-border bg-card hover:border-primary hover:shadow-lg transition-all">
                 <div className="grid size-12 place-items-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 text-primary mb-4 group-hover:scale-110 transition">
                   <Icon className="size-6" />
                 </div>
