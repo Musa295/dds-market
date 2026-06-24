@@ -106,7 +106,11 @@ function CatalogPage() {
                     {p.features.slice(0,3).map((f) => <li key={f}>• {f}</li>)}
                   </ul>
                   <div className="mt-4 flex items-center justify-between">
-                    <div className="font-display font-bold text-primary">{p.price}</div>
+                    {/^\s*оставьте\s+заявку/i.test(p.price) ? (
+                      <Link to="/contacts" className="font-display font-bold text-primary text-sm underline-offset-4 hover:underline">{p.price}</Link>
+                    ) : (
+                      <div className="font-display font-bold text-primary">{p.price}</div>
+                    )}
                     <Button size="sm" asChild><Link to="/catalog/$slug" params={{ slug: p.slug }}>Подробнее</Link></Button>
                   </div>
                 </div>

@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Cog, Printer, Layers, Wind, FlaskConical, Zap, ShieldCheck, Sparkles, ScanLine, Package, Flame } from "lucide-react";
 import { PRODUCTS, CATEGORIES, SERVICES, SITE } from "@/components/site/data";
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,34 +34,34 @@ function Index() {
       <Header />
 
       {/* HERO with video */}
-      <section className="relative overflow-hidden bg-[#0b1220]">
+      <section className="relative overflow-hidden bg-[#0b1220] dark:bg-[#0a1118]">
         <video
-          src="/hero-video.mp4"
+          src={heroVideo.url}
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 dark:opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220]/95 via-[#0b1220]/80 to-primary/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220]/85 via-[#0b1220]/65 to-primary/50 dark:from-[#06090f]/75 dark:via-[#06090f]/45 dark:to-[#06090f]/30" />
         <div className="absolute inset-0 bg-mesh opacity-10 mix-blend-overlay" />
-        <div className="container relative mx-auto px-6 py-16 md:py-20 max-w-4xl text-background">
+        <div className="container relative mx-auto px-6 py-16 md:py-20 max-w-4xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-background/20 bg-background/10 backdrop-blur text-background text-xs font-medium">
             <Sparkles className="size-3.5" /> Цифровая стоматология · Москва
           </span>
           <h1 className="mt-5 font-display text-4xl md:text-6xl font-bold leading-[1.05] text-balance">
             Оборудование для современной <span className="text-accent">стоматологии</span> и зуботехнических лабораторий
           </h1>
-          <p className="mt-6 text-lg text-background/85 max-w-2xl">
+          <p className="mt-6 text-lg text-white/90 max-w-2xl">
             Сканеры, фрезерные станки, 3D-принтеры, печи и ПО от ведущих мировых производителей. Полный цикл — от подбора до сервиса.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg"><Link to="/catalog">Перейти в каталог <ArrowRight className="size-4" /></Link></Button>
-            <Button asChild size="lg" variant="outline" className="bg-background/10 backdrop-blur border-background/30 text-background hover:bg-background hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
+            <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur border-white/40 text-white hover:bg-white hover:text-foreground"><Link to="/contacts">Получить консультацию</Link></Button>
           </div>
         </div>
-        <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-background/60 text-xs">
+        <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-white/70 text-xs">
           <ShieldCheck className="size-3.5" /> ISO 13485 · Гарантия до 3 лет
         </div>
       </section>
@@ -78,7 +79,7 @@ function Index() {
           {CATEGORIES.map((cat) => {
             const Icon = CATEGORY_ICONS[cat] ?? Cog;
             return (
-              <Link key={cat} to="/catalog" className="group p-6 rounded-2xl border border-border bg-card hover:border-primary hover:shadow-lg transition-all">
+              <Link key={cat} to="/catalog" search={{ q: "", cat }} className="group p-6 rounded-2xl border border-border bg-card hover:border-primary hover:shadow-lg transition-all">
                 <div className="grid size-12 place-items-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 text-primary mb-4 group-hover:scale-110 transition">
                   <Icon className="size-6" />
                 </div>
