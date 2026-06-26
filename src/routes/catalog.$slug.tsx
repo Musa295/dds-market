@@ -25,9 +25,11 @@ export const Route = createFileRoute("/catalog/$slug")({
       </div>
     </PageShell>
   ),
-  errorComponent: ({ error }) => (
+  errorComponent: () => (
     <PageShell title="Ошибка" crumbs={[{ label: "Каталог", to: "/catalog" }]}>
-      <div className="container mx-auto px-6 py-20 text-center text-muted-foreground">{error.message}</div>
+      <div className="container mx-auto px-6 py-20 text-center text-muted-foreground">
+        Произошла ошибка. Пожалуйста, попробуйте позже.
+      </div>
     </PageShell>
   ),
   component: ProductPage,
