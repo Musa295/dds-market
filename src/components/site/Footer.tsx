@@ -46,11 +46,6 @@ export function Footer() {
             <a href={SITE.telegram} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm hover:text-accent"><Send className="size-4" /> Telegram</a>
             <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm hover:text-accent"><MessageCircle className="size-4" /> WhatsApp</a>
             <a href={SITE.max} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm hover:text-accent"><Zap className="size-4" /> MAX</a>
-            {SITE.instagram ? (
-              <a href={SITE.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm hover:text-accent"><Instagram className="size-4" /> Instagram</a>
-            ) : (
-              <span className="flex items-center gap-2 text-sm opacity-50 cursor-default" title="Скоро"><Instagram className="size-4" /> Instagram</span>
-            )}
             <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 text-sm hover:text-accent"><Mail className="size-4" /> Email</a>
           </div>
         </div>
