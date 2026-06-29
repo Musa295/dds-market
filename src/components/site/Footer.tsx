@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, Send, MessageCircle, Zap, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle, Zap } from "lucide-react";
 import { SITE, NAV } from "./data";
 import logo from "@/assets/logo.png";
 
