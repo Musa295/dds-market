@@ -155,6 +155,8 @@ function ProductPage() {
             <div className="text-xs text-muted-foreground mt-1">Работаем напрямую с производителями — без лишних наценок. Найдёте дешевле — сделаем индивидуальное предложение.</div>
           </div>
 
+          <p className="mt-3 text-xs text-muted-foreground">⚠️ Цены могут изменяться в зависимости от курса валют. Актуальную стоимость уточняйте у менеджера.</p>
+
           <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
             <div className="font-semibold mb-3">Запросить КП и условия поставки</div>
             <div className="flex flex-wrap gap-2">

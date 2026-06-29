@@ -89,6 +89,9 @@ function CatalogPage() {
         </aside>
 
         <div>
+          <div className="mb-4 p-3 rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 text-xs text-amber-900 dark:text-amber-200">
+            ⚠️ Цены могут изменяться в зависимости от курса валют. Актуальную стоимость уточняйте у менеджера.
+          </div>
           <div className="mb-6 text-sm text-muted-foreground">Найдено: <span className="font-semibold text-foreground">{filtered.length}</span></div>
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.map((p) => (
