@@ -190,7 +190,7 @@ export const SITE = {
   telegram: "https://t.me/ddsmarketru",
   whatsapp: "https://wa.me/79309895737",
   max: "https://max.ru/u/f9LHodD0cOIM_hUSfnoqLKTHUPOaMPMxsYNpf-T-hChtGkBwpE2vazue0T8",
-  instagram: "https://www.instagram.com/systemscadcam?igsh=a3c5cmhtcGx5bTgy",
+  instagram: "",
 };
 
 export const NAV = [
@@ -262,7 +262,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 500 Pro",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "1 500 000 ₽",
+    price: "1 550 000 ₽",
     short: "5-осевой фрезерный станок XTCERA X-Mill 500 Pro для сухой обработки циркония, воска, PMMA и мягких сплавов Co-Cr. Шпиндель 1,8 кВт / 60 000 об/мин, магазин на 10 фрез, ПО hyperDENT.",
     features: [
       "5 осей, рабочая область XYZ 220 / 160 / 120 мм",
@@ -307,7 +307,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 500 SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "1 150 000 ₽",
+    price: "1 200 000 ₽",
     short: "Фрезерный станок XTCERA X-Mill 500 SE линейки X-Mill. Точные характеристики — по паспорту поставщика.",
     features: [
       "Линейка XTCERA X-Mill",
@@ -336,7 +336,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 500 Plus",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "1 400 000 ₽",
+    price: "1 420 000 ₽",
     short: "5-осевой XTCERA X-Mill 500 Plus для сухой обработки циркония, воска, PMMA и мягких сплавов Co-Cr. Шпиндель 1,8 кВт / 60 000 об/мин, магазин на 8 фрез.",
     features: [
       "5 осей, рабочая область 220 / 160 / 120 мм",
@@ -377,7 +377,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 600SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "1 570 000 ₽",
+    price: "1 500 000 ₽",
     short: "4-осевой XTCERA X-Mill 600SE для мокрой обработки титана, воска, PMMA, стеклокерамики и Premill-абатментов. Шпиндель 1,8 кВт / 40 000 об/мин, магазин на 10 фрез.",
     features: [
       "4 оси, мокрая обработка с водяным охлаждением",
@@ -418,7 +418,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 630",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "2 400 000 ₽",
+    price: "2 450 000 ₽",
     short: "5-осевой XTCERA X-Mill 630 для мокрой обработки титана, PMMA, воска, стеклокерамики и Premill-абатментов. Шпиндель 2,5 кВт / 60 000 об/мин, магазин на 22 инструмента.",
     features: [
       "5 осей, мокрая обработка",
@@ -458,7 +458,7 @@ export const PRODUCTS: Product[] = [
     name: "XTCERA X-Mill 650SE",
     category: "Фрезерные станки",
     brand: "XTCERA",
-    price: "2 800 000 ₽",
+    price: "2 850 000 ₽",
     short: "Профессиональный 5-осевой XTCERA X-Mill 650SE для мокрой обработки. Шпиндель 4 кВт, магазин на 36 инструментов, блоки 140×150 мм и диски 98 мм, точность 1 мкм.",
     features: [
       "Шпиндель 4 кВт, до 40 000 об/мин",
@@ -499,7 +499,7 @@ export const PRODUCTS: Product[] = [
     name: "BLZ Tech Dental BLZ MO200",
     category: "Фрезерные станки",
     brand: "BLZ Tech Dental",
-    price: "1 200 000 ₽",
+    price: "1 251 000 ₽",
     short: "5-осевой BLZ MO200 с автокалибровкой, шпинделем 2,5 кВт, держателем C-CLAMP и магазином на 12 фрез. Решение начального уровня для лабораторий.",
     features: [
       "5 осей с автокалибровкой",
@@ -534,7 +534,7 @@ export const PRODUCTS: Product[] = [
     name: "Cradle A52",
     category: "Фрезерные станки",
     brand: "Cradle",
-    price: "1 300 000 ₽",
+    price: "1 350 000 ₽",
     short: "5-осевой Cradle A52 для сухой обработки циркония, PMMA, PEEK и воска. Шпиндель 60 000 об/мин, точность <0,01 мм, диски Ø98,5 мм высотой 10–30 мм.",
     features: [
       "5 осей, сухая обработка",
@@ -572,7 +572,7 @@ export const PRODUCTS: Product[] = [
     name: "Cradle A52DW",
     category: "Фрезерные станки",
     brand: "Cradle",
-    price: "1 420 000 ₽",
+    price: "1 450 000 ₽",
     short: "5-осевой Cradle A52DW — расширенная версия A52. По импортным данным: мощность 1,0 кВт, шпиндель до 80 000 об/мин. Точные характеристики — по паспорту поставщика.",
     features: [
       "5 осей, расширенная версия A52",
@@ -603,7 +603,7 @@ export const PRODUCTS: Product[] = [
     name: "Cradle B42",
     category: "Фрезерные станки",
     brand: "Cradle",
-    price: "1 470 000 ₽",
+    price: "1 500 000 ₽",
     short: "4-осевой Cradle B42 для Premill-абатментов и стеклокерамики. Шпиндель 60 000 об/мин, водяное охлаждение, магазин 15 фрез, точность <0,01 мм.",
     features: [
       "4 оси, водяное охлаждение",
@@ -642,7 +642,7 @@ export const PRODUCTS: Product[] = [
     name: "Cradle B52",
     category: "Фрезерные станки",
     brand: "Cradle",
-    price: "2 600 000 ₽",
+    price: "2 620 000 ₽",
     short: "5-осевой Cradle B52 с шпинделем Jäger (DE) и сервоприводами Panasonic (JP). Магазин 15 фрез, точность <0,01 мм. Для титановых балок, Premill и CoCr-каркасов.",
     features: [
       "Шпиндель Jäger (DE), приводы Panasonic (JP)",
@@ -682,7 +682,7 @@ export const PRODUCTS: Product[] = [
     name: "Cradle B52SE",
     category: "Фрезерные станки",
     brand: "Cradle",
-    price: "2 300 000 ₽",
+    price: "2 350 000 ₽",
     short: "5-осевой Cradle B52SE с сервоприводами, шпинделем и электроникой собственной разработки Cradle. Магазин 15 фрез, точность <0,01 мм.",
     features: [
       "Сервоприводы, шпиндель и электроника Cradle",
@@ -723,7 +723,7 @@ export const PRODUCTS: Product[] = [
     name: "FastForm DeskFab X1",
     category: "3D-принтеры по металлу (SLM)",
     brand: "FastForm",
-    price: "2 420 000 ₽",
+    price: "2 460 000 ₽",
     short: "Настольный SLM-принтер FastForm DeskFab X1 — селективное лазерное плавление металлических порошков для лабораторий, стоматологий и малых производств.",
     features: [
       "Технология SLM (селективное лазерное плавление)",
@@ -756,7 +756,7 @@ export const PRODUCTS: Product[] = [
     name: "RayShape Edge Mini",
     category: "3D-принтеры",
     brand: "RayShape",
-    price: "140 000 ₽",
+    price: "144 000 ₽",
     short: "Компактный LCD 4K+ принтер RayShape Edge Mini, область построения 130×80×100 мм, скорость до 80 мм/час.",
     features: [
       "LCD-технология, монохромный экран 4K+",
@@ -797,7 +797,7 @@ export const PRODUCTS: Product[] = [
     name: "RayShape Edge E2",
     category: "3D-принтеры",
     brand: "RayShape",
-    price: "260 000 ₽",
+    price: "290 000 ₽",
     short: "Профессиональный LCD-принтер RayShape Edge E2. Детальные характеристики уточняются по паспорту поставщика — параметры Edge Mini не переносятся.",
     features: [
       "Линейка RayShape Edge",
@@ -830,7 +830,7 @@ export const PRODUCTS: Product[] = [
     name: "BLZ LS100",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
-    price: "390 000 ₽",
+    price: "397 000 ₽",
     short: "Лабораторный 3D-сканер BLZ LS100 начального уровня. Детальные характеристики уточняются по паспорту поставщика.",
     features: [
       "Лабораторный 3D-сканер",
@@ -860,7 +860,7 @@ export const PRODUCTS: Product[] = [
     name: "BLZ LS200 Plus",
     category: "3D-сканеры",
     brand: "BLZ Tech Dental",
-    price: "490 000 ₽",
+    price: "497 000 ₽",
     short: "Лабораторный 3D-сканер BLZ LS200 Plus: 2 камеры по 5,6 Мп, точность <5 мкм, сканирование арки за 20 секунд, True Color и A.I. Extract.",
     features: [
       "2 камеры по 5,6 Мп, True Color",
@@ -894,7 +894,7 @@ export const PRODUCTS: Product[] = [
     name: "DENPARK Z-5",
     category: "3D-сканеры",
     brand: "DENPARK",
-    price: "350 000 ₽",
+    price: "370 000 ₽",
     short: "Лабораторный 3D-сканер DENPARK Z-5: 2 камеры по 2,4 Мп, точность 6 микрон, скан челюсти за 9 секунд. Работает с exocad без отдельного ПО.",
     features: [
       "2 камеры по 2,4 Мп",
@@ -931,7 +931,7 @@ export const PRODUCTS: Product[] = [
     name: "DENPARK Z-9",
     category: "3D-сканеры",
     brand: "DENPARK",
-    price: "450 000 ₽",
+    price: "470 000 ₽",
     short: "Профессиональный 3D-сканер DENPARK Z-9: 2 камеры по 5 Мп, точность 5 микрон, скан челюсти за 13 секунд, поддержка переноса артикуляторов в exocad.",
     features: [
       "2 камеры по 5 Мп",
@@ -970,7 +970,7 @@ export const PRODUCTS: Product[] = [
     name: "Srefo R-407-1",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "50 000 ₽",
+    price: "94 000 ₽",
     short: "Промышленная вытяжка Srefo R-407-1 для двух CAM-установок: 500 м³/ч, 1200 Вт, бесщеточный двигатель, автоматическая очистка фильтра.",
     features: [
       "Для 2 CAM-установок",
@@ -1010,7 +1010,7 @@ export const PRODUCTS: Product[] = [
     name: "Srefo E-402 Pro",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "50 000 ₽",
+    price: "56 500 ₽",
     short: "Компактная вытяжка Srefo E-402 Pro для одной CAM-системы: 198 м³/ч, регулировка 200–1200 Вт, 15 кг.",
     features: [
       "Для одной CAM-системы / микромотора",
@@ -1047,7 +1047,7 @@ export const PRODUCTS: Product[] = [
     name: "Srefo R-412",
     category: "Вытяжки для станков",
     brand: "Srefo",
-    price: "75 000 ₽",
+    price: "78 500 ₽",
     short: "Промышленная вытяжка Srefo R-412 для CAM-установок и фрезерования циркония: 212 м³/ч, 1200 Вт, бесщеточный двигатель, импульсная очистка пыли.",
     features: [
       "Для CAM-установок и циркония",
@@ -1201,7 +1201,7 @@ export const PRODUCTS: Product[] = [
     name: "Zetin ZTCF-30B SiC",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
-    price: "428 000 ₽",
+    price: "430 000 ₽",
     short: "Печь синтеризации циркония Zetin ZTCF-30B SiC с SiC-нагревателями. Детальные характеристики уточняются по паспорту поставщика.",
     features: [
       "Линейка Zetin ZTCF",
@@ -1229,7 +1229,7 @@ export const PRODUCTS: Product[] = [
     name: "Zetin ZTCF-30B CS",
     category: "Печи спекания и обжига керамики",
     brand: "Zetin",
-    price: "365 000 ₽",
+    price: "395 000 ₽",
     short: "Компактная печь сверхбыстрой синтеризации циркония Zetin ZTCF-30B CS: до 1750 °C, цикл от 1 часа, до 60 единиц, точность ±1 °C, 40 программ.",
     features: [
       "Сверхбыстрая синтеризация — цикл от 1 часа",
@@ -1275,7 +1275,7 @@ export const PRODUCTS: Product[] = [
     name: "Vicce GT1",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
-    price: "350 000 ₽",
+    price: "370 000 ₽",
     short: "Скоростная печь Vicce GT1 для спекания циркония. Детальные характеристики уточняются по паспорту поставщика.",
     features: [
       "Скоростная печь спекания",
@@ -1334,7 +1334,7 @@ export const PRODUCTS: Product[] = [
     name: "Vicce A7+",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
-    price: "280 000 ₽",
+    price: "180 000 ₽",
     short: "Печь для обжига керамики Vicce A7+. Детальные характеристики уточняются по паспорту поставщика — параметры A7Pro не переносятся.",
     features: [
       "Печь для обжига керамики",
@@ -1363,7 +1363,7 @@ export const PRODUCTS: Product[] = [
     name: "Vicce A7Pro",
     category: "Печи спекания и обжига керамики",
     brand: "Vicce",
-    price: "320 000 ₽",
+    price: "200 000 ₽",
     short: "Печь обжига керамики Vicce A7Pro с насосом 550D: до 1150 °C, вакуум <30 мм рт.ст., 200 Вт насос, габариты 33 × 42 × 56 см, 24,6 кг.",
     features: [
       "Макс. температура 1150 °C",
@@ -1451,7 +1451,7 @@ export const PRODUCTS: Product[] = [
     name: "Фотополимер RayShape Model PRO Grey",
     category: "Фотополимерные смолы",
     brand: "RayShape",
-    price: "от 4 500 ₽",
+    price: "от 5 000 ₽",
     short: "Фотополимер RayShape Model PRO Grey для печати разборных, рабочих и диагностических моделей. Вязкость 265 мПа·с, прочность на изгиб 74 МПа.",
     features: [
       "Длина волны 405 нм",
@@ -1472,8 +1472,8 @@ export const PRODUCTS: Product[] = [
       "• Страна производства: Китай. Фасовка: 1 кг и 2,5 кг.",
     ],
     sizes: [
-      { label: "Бутыль 1 кг", price: "4 500 ₽" },
-      { label: "Канистра 2,5 кг", price: "11 000 ₽" },
+      { label: "Бутыль 1 кг", price: "5 000 ₽" },
+      { label: "Канистра 2,5 кг", price: "12 000 ₽" },
     ],
     specs: [
       { label: "Тип", value: "Фотополимерная смола для 3D-печати моделей" },
@@ -1493,7 +1493,7 @@ export const PRODUCTS: Product[] = [
     name: "Фотополимер RayShape Model PRO Orange",
     category: "Фотополимерные смолы",
     brand: "RayShape",
-    price: "от 4 500 ₽",
+    price: "от 5 000 ₽",
     short: "Фотополимер RayShape Model PRO Orange для печати моделей с высокой контрастностью. Детальный TDS уточняется по паспорту поставщика.",
     features: [
       "Длина волны 405 нм",
@@ -1512,8 +1512,8 @@ export const PRODUCTS: Product[] = [
       "• Фасовка: бутыль 1 кг и канистра 2,5 кг.",
     ],
     sizes: [
-      { label: "Бутыль 1 кг", price: "4 500 ₽" },
-      { label: "Канистра 2,5 кг", price: "11 000 ₽" },
+      { label: "Бутыль 1 кг", price: "5 000 ₽" },
+      { label: "Канистра 2,5 кг", price: "12 000 ₽" },
     ],
     specs: [
       { label: "Тип", value: "Фотополимерная смола для 3D-печати моделей" },
@@ -1561,7 +1561,7 @@ export const PRODUCTS: Product[] = [
     name: "Srefo R-1206",
     category: "Аппараты для анодирования",
     brand: "Srefo",
-    price: "52 000 ₽",
+    price: "58 000 ₽",
     short: "Аппарат Srefo R-1206 для анодирования титановых изделий. Цифровой индикатор, питание 220 В. Детальная карточка уточняется по паспорту поставщика.",
     features: [
       "Анодирование чистого титана",
@@ -2218,7 +2218,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Ванночки и плёнки",
     brand: "RayShape",
-    price: "10 200 ₽",
+    price: "12 800 ₽",
     short: "Сменная ванночка с FEP-плёнкой для DLP-принтера RayShape Edge E2.",
     features: [
       "Алюминиевый каркас",
@@ -2248,7 +2248,7 @@ export const PRODUCTS: Product[] = [
     category: "Расходные материалы",
     subcategory: "Ванночки и плёнки",
     brand: "RayShape",
-    price: "7 000 ₽",
+    price: "7 800 ₽",
     short: "Набор сменных FEP-плёнок для ванночки 3D-принтера RayShape Edge E2.",
     features: [
       "Совместимость с RayShape Edge E2",
