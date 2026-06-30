@@ -7,7 +7,10 @@ export const Route = createFileRoute("/delivery")({
   head: () => ({ meta: [
     { title: "Доставка и оплата — Digital Dentistry Solutions" },
     { name: "description", content: "Самовывоз и доставка транспортными компаниями: MagicTrans, ПЭК, Деловые линии, СДЭК. Оплата наличными в офисе, переводом, лизинг через партнёров." },
-  ]}),
+    { property: "og:title", content: "Доставка и оплата — DDS MARKET" },
+    { property: "og:description", content: "Самовывоз со склада в Москве и доставка по всей России. Оплата наличными, переводом, лизинг." },
+    { property: "og:url", content: "https://dds-market.lovable.app/delivery" },
+  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/delivery" }]}),
   component: () => (
     <PageShell title="Доставка и оплата" subtitle="Самовывоз со склада в Москве или доставка транспортными компаниями по всей России." crumbs={[{ label: "Доставка" }]}>
       <div className="container mx-auto px-6 py-14">
