@@ -6,7 +6,10 @@ export const Route = createFileRoute("/laboratory")({
   head: () => ({ meta: [
     { title: "Зуботехническая лаборатория — Digital Dentistry Solutions" },
     { name: "description", content: "Цифровая зуботехническая лаборатория в Москве: коронки, виниры, импланты, бюгели, элайнеры." },
-  ]}),
+    { property: "og:title", content: "Зуботехническая лаборатория — DDS MARKET" },
+    { property: "og:description", content: "Цифровая зуботехническая лаборатория в Москве: коронки, виниры, импланты, бюгели, элайнеры." },
+    { property: "og:url", content: "https://dds-market.lovable.app/laboratory" },
+  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/laboratory" }]}),
   component: () => (
     <PageShell title="Зуботехническая лаборатория" subtitle="Полный цикл цифрового и классического зубопротезирования. Работаем по защищённым каналам с клиниками по всей России." crumbs={[{ label: "Лаборатория" }]}>
       <div className="container mx-auto px-6 py-14">
