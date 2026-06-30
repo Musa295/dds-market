@@ -159,14 +159,14 @@ function ProductPage() {
 
           <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
             <div className="font-semibold mb-3">Запросить КП и условия поставки</div>
-            <div className="flex flex-wrap gap-2">
-              <Button asChild><Link to="/contacts">Оставить заявку</Link></Button>
+            <div className="flex flex-wrap gap-2 mb-4">
               <Button variant="outline" asChild><a href={SITE.phoneHref}><Phone className="size-4 mr-2" />{SITE.phone}</a></Button>
               <Button variant="outline" asChild><a href={SITE.whatsapp} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />WhatsApp</a></Button>
               <Button variant="outline" asChild><a href={SITE.telegram} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />Telegram</a></Button>
               <Button variant="outline" asChild><a href={SITE.max} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />MAX</a></Button>
               <Button variant="outline" asChild><a href={`mailto:${SITE.email}`}><Mail className="size-4 mr-2" />Email</a></Button>
             </div>
+            <QuickInquiryForm productName={product.name} price={currentPrice} />
           </div>
 
           <div className="mt-6 grid grid-cols-3 gap-3 text-xs">
@@ -312,5 +312,48 @@ function ProductPage() {
         </div>
       </div>
     </PageShell>
+  );
+}
+
+const TG_TOKEN = "8604500241:AAGp-nHeaFuf84cCA2bHrfhabulDFkVbBgg";
+const TG_CHAT_ID = "8947129651";
+
+function QuickInquiryForm({ productName, price }: { productName: string; price: string }) {
+  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "err">("idle");
+  return (
+    <form
+      onSubmit={async (e) => {
+        e.preventDefault();
+        const fd = new FormData(e.currentTarget);
+        const name = String(fd.get("name") || "");
+        const phone = String(fd.get("phone") || "");
+        const comment = String(fd.get("comment") || "");
+        const text = `🛒 Заявка с карточки товара\n\n📦 Товар: ${productName}\n💰 Цена: ${price}\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n💬 Комментарий: ${comment || "—"}`;
+        setStatus("sending");
+        try {
+          const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: TG_CHAT_ID, text }),
+          });
+          if (!res.ok) throw new Error();
+          setStatus("ok");
+          (e.target as HTMLFormElement).reset();
+        } catch {
+          setStatus("err");
+        }
+      }}
+      className="space-y-2 pt-4 border-t border-border"
+    >
+      <div className="text-sm font-semibold mb-2">Быстрая заявка по этому товару</div>
+      <input name="name" required placeholder="Ваше имя" className="w-full h-10 px-3 rounded-lg border border-border bg-background text-sm outline-none focus:border-primary" />
+      <input name="phone" required type="tel" placeholder="Телефон" className="w-full h-10 px-3 rounded-lg border border-border bg-background text-sm outline-none focus:border-primary" />
+      <textarea name="comment" rows={2} placeholder="Комментарий (необязательно)" className="w-full p-3 rounded-lg border border-border bg-background text-sm outline-none focus:border-primary" />
+      <Button type="submit" className="w-full" disabled={status === "sending"}>
+        {status === "sending" ? "Отправка…" : "Отправить заявку"}
+      </Button>
+      {status === "ok" && <p className="text-xs text-green-600 text-center">✓ Заявка отправлена! Свяжемся в ближайшее время.</p>}
+      {status === "err" && <p className="text-xs text-destructive text-center">Ошибка отправки. Позвоните: {SITE.phone}</p>}
+    </form>
   );
 }
