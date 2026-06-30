@@ -6,12 +6,12 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "О компании — DDS MARKET" },
-      {
-        name: "description",
-        content:
-          "DDS MARKET — комплексные поставки оборудования для фрезерных центров и зуботехнических лабораторий: CAD/CAM, 3D-печать, печи, инфраструктура, расходные материалы.",
-      },
+      { name: "description", content: "DDS MARKET — комплексные поставки оборудования для фрезерных центров и зуботехнических лабораторий: CAD/CAM, 3D-печать, печи, инфраструктура, расходные материалы." },
+      { property: "og:title", content: "О компании — DDS MARKET" },
+      { property: "og:description", content: "Комплексные поставки оборудования для фрезерных центров и зуботехнических лабораторий." },
+      { property: "og:url", content: "https://dds-market.lovable.app/about" },
     ],
+    links: [{ rel: "canonical", href: "https://dds-market.lovable.app/about" }],
   }),
   component: AboutPage,
 });
