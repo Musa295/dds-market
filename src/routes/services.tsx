@@ -8,7 +8,10 @@ export const Route = createFileRoute("/services")({
   head: () => ({ meta: [
     { title: "Услуги — Digital Dentistry Solutions" },
     { name: "description", content: "Подбор оборудования, поставка, монтаж, обучение и сервисное обслуживание." },
-  ]}),
+    { property: "og:title", content: "Услуги — Digital Dentistry Solutions" },
+    { property: "og:description", content: "Подбор оборудования, поставка, монтаж, обучение и сервисное обслуживание." },
+    { property: "og:url", content: "https://dds-market.lovable.app/services" },
+  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/services" }]}),
   component: () => (
     <PageShell title="Услуги" subtitle="Полный спектр услуг по оснащению и сопровождению стоматологических клиник и лабораторий." crumbs={[{ label: "Услуги" }]}>
       <div className="container mx-auto px-6 py-14 grid md:grid-cols-2 gap-5">
