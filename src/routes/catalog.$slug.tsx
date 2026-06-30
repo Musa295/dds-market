@@ -159,14 +159,14 @@ function ProductPage() {
 
           <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
             <div className="font-semibold mb-3">Запросить КП и условия поставки</div>
-            <div className="flex flex-wrap gap-2">
-              <Button asChild><Link to="/contacts">Оставить заявку</Link></Button>
+            <div className="flex flex-wrap gap-2 mb-4">
               <Button variant="outline" asChild><a href={SITE.phoneHref}><Phone className="size-4 mr-2" />{SITE.phone}</a></Button>
               <Button variant="outline" asChild><a href={SITE.whatsapp} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />WhatsApp</a></Button>
               <Button variant="outline" asChild><a href={SITE.telegram} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />Telegram</a></Button>
               <Button variant="outline" asChild><a href={SITE.max} target="_blank" rel="noopener"><MessageCircle className="size-4 mr-2" />MAX</a></Button>
               <Button variant="outline" asChild><a href={`mailto:${SITE.email}`}><Mail className="size-4 mr-2" />Email</a></Button>
             </div>
+            <QuickInquiryForm productName={product.name} price={currentPrice} />
           </div>
 
           <div className="mt-6 grid grid-cols-3 gap-3 text-xs">
