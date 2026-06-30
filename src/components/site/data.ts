@@ -50,131 +50,130 @@ import srefoR412_2 from "@/assets/products/srefo-r412-2.webp";
 import srefoR412_3 from "@/assets/products/srefo-r412-3.webp";
 
 // Uploaded asset pointers
-import xtcera650se1 from "@/assets/products/xtcera-x-mill-650se-1.jpg.asset.json";
-import xtcera650se2 from "@/assets/products/xtcera-x-mill-650se-2.jpg.asset.json";
-import xtcera650se3 from "@/assets/products/xtcera-x-mill-650se-3.jpg.asset.json";
-import xtcera650se4 from "@/assets/products/xtcera-x-mill-650se-4.jpg.asset.json";
-import xtcera630a from "@/assets/products/xtcera-x-mill-630-1.jpg.asset.json";
-import xtcera630b from "@/assets/products/xtcera-x-mill-630-2.jpg.asset.json";
-import xtcera500se1 from "@/assets/products/xtcera-x-mill-500se-1.jpg.asset.json";
-import xtcera500se2 from "@/assets/products/xtcera-x-mill-500se-2.jpg.asset.json";
-import xtcera500se3 from "@/assets/products/xtcera-x-mill-500se-3.jpg.asset.json";
-import xtcera500se4 from "@/assets/products/xtcera-x-mill-500se-4.png.asset.json";
-import xtcera500plus1 from "@/assets/products/xtcera-x-mill-500plus-1.webp.asset.json";
-import xtcera500plus2 from "@/assets/products/xtcera-x-mill-500plus-2.png.asset.json";
-import xtcera500plus3 from "@/assets/products/xtcera-x-mill-500plus-3.jpg.asset.json";
-import xtcera500plus4 from "@/assets/products/xtcera-x-mill-500plus-4.jpg.asset.json";
-import blzMo200_1 from "@/assets/products/blz-mo200-1.jpg.asset.json";
-import blzMo200_2 from "@/assets/products/blz-mo200-2.jpg.asset.json";
-import blzMo200_3 from "@/assets/products/blz-mo200-3.jpg.asset.json";
-import blzMo200_4 from "@/assets/products/blz-mo200-4.jpg.asset.json";
-import cradleA52_1 from "@/assets/products/cradle-a52-1.jpg.asset.json";
-import cradleA52_2 from "@/assets/products/cradle-a52-2.jpg.asset.json";
-import cradleA52_3 from "@/assets/products/cradle-a52-3.png.asset.json";
-import cradleA52_4 from "@/assets/products/cradle-a52-4.png.asset.json";
-import cradleB52se1 from "@/assets/products/cradle-b52se-1.png.asset.json";
-import cradleB52se2 from "@/assets/products/cradle-b52se-2.png.asset.json";
-import cradleB52se3 from "@/assets/products/cradle-b52se-3.jpg.asset.json";
-import cradleB52_1 from "@/assets/products/cradle-b52-1.png.asset.json";
-import cradleB52_2 from "@/assets/products/cradle-b52-2.jpg.asset.json";
-import cradleB52_3 from "@/assets/products/cradle-b52-3.jpg.asset.json";
-import cradleB42_1 from "@/assets/products/cradle-b42-1.png.asset.json";
-import cradleB42_2 from "@/assets/products/cradle-b42-2.png.asset.json";
-import cradleB42_3 from "@/assets/products/cradle-b42-3.png.asset.json";
-import zetin20bPro1 from "@/assets/products/zetin-20b-pro-1.jpg.asset.json";
-import zetin20b1 from "@/assets/products/zetin-20b-1.jpg.asset.json";
-import zetin20b2 from "@/assets/products/zetin-20b-2.jpg.asset.json";
-import zetin20b3 from "@/assets/products/zetin-20b-3.jpg.asset.json";
-import zetin20b4 from "@/assets/products/zetin-20b-4.jpg.asset.json";
-import zetin30bPlus1 from "@/assets/products/zetin-30b-plus-1.jpg.asset.json";
-import zetin30bPlus2 from "@/assets/products/zetin-30b-plus-2.jpg.asset.json";
-import zetin30bPlus3 from "@/assets/products/zetin-30b-plus-3.jpg.asset.json";
-import zetin30bCs1 from "@/assets/products/zetin-30b-cs-1.jpg.asset.json";
-import zetin30bCs2 from "@/assets/products/zetin-30b-cs-2.jpg.asset.json";
-import zetin30bCs3 from "@/assets/products/zetin-30b-cs-3.jpg.asset.json";
-import zetin30bCs4 from "@/assets/products/zetin-30b-cs-4.jpg.asset.json";
-import zetin30bSic1 from "@/assets/products/zetin-30b-sic-1.jpg.asset.json";
-import zetin30bSic2 from "@/assets/products/zetin-30b-sic-2.jpg.asset.json";
-import zetin30bSic3 from "@/assets/products/zetin-30b-sic-3.jpg.asset.json";
-import upceraGt1Pro1 from "@/assets/products/upcera-gt1-pro-1.jpg.asset.json";
-import upceraGt1Pro2 from "@/assets/products/upcera-gt1-pro-2.jpg.asset.json";
-import upceraGt1Pro3 from "@/assets/products/upcera-gt1-pro-3.jpg.asset.json";
-import upceraGt1_1 from "@/assets/products/upcera-gt1-1.jpg.asset.json";
-import upceraGt1_2 from "@/assets/products/upcera-gt1-2.jpg.asset.json";
-import upceraGt1_3 from "@/assets/products/upcera-gt1-3.jpg.asset.json";
-import upceraA7plus1 from "@/assets/products/upcera-a7plus-1.jpg.asset.json";
-import upceraA7plus2 from "@/assets/products/upcera-a7plus-2.jpg.asset.json";
-import upceraA7pro1 from "@/assets/products/upcera-a7pro-1.jpg.asset.json";
-import upceraA7pro2 from "@/assets/products/upcera-a7pro-2.jpg.asset.json";
-import upceraA7pro3 from "@/assets/products/upcera-a7pro-3.jpg.asset.json";
-import vicceTtf1 from "@/assets/products/vicce-ttf-1.png.asset.json";
-import vicceTtf2 from "@/assets/products/vicce-ttf-2.png.asset.json";
-import photoGrey from "@/assets/products/photopolymer-grey-1.png.asset.json";
-import photoOrange from "@/assets/products/photopolymer-orange-1.png.asset.json";
-import photoXe from "@/assets/products/photopolymer-xe-1.png.asset.json";
-import burPmma from "@/assets/products/dental-burs-pmma-1.png.asset.json";
-import burCalib1 from "@/assets/products/calibration-bur-1.png.asset.json";
-import burCalib2 from "@/assets/products/calibration-bur-2.webp.asset.json";
-import lithium1 from "@/assets/products/lithium-disilicate-1.jpg.asset.json";
-import lithium2 from "@/assets/products/lithium-disilicate-2.jpg.asset.json";
-import lithium3 from "@/assets/products/lithium-disilicate-3.jpg.asset.json";
-import lithium4 from "@/assets/products/lithium-disilicate-4.jpg.asset.json";
-import pmmaMono from "@/assets/products/pmma-monolayer-1.jpg.asset.json";
-import waxNew from "@/assets/products/wax-disc-1.jpg.asset.json";
-import slmPowder10 from "@/assets/products/slm-powder-10-1.jpg.asset.json";
-import slmPowder15 from "@/assets/products/slm-powder-15-1.jpg.asset.json";
+import xtcera650se1 from "@/assets/products/xtcera-x-mill-650se-1.jpg";
+import xtcera650se2 from "@/assets/products/xtcera-x-mill-650se-2.jpg";
+import xtcera650se3 from "@/assets/products/xtcera-x-mill-650se-3.jpg";
+import xtcera650se4 from "@/assets/products/xtcera-x-mill-650se-4.jpg";
+import xtcera630a from "@/assets/products/xtcera-x-mill-630-1.jpg";
+import xtcera630b from "@/assets/products/xtcera-x-mill-630-2.jpg";
+import xtcera500se1 from "@/assets/products/xtcera-x-mill-500se-1.jpg";
+import xtcera500se2 from "@/assets/products/xtcera-x-mill-500se-2.jpg";
+import xtcera500se3 from "@/assets/products/xtcera-x-mill-500se-3.jpg";
+import xtcera500se4 from "@/assets/products/xtcera-x-mill-500se-4.png";
+import xtcera500plus1 from "@/assets/products/xtcera-x-mill-500plus-1.webp";
+import xtcera500plus2 from "@/assets/products/xtcera-x-mill-500plus-2.png";
+import xtcera500plus3 from "@/assets/products/xtcera-x-mill-500plus-3.jpg";
+import xtcera500plus4 from "@/assets/products/xtcera-x-mill-500plus-4.jpg";
+import blzMo200_1 from "@/assets/products/blz-mo200-1.jpg";
+import blzMo200_2 from "@/assets/products/blz-mo200-2.jpg";
+import blzMo200_3 from "@/assets/products/blz-mo200-3.jpg";
+import blzMo200_4 from "@/assets/products/blz-mo200-4.jpg";
+import cradleA52_1 from "@/assets/products/cradle-a52-1.jpg";
+import cradleA52_2 from "@/assets/products/cradle-a52-2.jpg";
+import cradleA52_3 from "@/assets/products/cradle-a52-3.png";
+import cradleA52_4 from "@/assets/products/cradle-a52-4.png";
+import cradleB52se1 from "@/assets/products/cradle-b52se-1.png";
+import cradleB52se2 from "@/assets/products/cradle-b52se-2.png";
+import cradleB52se3 from "@/assets/products/cradle-b52se-3.jpg";
+import cradleB52_1 from "@/assets/products/cradle-b52-1.png";
+import cradleB52_2 from "@/assets/products/cradle-b52-2.jpg";
+import cradleB52_3 from "@/assets/products/cradle-b52-3.jpg";
+import cradleB42_1 from "@/assets/products/cradle-b42-1.png";
+import cradleB42_2 from "@/assets/products/cradle-b42-2.png";
+import cradleB42_3 from "@/assets/products/cradle-b42-3.png";
+import zetin20bPro1 from "@/assets/products/zetin-20b-pro-1.jpg";
+import zetin20b1 from "@/assets/products/zetin-20b-1.jpg";
+import zetin20b2 from "@/assets/products/zetin-20b-2.jpg";
+import zetin20b3 from "@/assets/products/zetin-20b-3.jpg";
+import zetin20b4 from "@/assets/products/zetin-20b-4.jpg";
+import zetin30bPlus1 from "@/assets/products/zetin-30b-plus-1.jpg";
+import zetin30bPlus2 from "@/assets/products/zetin-30b-plus-2.jpg";
+import zetin30bPlus3 from "@/assets/products/zetin-30b-plus-3.jpg";
+import zetin30bCs1 from "@/assets/products/zetin-30b-cs-1.jpg";
+import zetin30bCs2 from "@/assets/products/zetin-30b-cs-2.jpg";
+import zetin30bCs3 from "@/assets/products/zetin-30b-cs-3.jpg";
+import zetin30bCs4 from "@/assets/products/zetin-30b-cs-4.jpg";
+import zetin30bSic1 from "@/assets/products/zetin-30b-sic-1.jpg";
+import zetin30bSic2 from "@/assets/products/zetin-30b-sic-2.jpg";
+import zetin30bSic3 from "@/assets/products/zetin-30b-sic-3.jpg";
+import upceraGt1Pro1 from "@/assets/products/upcera-gt1-pro-1.jpg";
+import upceraGt1Pro2 from "@/assets/products/upcera-gt1-pro-2.jpg";
+import upceraGt1Pro3 from "@/assets/products/upcera-gt1-pro-3.jpg";
+import upceraGt1_1 from "@/assets/products/upcera-gt1-1.jpg";
+import upceraGt1_2 from "@/assets/products/upcera-gt1-2.jpg";
+import upceraGt1_3 from "@/assets/products/upcera-gt1-3.jpg";
+import upceraA7plus1 from "@/assets/products/upcera-a7plus-1.jpg";
+import upceraA7plus2 from "@/assets/products/upcera-a7plus-2.jpg";
+import upceraA7pro1 from "@/assets/products/upcera-a7pro-1.jpg";
+import upceraA7pro2 from "@/assets/products/upcera-a7pro-2.jpg";
+import upceraA7pro3 from "@/assets/products/upcera-a7pro-3.jpg";
+import vicceTtf1 from "@/assets/products/vicce-ttf-1.png";
+import vicceTtf2 from "@/assets/products/vicce-ttf-2.png";
+import photoGrey from "@/assets/products/photopolymer-grey-1.png";
+import photoOrange from "@/assets/products/photopolymer-orange-1.png";
+import photoXe from "@/assets/products/photopolymer-xe-1.png";
+import burPmma from "@/assets/products/dental-burs-pmma-1.png";
+import burCalib1 from "@/assets/products/calibration-bur-1.png";
+import burCalib2 from "@/assets/products/calibration-bur-2.webp";
+import lithium1 from "@/assets/products/lithium-disilicate-1.jpg";
+import lithium2 from "@/assets/products/lithium-disilicate-2.jpg";
+import lithium3 from "@/assets/products/lithium-disilicate-3.jpg";
+import lithium4 from "@/assets/products/lithium-disilicate-4.jpg";
+import pmmaMono from "@/assets/products/pmma-monolayer-1.jpg";
+import waxNew from "@/assets/products/wax-disc-1.jpg";
+import slmPowder10 from "@/assets/products/slm-powder-10-1.jpg";
+import slmPowder15 from "@/assets/products/slm-powder-15-1.jpg";
 
 // New uploaded assets (June 2026)
-import rayshapeGreyNew from "@/assets/products/new-rayshape-grey.jpg.asset.json";
-import rayshapeOrangeNew from "@/assets/products/new-rayshape-orange.jpg.asset.json";
-import yuceraPlus1 from "@/assets/products/new-yucera-3d-plus-1.webp.asset.json";
-import yuceraPlus2 from "@/assets/products/new-yucera-3d-plus-2.jpg.asset.json";
-import yucera4d1 from "@/assets/products/new-yucera-4d-pro-1.jpg.asset.json";
-import yucera4d2 from "@/assets/products/new-yucera-4d-pro-2.jpg.asset.json";
-import yuceraSt1 from "@/assets/products/new-yucera-st-1.jpg.asset.json";
-import yuceraSt2 from "@/assets/products/new-yucera-st-2.webp.asset.json";
-import xtcera3d1 from "@/assets/products/new-xtcera-3d-1.jpg.asset.json";
-import xtcera3d2 from "@/assets/products/new-xtcera-3d-2.jpg.asset.json";
-import xtcera3d3 from "@/assets/products/new-xtcera-3d-3.jpg.asset.json";
-import sinoTi1 from "@/assets/products/new-sino-ti-1.jpg.asset.json";
-import sinoTi2 from "@/assets/products/new-sino-ti-2.jpg.asset.json";
-import sinoTi3 from "@/assets/products/new-sino-ti-3.jpg.asset.json";
-import sinoTi4 from "@/assets/products/new-sino-ti-4.jpg.asset.json";
-import rayshapeVat1 from "@/assets/products/new-rayshape-vat-1.jpg.asset.json";
-import rayshapeVat2 from "@/assets/products/new-rayshape-vat-2.jpg.asset.json";
-import rayshapeVat3 from "@/assets/products/new-rayshape-vat-3.jpg.asset.json";
-import srefoClean1 from "@/assets/products/srefo-r1206-clean-1.png.asset.json";
-import srefoClean2 from "@/assets/products/srefo-r1206-clean-2.png.asset.json";
-import srefoClean3 from "@/assets/products/srefo-r1206-clean-3.png.asset.json";
-import rayshapeFilms1 from "@/assets/products/rayshape-films-set-1.jpg.asset.json";
-import rayshapeFilms2 from "@/assets/products/rayshape-films-set-2.jpg.asset.json";
-import rayshapeFilms3 from "@/assets/products/rayshape-films-set-3.webp.asset.json";
-import rayshapeGrey1kg from "@/assets/products/rayshape-grey-1kg.webp.asset.json";
-import rayshapeOrange1kg from "@/assets/products/rayshape-orange-1kg.webp.asset.json";
-import cradleA52dw1 from "@/assets/products/cradle-a52dw-1.png.asset.json";
-import cradleA52dw2 from "@/assets/products/cradle-a52dw-2.png.asset.json";
-import sinoTi2White from "@/assets/products/new-sino-ti-2-white.jpg.asset.json";
-import srefoR501_1 from "@/assets/products/srefo-r501-1.jpg.asset.json";
-import srefoR502_1 from "@/assets/products/srefo-r502-1.jpg.asset.json";
-import srefoR50s1 from "@/assets/products/srefo-r50s-1.jpg.asset.json";
-import srefoR50s2 from "@/assets/products/srefo-r50s-2.jpg.asset.json";
-import srefoR50s3 from "@/assets/products/srefo-r50s-3.jpg.asset.json";
+import rayshapeGreyNew from "@/assets/products/new-rayshape-grey.jpg";
+import rayshapeOrangeNew from "@/assets/products/new-rayshape-orange.jpg";
+import yuceraPlus1 from "@/assets/products/new-yucera-3d-plus-1.webp";
+import yuceraPlus2 from "@/assets/products/new-yucera-3d-plus-2.jpg";
+import yucera4d1 from "@/assets/products/new-yucera-4d-pro-1.jpg";
+import yucera4d2 from "@/assets/products/new-yucera-4d-pro-2.jpg";
+import yuceraSt1 from "@/assets/products/new-yucera-st-1.jpg";
+import yuceraSt2 from "@/assets/products/new-yucera-st-2.webp";
+import xtcera3d1 from "@/assets/products/new-xtcera-3d-1.jpg";
+import xtcera3d2 from "@/assets/products/new-xtcera-3d-2.jpg";
+import xtcera3d3 from "@/assets/products/new-xtcera-3d-3.jpg";
+import sinoTi1 from "@/assets/products/new-sino-ti-1.jpg";
+import sinoTi2 from "@/assets/products/new-sino-ti-2.jpg";
+import sinoTi3 from "@/assets/products/new-sino-ti-3.jpg";
+import sinoTi4 from "@/assets/products/new-sino-ti-4.jpg";
+import rayshapeVat1 from "@/assets/products/new-rayshape-vat-1.jpg";
+import rayshapeVat2 from "@/assets/products/new-rayshape-vat-2.jpg";
+import rayshapeVat3 from "@/assets/products/new-rayshape-vat-3.jpg";
+import srefoClean1 from "@/assets/products/srefo-r1206-clean-1.png";
+import srefoClean2 from "@/assets/products/srefo-r1206-clean-2.png";
+import srefoClean3 from "@/assets/products/srefo-r1206-clean-3.png";
+import rayshapeFilms1 from "@/assets/products/rayshape-films-set-1.jpg";
+import rayshapeFilms2 from "@/assets/products/rayshape-films-set-2.jpg";
+import rayshapeFilms3 from "@/assets/products/rayshape-films-set-3.webp";
+import rayshapeGrey1kg from "@/assets/products/rayshape-grey-1kg.webp";
+import rayshapeOrange1kg from "@/assets/products/rayshape-orange-1kg.webp";
+import cradleA52dw1 from "@/assets/products/cradle-a52dw-1.png";
+import cradleA52dw2 from "@/assets/products/cradle-a52dw-2.png";
+import sinoTi2White from "@/assets/products/new-sino-ti-2-white.jpg";
+import srefoR501_1 from "@/assets/products/srefo-r501-1.jpg";
+import srefoR502_1 from "@/assets/products/srefo-r502-1.jpg";
+import srefoR50s1 from "@/assets/products/srefo-r50s-1.jpg";
+import srefoR50s2 from "@/assets/products/srefo-r50s-2.jpg";
+import srefoR50s3 from "@/assets/products/srefo-r50s-3.jpg";
 // New batch (June 2026): дополнительное оборудование и запчасти
-import imgXcq2412 from "@/assets/products/new-img_1.jpg.asset.json";
-import imgXcq2413 from "@/assets/products/new-img_16.jpg.asset.json";
-import imgCompressor20b from "@/assets/products/new-img_2.jpg.asset.json";
-import imgTen30b from "@/assets/products/new-img_3.jpg.asset.json";
-import imgR1207a from "@/assets/products/new-img_4.jpg.asset.json";
-import imgR1207b from "@/assets/products/new-img_5.jpg.asset.json";
-import imgAiditeEz from "@/assets/products/new-img_6.jpg.asset.json";
-import imgHarzA3_1kg from "@/assets/products/new-img_7.jpg.asset.json";
-import imgHarzA3_05kg from "@/assets/products/new-img_8.jpg.asset.json";
-import imgR1105a from "@/assets/products/new-img_9.jpg.asset.json";
-import imgR1105b from "@/assets/products/new-img_10.jpg.asset.json";
-import imgR1105c from "@/assets/products/new-img_11.jpg.asset.json";
-import imgR1105d from "@/assets/products/new-img_12.jpg.asset.json";
+import imgXcq2412 from "@/assets/products/new-img_1.jpg";
+import imgXcq2413 from "@/assets/products/new-img_16.jpg";
+import imgCompressor20b from "@/assets/products/new-img_2.jpg";
+import imgTen30b from "@/assets/products/new-img_3.jpg";
+import imgR1207a from "@/assets/products/new-img_4.jpg";
+import imgR1207b from "@/assets/products/new-img_5.jpg";
+import imgAiditeEz from "@/assets/products/new-img_6.jpg";
+import imgHarzA3_1kg from "@/assets/products/new-img_7.jpg";
+import imgHarzA3_05kg from "@/assets/products/new-img_8.jpg";
+import imgR1105a from "@/assets/products/new-img_9.jpg";
+import imgR1105b from "@/assets/products/new-img_10.jpg";
+import imgR1105c from "@/assets/products/new-img_11.jpg";
+import imgR1105d from "@/assets/products/new-img_12.jpg";
 
-const url = (a: { url: string }) => a.url;
 
 export const SITE = {
   name: "DDS MARKET",
@@ -315,8 +314,8 @@ export const PRODUCTS: Product[] = [
       "Сухая обработка",
       "Уточнение спецификации — по паспорту",
     ],
-    image: url(xtcera500se1),
-    images: [url(xtcera500se1), url(xtcera500se2), url(xtcera500se3), url(xtcera500se4)],
+    image: xtcera500se1,
+    images: [xtcera500se1, xtcera500se2, xtcera500se3, xtcera500se4],
     description: [
       "XTCERA X-Mill 500 SE — модель из линейки XTCERA X-Mill для зуботехнических лабораторий. Подходит для обработки циркония, воска и PMMA.",
       "• Стоматологический CAD/CAM-фрезер сухого типа.",
@@ -344,8 +343,8 @@ export const PRODUCTS: Product[] = [
       "Магазин на 8 фрез с автоматической сменой",
       "C-holder, вертикальное фрезерование 90°",
     ],
-    image: url(xtcera500plus1),
-    images: [url(xtcera500plus1), url(xtcera500plus2), url(xtcera500plus3), url(xtcera500plus4)],
+    image: xtcera500plus1,
+    images: [xtcera500plus1, xtcera500plus2, xtcera500plus3, xtcera500plus4],
     description: [
       "XTCERA X-Mill 500 Plus — 5-осевой фрезерный станок для сухой обработки циркония, воска, PMMA и мягких сплавов Co-Cr. Позволяет изготавливать коронки, мосты, модели и каркасы в условиях средней нагрузки.",
       "• Мощность шпинделя 1,8 кВт, жидкостное охлаждение, до 60 000 об/мин.",
@@ -426,8 +425,8 @@ export const PRODUCTS: Product[] = [
       "Магазин на 22 инструмента",
       "Титан, PMMA, воск, стеклокерамика",
     ],
-    image: url(xtcera630a),
-    images: [url(xtcera630a), url(xtcera630b)],
+    image: xtcera630a,
+    images: [xtcera630a, xtcera630b],
     description: [
       "XTCERA X-Mill 630 — пятиосевой фрезерный станок мокрой обработки для интенсивной загрузки. Подходит лабораториям и центрам фрезерования, которым нужна стабильная работа по титану, стеклокерамике и Premill-абатментам.",
       "• 5 осей: рабочая область XYZ 195 / 115 / 120 мм, ось A 360°, ось B ±30°.",
@@ -466,8 +465,8 @@ export const PRODUCTS: Product[] = [
       "Точность позиционирования 1 мкм",
       "Блоки 140×150 мм и диски 98 мм",
     ],
-    image: url(xtcera650se1),
-    images: [url(xtcera650se1), url(xtcera650se2), url(xtcera650se3), url(xtcera650se4)],
+    image: xtcera650se1,
+    images: [xtcera650se1, xtcera650se2, xtcera650se3, xtcera650se4],
     description: [
       "XTCERA X-Mill 650SE — флагман линейки X-Mill для центров фрезерования и крупных лабораторий. Большая рабочая зона и мощный шпиндель закрывают задачи серийного производства имплантологических каркасов.",
       "• 5 осей: рабочая область XYZ 370 / 160 / 180 мм, ось A 360°, ось B ±40°.",
@@ -507,8 +506,8 @@ export const PRODUCTS: Product[] = [
       "Полуоткрытый держатель C-CLAMP, угол 90°",
       "Магазин на 12 фрез",
     ],
-    image: url(blzMo200_1),
-    images: [url(blzMo200_1), url(blzMo200_2), url(blzMo200_3), url(blzMo200_4)],
+    image: blzMo200_1,
+    images: [blzMo200_1, blzMo200_2, blzMo200_3, blzMo200_4],
     description: [
       "BLZ Tech Dental BLZ MO200 — пятиосевой фрезерный станок с автокалибровкой для лабораторий, переходящих на собственное фрезерование. Подходит под типовой поток: коронки, небольшие мосты, ортомодели, абатменты из преформ.",
       "• 5 осей с автокалибровкой — стабильная работа без частой ручной подстройки.",
@@ -542,8 +541,8 @@ export const PRODUCTS: Product[] = [
       "Точность <0,01 мм",
       "Диски Ø98,5 мм, высота 10–30 мм",
     ],
-    image: url(cradleA52_1),
-    images: [url(cradleA52_1), url(cradleA52_2), url(cradleA52_3), url(cradleA52_4)],
+    image: cradleA52_1,
+    images: [cradleA52_1, cradleA52_2, cradleA52_3, cradleA52_4],
     description: [
       "Cradle A52 — пятиосевой фрезерный станок сухого типа для зуботехнических лабораторий. Подходит под широкий спектр работ: от каркасов и полной анатомии до телескопических коронок и бюгелей.",
       "• 5 осей, сухая обработка, шпиндель до 60 000 об/мин.",
@@ -580,8 +579,8 @@ export const PRODUCTS: Product[] = [
       "Шпиндель до 80 000 об/мин",
       "Точные характеристики по паспорту",
     ],
-    image: url(cradleA52dw2),
-    images: [url(cradleA52dw2), url(cradleA52dw1)],
+    image: cradleA52dw2,
+    images: [cradleA52dw2, cradleA52dw1],
     description: [
       "Cradle A52DW — расширенная версия Cradle A52 с увеличенной скоростью шпинделя. Подходит лабораториям, которым нужны более короткие циклы по цирконию и сложным материалам.",
       "• 5 осей — обработка анатомически сложных конструкций.",
@@ -611,8 +610,8 @@ export const PRODUCTS: Product[] = [
       "Магазин на 15 фрез, точность <0,01 мм",
       "Premill, стеклокерамика, опц. титан/PMMA/PEEK",
     ],
-    image: url(cradleB42_1),
-    images: [url(cradleB42_1), url(cradleB42_2), url(cradleB42_3)],
+    image: cradleB42_1,
+    images: [cradleB42_1, cradleB42_2, cradleB42_3],
     description: [
       "Cradle B42 — специализированный 4-осевой фрезерный станок для Premill-абатментов и реставраций из дисиликата лития/стеклокерамики. Заточен под узкий, но требовательный класс работ — точную посадку винтовых конструкций на имплантах.",
       "• 4 оси, мощность 4,0 кВт, шпиндель до 60 000 об/мин.",
@@ -650,8 +649,8 @@ export const PRODUCTS: Product[] = [
       "Магазин 15 фрез, точность <0,01 мм",
       "Ti-балка, Premill, CoCr, PMMA, воск",
     ],
-    image: url(cradleB52_1),
-    images: [url(cradleB52_1), url(cradleB52_2), url(cradleB52_3)],
+    image: cradleB52_1,
+    images: [cradleB52_1, cradleB52_2, cradleB52_3],
     description: [
       "Cradle B52 — пятиосевой фрезерный станок премиальной комплектации с немецким шпинделем Alfred Jäger и японскими сервоприводами Panasonic. Сочетание ключевых компонентов обеспечивает стабильность геометрии на длинных балках All-on-X и каркасах из CoCr.",
       "• 5 осей, мощность 4,5 кВт, шпиндель до 60 000 об/мин.",
@@ -690,8 +689,8 @@ export const PRODUCTS: Product[] = [
       "Магазин 15 фрез, точность <0,01 мм",
       "Ti-балка, Premill, CoCr, PMMA, воск",
     ],
-    image: url(cradleB52se1),
-    images: [url(cradleB52se1), url(cradleB52se2), url(cradleB52se3)],
+    image: cradleB52se1,
+    images: [cradleB52se1, cradleB52se2, cradleB52se3],
     description: [
       "Cradle B52SE — версия B52 с сервоприводами, шпинделем и электроникой собственной разработки Cradle. По характеристикам близка к B52 и подходит лабораториям, которым нужна та же платформа без премиальных европейских/японских узлов.",
       "• 5 осей, мощность 4,5 кВт, шпиндель до 60 000 об/мин.",
@@ -1094,8 +1093,8 @@ export const PRODUCTS: Product[] = [
       "Базовая версия (не Pro)",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(zetin20b1),
-    images: [url(zetin20b1), url(zetin20b2), url(zetin20b3), url(zetin20b4)],
+    image: zetin20b1,
+    images: [zetin20b1, zetin20b2, zetin20b3, zetin20b4],
     description: [
       "Zetin ZTCF-20B — базовая версия печи для обжига керамики в линейке ZTCF. Подходит лабораториям, которым нужна надёжная печь для стандартных задач обжига.",
       "• Печь для обжига керамики, та же платформа, что и у ZTCF-20B Pro.",
@@ -1123,8 +1122,8 @@ export const PRODUCTS: Product[] = [
       "Вакуум до −98 кПа, безмасляный насос",
       "100 программ (расширение до 500)",
     ],
-    image: url(zetin20bPro1),
-    images: [url(zetin20bPro1)],
+    image: zetin20bPro1,
+    images: [zetin20bPro1],
     description: [
       "Zetin ZTCF-20B Pro — печь для обжига керамики с расширенным набором программ и сенсорным управлением. Подходит для прессовки и обжига всех современных керамических масс.",
       "• Тип: печь для обжига керамики, нагревательный элемент — проволока Kanthal.",
@@ -1165,8 +1164,8 @@ export const PRODUCTS: Product[] = [
       "Камера 110×110×120 мм — до 150 единиц",
       "Быстрый цикл ~2 ч, 7\" сенсорный дисплей",
     ],
-    image: url(zetin30bPlus1),
-    images: [url(zetin30bPlus1), url(zetin30bPlus2), url(zetin30bPlus3)],
+    image: zetin30bPlus1,
+    images: [zetin30bPlus1, zetin30bPlus2, zetin30bPlus3],
     description: [
       "Zetin ZTCF-30B Plus — высокотемпературная печь для спекания реставраций из циркония. Подходит лабораториям с серийным потоком цирконатных работ.",
       "• Тип: печь для синтеризации циркония.",
@@ -1209,8 +1208,8 @@ export const PRODUCTS: Product[] = [
       "Печь для спекания циркония",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(zetin30bSic1),
-    images: [url(zetin30bSic1), url(zetin30bSic2), url(zetin30bSic3)],
+    image: zetin30bSic1,
+    images: [zetin30bSic1, zetin30bSic2, zetin30bSic3],
     description: [
       "Zetin ZTCF-30B SiC — версия печи для синтеризации циркония с нагревательными элементами на базе карбида кремния (SiC).",
       "• Та же платформа, что и Zetin ZTCF-30B, с заменой нагревательных элементов на SiC.",
@@ -1239,8 +1238,8 @@ export const PRODUCTS: Product[] = [
       "7\" сенсорный HD-дисплей, 40 программ",
       "Функция памяти при отключении питания",
     ],
-    image: url(zetin30bCs1),
-    images: [url(zetin30bCs1), url(zetin30bCs2), url(zetin30bCs3), url(zetin30bCs4)],
+    image: zetin30bCs1,
+    images: [zetin30bCs1, zetin30bCs2, zetin30bCs3, zetin30bCs4],
     description: [
       "Zetin ZTCF-30B CS — компактная высокотемпературная печь для сверхбыстрой синтеризации циркония прямо в условиях клиники или небольшой лаборатории. Полный цикл одиночной коронки — от «зеленого» состояния до спечённой реставрации — занимает около 1 часа, что позволяет изготавливать прочные и эстетичные работы за один приём.",
       "• Сверхбыстрая синтеризация — эксклюзивная программа быстрого цикла от 1 часа для одиночных коронок.",
@@ -1283,8 +1282,8 @@ export const PRODUCTS: Product[] = [
       "Для зуботехнических лабораторий",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(upceraGt1_1),
-    images: [url(upceraGt1_1), url(upceraGt1_2), url(upceraGt1_3)],
+    image: upceraGt1_1,
+    images: [upceraGt1_1, upceraGt1_2, upceraGt1_3],
     description: [
       "Vicce GT1 — скоростная печь для спекания циркония. Подходит лабораториям, которым важна короткая программа обжига при сохранении геометрии каркаса.",
       "• Платформа Vicce GT1 — скоростной обжиг циркониевых реставраций.",
@@ -1312,8 +1311,8 @@ export const PRODUCTS: Product[] = [
       "Для интенсивных лабораторий",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(upceraGt1Pro1),
-    images: [url(upceraGt1Pro1), url(upceraGt1Pro2), url(upceraGt1Pro3)],
+    image: upceraGt1Pro1,
+    images: [upceraGt1Pro1, upceraGt1Pro2, upceraGt1Pro3],
     description: [
       "Vicce GT1 Pro — Pro-версия скоростной печи Vicce GT1 для спекания циркония. Ориентирована на лаборатории с серийным потоком ортопедических работ.",
       "• Платформа Vicce GT1 в версии Pro — расширенные возможности по сравнению со стандартной.",
@@ -1342,8 +1341,8 @@ export const PRODUCTS: Product[] = [
       "Для зуботехнических лабораторий",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(upceraA7plus1),
-    images: [url(upceraA7plus1), url(upceraA7plus2)],
+    image: upceraA7plus1,
+    images: [upceraA7plus1, upceraA7plus2],
     description: [
       "Vicce A7+ — печь для обжига керамики в линейке A7. Подходит лабораториям, которым нужна надёжная универсальная печь под прессовку и обжиг керамических масс.",
       "• Платформа Vicce A7 — те же расходники и логика управления, что и у A7Pro.",
@@ -1371,8 +1370,8 @@ export const PRODUCTS: Product[] = [
       "Входная мощность 1200 + 350 Вт",
       "Габариты 33 × 42 × 56 см, 24,6 кг",
     ],
-    image: url(upceraA7pro1),
-    images: [url(upceraA7pro1), url(upceraA7pro2), url(upceraA7pro3)],
+    image: upceraA7pro1,
+    images: [upceraA7pro1, upceraA7pro2, upceraA7pro3],
     description: [
       "Vicce A7Pro — печь для обжига керамики с вакуумным насосом 550D для интенсивной эксплуатации в зуботехнических лабораториях. Подходит для прессовки и обжига всех современных керамических масс.",
       "• Тип: печь для обжига керамики с насосом 550D.",
@@ -1417,8 +1416,8 @@ export const PRODUCTS: Product[] = [
       "200 встроенных редактируемых программ",
       "PID-контроль температуры",
     ],
-    image: url(vicceTtf1),
-    images: [url(vicceTtf1), url(vicceTtf2)],
+    image: vicceTtf1,
+    images: [vicceTtf1, vicceTtf2],
     description: [
       "Vicce TTF — высокотемпературная печь для спекания циркониевых каркасов. Подходит лабораториям с регулярной серийной нагрузкой.",
       "• Тип: печь для синтеризации циркония.",
@@ -1459,8 +1458,8 @@ export const PRODUCTS: Product[] = [
       "Прочность на изгиб 74 МПа",
       "Фасовка 1 кг и 2,5 кг",
     ],
-    image: url(rayshapeGrey1kg),
-    images: [url(rayshapeGrey1kg), url(rayshapeGreyNew)],
+    image: rayshapeGrey1kg,
+    images: [rayshapeGrey1kg, rayshapeGreyNew],
     description: [
       "RayShape Model PRO Grey — фотополимер для 3D-печати зуботехнических моделей. Подходит для разборных, рабочих и диагностических моделей в открытых системах 3D-печати.",
       "• Тип: фотополимерная смола для 3D-печати стоматологических моделей.",
@@ -1501,8 +1500,8 @@ export const PRODUCTS: Product[] = [
       "Для моделей и диагностики",
       "Фасовка 1 кг и 2,5 кг",
     ],
-    image: url(rayshapeOrange1kg),
-    images: [url(rayshapeOrange1kg), url(rayshapeOrangeNew)],
+    image: rayshapeOrange1kg,
+    images: [rayshapeOrange1kg, rayshapeOrangeNew],
     description: [
       "RayShape Model PRO Orange — фотополимер для печати моделей с высокой контрастностью оттисков и линий разметки. Линейка той же серии Model PRO.",
       "• Цвет/назначение: оранжевый — модели для диагностики и презентации кейса.",
@@ -1536,8 +1535,8 @@ export const PRODUCTS: Product[] = [
       "Бутыль 1 кг",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(photoXe),
-    images: [url(photoXe)],
+    image: photoXe,
+    images: [photoXe],
     description: [
       "RayShape Model XE — фотополимер серии XE для прецизионной 3D-печати в зуботехнической лаборатории.",
       "• Длина волны фотоинициатора 405 нм — совместим с LCD/DLP-принтерами RayShape Edge.",
@@ -1569,8 +1568,8 @@ export const PRODUCTS: Product[] = [
       "Питание 220 В, 50 Гц",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(srefoClean1),
-    images: [url(srefoClean1), url(srefoClean2), url(srefoClean3)],
+    image: srefoClean1,
+    images: [srefoClean1, srefoClean2, srefoClean3],
     description: [
       "Srefo R-1206 — аппарат для анодирования титановых изделий: коронок, абатментов, балок и аксессуаров. Позволяет получить декоративные оттенки на поверхности чистого титана без покрасок и покрытий.",
       "• Назначение: анодирование чистого титана для зуботехнических и имплантологических изделий.",
@@ -1607,8 +1606,8 @@ export const PRODUCTS: Product[] = [
       "Автоматическое поддержание давления",
       "Защита от перегрева и избыточного давления",
     ],
-    image: url(srefoR502_1),
-    images: [url(srefoR502_1)],
+    image: srefoR502_1,
+    images: [srefoR502_1],
     description: [
       "Srefo R-502 — профессиональный стоматологический пароструйный аппарат для очистки зуботехнических конструкций, инструментов и рабочих поверхностей. Использует насыщенный пар под высоким давлением для эффективного удаления воска, полировочных паст, гипса, жировых загрязнений и остатков материалов после изготовления ортопедических конструкций.",
       "• Две независимые ручки позволяют работать нескольким операторам или быстро переключаться между режимами обработки без остановки оборудования.",
@@ -1654,8 +1653,8 @@ export const PRODUCTS: Product[] = [
       "Автоматическое поддержание давления",
       "Компактные размеры для небольших кабинетов",
     ],
-    image: url(srefoR501_1),
-    images: [url(srefoR501_1)],
+    image: srefoR501_1,
+    images: [srefoR501_1],
     description: [
       "Srefo R-501 — компактный стоматологический пароочиститель с одной рабочей ручкой для удаления воска, гипса, полировочных паст и технологических загрязнений с зуботехнических изделий. Подходит для небольших лабораторий и стоматологических кабинетов.",
       "• Простая и надёжная конструкция с одной паровой ручкой — минимум обслуживания и удобство в ежедневной работе.",
@@ -1702,8 +1701,8 @@ export const PRODUCTS: Product[] = [
       "Размер 98 мм, толщины 10–25 мм",
       "Коронки, мосты, full-contour",
     ],
-    image: url(yuceraPlus1),
-    images: [url(yuceraPlus1), url(yuceraPlus2)],
+    image: yuceraPlus1,
+    images: [yuceraPlus1, yuceraPlus2],
     description: [
       "Yucera 3D Plus Multilayer — многослойный окрашенный циркониевый блок/диск для CAD/CAM-фрезерования. Подходит для эстетических коронок, мостов и full-contour конструкций.",
       "• Тип: многослойный окрашенный цирконий с естественным градиентом.",
@@ -1745,8 +1744,8 @@ export const PRODUCTS: Product[] = [
       "Translucency градиент 43–57%",
       "Single crowns, мосты, full-arch",
     ],
-    image: url(yucera4d1),
-    images: [url(yucera4d1), url(yucera4d2)],
+    image: yucera4d1,
+    images: [yucera4d1, yucera4d2],
     description: [
       "Yucera 4D Pro Multilayer — многослойный цирконий с градиентом цвета и прозрачности от режущего края к дентинной зоне. Подходит для эстетически требовательных работ.",
       "• Тип: 4D Pro multilayer zirconia.",
@@ -1791,8 +1790,8 @@ export const PRODUCTS: Product[] = [
       "Для каркасов и мостов",
       "Уточнение характеристик — по паспорту",
     ],
-    image: url(yuceraSt1),
-    images: [url(yuceraSt1), url(yuceraSt2)],
+    image: yuceraSt1,
+    images: [yuceraSt1, yuceraSt2],
     description: [
       "Yucera HT — однослойный циркониевый диск из линейки Yucera Zirconia. Подходит для каркасов, мостов и работ, где приоритет — прочность.",
       "• Линейка Yucera Zirconia, формат 98 мм.",
@@ -1831,8 +1830,8 @@ export const PRODUCTS: Product[] = [
       "Для CAD/CAM-фрезерования",
       "Уточнение характеристик — по TDS",
     ],
-    image: url(xtcera3d1),
-    images: [url(xtcera3d1), url(xtcera3d2), url(xtcera3d3)],
+    image: xtcera3d1,
+    images: [xtcera3d1, xtcera3d2, xtcera3d3],
     description: [
       "XTCERA 3D — многослойный циркониевый блок для CAD/CAM-фрезерования эстетических реставраций. Подходит лабораториям, работающим на парке XTCERA или совместимых системах.",
       "• Многослойный цирконий с градиентом цвета.",
@@ -1875,8 +1874,8 @@ export const PRODUCTS: Product[] = [
       "Толщины 10–25 мм",
       "Биосовместимость, ISO 5832",
     ],
-    image: url(sinoTi4),
-    images: [url(sinoTi4)],
+    image: sinoTi4,
+    images: [sinoTi4],
     description: [
       "Sino Ti Metal Ti TC4 — титановый диск из сплава Ti-6Al-4V для фрезерования имплантационных и ортопедических конструкций.",
       "• Марка сплава: Ti-6Al-4V (TC4) — стандартный медицинский титан.",
@@ -1917,8 +1916,8 @@ export const PRODUCTS: Product[] = [
       "Толщины 10–25 мм",
       "Для крупных каркасов и балок",
     ],
-    image: url(sinoTi2White),
-    images: [url(sinoTi2White), url(sinoTi1), url(sinoTi3)],
+    image: sinoTi2White,
+    images: [sinoTi2White, sinoTi1, sinoTi3],
     description: [
       "Sino Ti Metal Ti TC4 — квадратный титановый блок для фрезерования крупных имплантологических конструкций. Подходит для станков с поддержкой блоков 140 × 150 мм (например, XTCERA X-Mill 650SE).",
       "• Марка сплава: Ti-6Al-4V (TC4).",
@@ -1960,8 +1959,8 @@ export const PRODUCTS: Product[] = [
       "Толщины 10–25 мм",
       "Временные коронки и прототипы",
     ],
-    image: url(pmmaMono),
-    images: [url(pmmaMono)],
+    image: pmmaMono,
+    images: [pmmaMono],
     description: [
       "PMMA Monolayer — однотонный диск из полиметилметакрилата для CAD/CAM-фрезерования временных конструкций и прототипов.",
       "• Применение: временные коронки и мосты, прототипы для примерки, ортомодели.",
@@ -1997,8 +1996,8 @@ export const PRODUCTS: Product[] = [
       "Для каркасов под литьё",
       "Выгорает без остатка",
     ],
-    image: url(waxNew),
-    images: [url(waxNew)],
+    image: waxNew,
+    images: [waxNew],
     description: [
       "Воск для CAD/CAM-фрезерования — расходник для подготовки каркасов под литьё.",
       "• Форм-фактор: диск Ø98 мм, толщины 10–25 мм.",
@@ -2029,8 +2028,8 @@ export const PRODUCTS: Product[] = [
       "Долговечная",
       "Уточнение диаметра — по паспорту станка",
     ],
-    image: url(burCalib2),
-    images: [url(burCalib2), url(burCalib1)],
+    image: burCalib2,
+    images: [burCalib2, burCalib1],
     description: [
       "Калибровочная фреза — расходник для регулярной автокалибровки CAD/CAM-станков. Поддерживает стабильность точности при ежедневной работе.",
       "• Совместимые станки: XTCERA X-Mill 500 Plus, Yucera, Aidite.",
@@ -2060,8 +2059,8 @@ export const PRODUCTS: Product[] = [
       "Различные диаметры",
       "Долговечное покрытие",
     ],
-    image: url(burPmma),
-    images: [url(burPmma)],
+    image: burPmma,
+    images: [burPmma],
     description: [
       "Универсальные фрезы по циркону и PMMA — расходник под типовой парк CAD/CAM-станков.",
       "• Совместимы с большинством стоматологических 4/5-осевых станков.",
@@ -2092,8 +2091,8 @@ export const PRODUCTS: Product[] = [
       "Совместим с XTCERA и аналогами",
       "Уточнение TDS — по паспорту",
     ],
-    image: url(lithium4),
-    images: [url(lithium4), url(lithium1), url(lithium2), url(lithium3)],
+    image: lithium4,
+    images: [lithium4, lithium1, lithium2, lithium3],
     description: [
       "Дисиликат лития XTCERA — блоки для фрезерования эстетических реставраций: виниров, вкладок, накладок и одиночных коронок передней группы.",
       "• Тип: Dental Lithium Disilicate Glass-Ceramics.",
@@ -2124,8 +2123,8 @@ export const PRODUCTS: Product[] = [
       "6 типовых размеров блоков",
       "Inlays, onlays, veneers, crowns",
     ],
-    image: url(lithium1),
-    images: [url(lithium1), url(lithium2)],
+    image: lithium1,
+    images: [lithium1, lithium2],
     description: [
       "Дисиликат лития Yucera — стоматологическая стеклокерамика для CAD/CAM или ручной обработки. Подходит для виниров, вкладок, накладок, частичных и полных коронок.",
       "• Тип: Dental Lithium Disilicate Glass-Ceramics.",
@@ -2162,8 +2161,8 @@ export const PRODUCTS: Product[] = [
       "Высокая текучесть",
       "Для SLM-принтеров (включая FastForm DeskFab X1)",
     ],
-    image: url(slmPowder10),
-    images: [url(slmPowder10)],
+    image: slmPowder10,
+    images: [slmPowder10],
     description: [
       "Металлический порошок 10–30 мкм — расходник для селективного лазерного плавления (SLM).",
       "• Фракция 10–30 мкм — для принтеров, рассчитанных на мелкую фракцию.",
@@ -2194,8 +2193,8 @@ export const PRODUCTS: Product[] = [
       "Высокая текучесть",
       "Стандарт для SLM-печати",
     ],
-    image: url(slmPowder15),
-    images: [url(slmPowder15)],
+    image: slmPowder15,
+    images: [slmPowder15],
     description: [
       "Металлический порошок 15–45 мкм — стандартная фракция для большинства зуботехнических SLM-принтеров.",
       "• Фракция 15–45 мкм — универсальный выбор под FastForm DeskFab X1 и аналоги.",
@@ -2226,8 +2225,8 @@ export const PRODUCTS: Product[] = [
       "Совместима с RayShape Edge E2",
       "Сменный расходник",
     ],
-    image: url(rayshapeVat1),
-    images: [url(rayshapeVat1), url(rayshapeVat2), url(rayshapeVat3)],
+    image: rayshapeVat1,
+    images: [rayshapeVat1, rayshapeVat2, rayshapeVat3],
     description: [
       "Ванночка для RayShape Edge E2 — сменный расходник с FEP-плёнкой в комплекте.",
       "• Совместимость: только RayShape Edge E2.",
@@ -2256,8 +2255,8 @@ export const PRODUCTS: Product[] = [
       "Длительный ресурс",
       "Несколько плёнок в наборе",
     ],
-    image: url(rayshapeFilms1),
-    images: [url(rayshapeFilms1), url(rayshapeFilms2), url(rayshapeFilms3)],
+    image: rayshapeFilms1,
+    images: [rayshapeFilms1, rayshapeFilms2, rayshapeFilms3],
     description: [
       "Набор сменных FEP-плёнок для ванночки RayShape Edge E2 — типовой регламентный расходник.",
       "• Совместимость: ванночка RayShape Edge E2.",
@@ -2286,8 +2285,8 @@ export const PRODUCTS: Product[] = [
       "Подходит для интенсивной работы",
       "Надёжная система фильтрации",
     ],
-    image: url(imgXcq2412),
-    images: [url(imgXcq2412)],
+    image: imgXcq2412,
+    images: [imgXcq2412],
     description: [
       "ZT-XCQ-2412 — профессиональная вытяжка для зуботехнических лабораторий и CAD/CAM участков. Предназначена для эффективного удаления пыли, образующейся при обработке циркония, PMMA, гипса, композитов и других материалов. Благодаря мощной системе фильтрации и автоматической очистке фильтров обеспечивает стабильную работу оборудования и поддерживает чистоту рабочего пространства даже при высокой нагрузке.",
       "• Высокопроизводительная система аспирации обеспечивает постоянное удаление пыли из рабочей зоны.",
@@ -2311,8 +2310,8 @@ export const PRODUCTS: Product[] = [
       "Промышленное исполнение",
       "Длительный ресурс эксплуатации",
     ],
-    image: url(imgXcq2413),
-    images: [url(imgXcq2413)],
+    image: imgXcq2413,
+    images: [imgXcq2413],
     description: [
       "ZT-XCQ-2413 — промышленная вытяжная система повышенной производительности для зуботехнических лабораторий и CAD/CAM центров. Предназначена для подключения нескольких рабочих мест или высокопроизводительного оборудования.",
       "• Увеличенная производительность по сравнению с младшими моделями.",
@@ -2336,8 +2335,8 @@ export const PRODUCTS: Product[] = [
       "Автоматическое опускание изделия",
       "Компактные размеры",
     ],
-    image: url(imgR1207a),
-    images: [url(imgR1207a), url(imgR1207b)],
+    image: imgR1207a,
+    images: [imgR1207a, imgR1207b],
     description: [
       "SREFO R-1207 — профессиональный аппарат для анодирования титана, предназначенный для изменения цвета титановых изделий методом электрохимической обработки. Используется при изготовлении индивидуальных абатментов, балок, мультиюнитов, ортодонтических винтов и других стоматологических конструкций из титана.",
       "• Позволяет получать широкий диапазон оттенков за счёт регулировки напряжения.",
@@ -2370,8 +2369,8 @@ export const PRODUCTS: Product[] = [
       "Высокий крутящий момент",
       "Длительный ресурс работы",
     ],
-    image: url(srefoR50s1),
-    images: [url(srefoR50s1), url(srefoR50s2), url(srefoR50s3)],
+    image: srefoR50s1,
+    images: [srefoR50s1, srefoR50s2, srefoR50s3],
     description: [
       "SREFO R-50S — мощный бесщёточный микромотор для зуботехнических лабораторий, предназначенный для финишной обработки, шлифовки и полировки ортопедических конструкций. Высокий крутящий момент и низкий уровень шума делают его отличным решением для ежедневной интенсивной работы.",
       "• Скорость вращения от 1 000 до 50 000 об/мин.",
@@ -2405,8 +2404,8 @@ export const PRODUCTS: Product[] = [
       "Комплект из 4 насадок",
       "Высокая надёжность",
     ],
-    image: url(imgR1105a),
-    images: [url(imgR1105a), url(imgR1105b), url(imgR1105c), url(imgR1105d)],
+    image: imgR1105a,
+    images: [imgR1105a, imgR1105b, imgR1105c, imgR1105d],
     description: [
       "SREFO R-1105 — профессиональный электрический шпатель для моделировки воска в зуботехнических лабораториях. Позволяет быстро нагревать рабочие наконечники и точно поддерживать заданную температуру во время моделирования каркасов и восковых конструкций.",
       "• Немецкая интегральная схема обеспечивает стабильную работу.",
@@ -2429,8 +2428,8 @@ export const PRODUCTS: Product[] = [
       "Низкий уровень шума",
       "Простое подключение",
     ],
-    image: url(imgCompressor20b),
-    images: [url(imgCompressor20b)],
+    image: imgCompressor20b,
+    images: [imgCompressor20b],
     description: [
       "Компрессор для печей Zetin ZTCF-20B и ZTCF-20B PRO — специализированный безмасляный компрессор для работы с печами быстрого спекания циркония. Обеспечивает стабильную подачу воздуха, необходимую для корректной работы системы охлаждения и термостабилизации оборудования.",
       "• Стабильная подача воздуха.",
@@ -2452,8 +2451,8 @@ export const PRODUCTS: Product[] = [
       "Простая замена",
       "Стабильная работа печи",
     ],
-    image: url(imgTen30b),
-    images: [url(imgTen30b)],
+    image: imgTen30b,
+    images: [imgTen30b],
     description: [
       "Нагревательный ТЭН для Zetin ZTCF-30B / ZTCF-30B Plus — оригинальный нагревательный элемент для печей спекания циркония серии ZTCF. Обеспечивает равномерный нагрев рабочей камеры и поддерживает стабильные температурные режимы при длительной эксплуатации.",
       "• Оригинальная запасная часть производителя.",
@@ -2475,8 +2474,8 @@ export const PRODUCTS: Product[] = [
       "Простая постобработка",
       "Отличная точность",
     ],
-    image: url(imgAiditeEz),
-    images: [url(imgAiditeEz)],
+    image: imgAiditeEz,
+    images: [imgAiditeEz],
     description: [
       "Aidite EZPrint — профессиональная фотополимерная смола для 3D-печати стоматологических моделей. Обеспечивает высокую детализацию, точную передачу анатомии и стабильные результаты при ежедневном производстве моделей.",
       "• Высокая точность печати.",
@@ -2498,8 +2497,8 @@ export const PRODUCTS: Product[] = [
       "Минимальная усадка",
       "Простота печати",
     ],
-    image: url(imgHarzA3_1kg),
-    images: [url(imgHarzA3_1kg), url(imgHarzA3_05kg)],
+    image: imgHarzA3_1kg,
+    images: [imgHarzA3_1kg, imgHarzA3_05kg],
     sizes: [
       { label: "0,5 кг", price: "12 000 ₽" },
       { label: "1 кг", price: "20 000 ₽" },
