@@ -12,7 +12,10 @@ export const Route = createFileRoute("/contacts")({
   head: () => ({ meta: [
     { title: "Контакты — Digital Dentistry Solutions" },
     { name: "description", content: "Адрес офиса в Москве, телефон, email, Telegram, WhatsApp, MAX." },
-  ]}),
+    { property: "og:title", content: "Контакты — Digital Dentistry Solutions" },
+    { property: "og:description", content: "Адрес офиса в Москве, телефон, email, Telegram, WhatsApp, MAX." },
+    { property: "og:url", content: "https://dds-market.lovable.app/contacts" },
+  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/contacts" }]}),
   component: ContactsPage,
 });
 
