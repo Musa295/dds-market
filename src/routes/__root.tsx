@@ -99,6 +99,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "DDS Market — Digital Dentistry Solutions",
+          url: "https://ddsmarket.ru",
+          logo: "https://ddsmarket.ru/favicon.png",
+          description: "Поставка, монтаж и сервис цифрового стоматологического оборудования в Москве: сканеры, фрезерные станки, 3D-принтеры, печи.",
+          areaServed: "RU",
+          contactPoint: [{ "@type": "ContactPoint", telephone: "+7 (925) 442-58-58", contactType: "sales", areaServed: "RU", availableLanguage: ["ru"] }],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "DDS Market",
+          url: "https://ddsmarket.ru",
+          inLanguage: "ru-RU",
+          potentialAction: { "@type": "SearchAction", target: "https://ddsmarket.ru/catalog?q={query}", "query-input": "required name=query" },
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
