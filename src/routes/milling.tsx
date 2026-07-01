@@ -9,8 +9,8 @@ export const Route = createFileRoute("/milling")({
     { name: "description", content: "Собственный фрезерный центр в Москве: каркасы из циркония, диоксида кремния, PMMA, титана." },
     { property: "og:title", content: "Фрезерный центр — DDS MARKET Москва" },
     { property: "og:description", content: "Собственный фрезерный центр в Москве: каркасы из циркония, диоксида кремния, PMMA, титана." },
-    { property: "og:url", content: "https://dds-market.lovable.app/milling" },
-  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/milling" }]}),
+    { property: "og:url", content: "https://ddsmarket.ru/milling" },
+  ], links: [{ rel: "canonical", href: "https://ddsmarket.ru/milling" }]}),
   component: () => (
     <PageShell title="Фрезерный центр" subtitle="Изготовление каркасов и реставраций на 5-осевом оборудовании VHF и Roland. Приём STL по защищённым каналам." crumbs={[{ label: "Фрезерный центр" }]}>
       <div className="container mx-auto px-6 py-14 grid lg:grid-cols-[1fr_400px] gap-10">

@@ -9,8 +9,8 @@ export const Route = createFileRoute("/delivery")({
     { name: "description", content: "Самовывоз и доставка транспортными компаниями: MagicTrans, ПЭК, Деловые линии, СДЭК. Оплата наличными в офисе, переводом, лизинг через партнёров." },
     { property: "og:title", content: "Доставка и оплата — DDS MARKET" },
     { property: "og:description", content: "Самовывоз со склада в Москве и доставка по всей России. Оплата наличными, переводом, лизинг." },
-    { property: "og:url", content: "https://dds-market.lovable.app/delivery" },
-  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/delivery" }]}),
+    { property: "og:url", content: "https://ddsmarket.ru/delivery" },
+  ], links: [{ rel: "canonical", href: "https://ddsmarket.ru/delivery" }]}),
   component: () => (
     <PageShell title="Доставка и оплата" subtitle="Самовывоз со склада в Москве или доставка транспортными компаниями по всей России." crumbs={[{ label: "Доставка" }]}>
       <div className="container mx-auto px-6 py-14">
