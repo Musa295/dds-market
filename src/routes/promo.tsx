@@ -15,8 +15,8 @@ export const Route = createFileRoute("/promo")({
     { name: "description", content: "Актуальные акции и спецпредложения на стоматологическое оборудование и расходные материалы." },
     { property: "og:title", content: "Акции и спецпредложения — DDS MARKET" },
     { property: "og:description", content: "Актуальные акции и спецпредложения на стоматологическое оборудование и расходные материалы." },
-    { property: "og:url", content: "https://dds-market.lovable.app/promo" },
-  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/promo" }]}),
+    { property: "og:url", content: "https://ddsmarket.ru/promo" },
+  ], links: [{ rel: "canonical", href: "https://ddsmarket.ru/promo" }]}),
   component: () => (
     <PageShell title="Акции и спецпредложения" subtitle="Скидки и бонусы для постоянных клиентов." crumbs={[{ label: "Акции" }]}>
       <div className="container mx-auto px-6 py-14 grid md:grid-cols-2 gap-5">

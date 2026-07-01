@@ -45,8 +45,8 @@ export const Route = createFileRoute("/catalog/")({
     { name: "description", content: "Каталог стоматологического оборудования: сканеры, фрезерные станки, 3D-принтеры, печи, ПО, расходные материалы." },
     { property: "og:title", content: "Каталог стоматологического оборудования — DDS MARKET" },
     { property: "og:description", content: "Сканеры, фрезерные станки, 3D-принтеры, печи, ПО и расходные материалы. Цены ниже конкурентов." },
-    { property: "og:url", content: "https://dds-market.lovable.app/catalog" },
-  ], links: [{ rel: "canonical", href: "https://dds-market.lovable.app/catalog" }]}),
+    { property: "og:url", content: "https://ddsmarket.ru/catalog" },
+  ], links: [{ rel: "canonical", href: "https://ddsmarket.ru/catalog" }]}),
   component: CatalogPage,
   validateSearch: (s: Record<string, unknown>) => ({ q: (s.q as string) ?? "", cat: (s.cat as string) ?? "" }),
 });
