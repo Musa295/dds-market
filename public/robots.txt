@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://dds-market.lovable.app/sitemap.xml
+Sitemap: https://ddsmarket.ru/sitemap.xml
